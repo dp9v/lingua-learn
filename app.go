@@ -27,7 +27,9 @@ func main() {
 		if len(data) == 0 {
 			dialog.NewError(errors.New("список слов пуст"), myWindow).Show()
 		} else {
-			showWindow(myApp, getRandomWords(5))
+			window := InitShowWordsWindow(myApp, getRandomWords(5))
+			window.Show()
+			//showWindow(myApp, getRandomWords(5))
 		}
 	})
 	myWindow.SetContent(container.NewCenter(startBtn))

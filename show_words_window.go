@@ -10,54 +10,66 @@ import (
 	"strings"
 )
 
-var (
-	currentWord      = 0
+type ShowWordsWindow struct {
+	currentWord      int
 	roundWords       []Word
-	showWordsWindow  fyne.Window
-	nextBtn          = widget.NewButton("Start", onNextBtnClick)
-	closeBtn         = widget.NewButton("Close", onCloseBtnClick)
-	input            = widget.NewEntry()
-	originalLabel    = widget.NewLabel("")
-	correctWordLabel = widget.NewLabel("")
-)
+	window           fyne.Window
+	nextBtn          *widget.Button
+	closeBtn         *widget.Button
+	input            *widget.Entry
+	translationLabel *widget.Label
+	correctWordLabel *widget.Label
+}
 
-func showWindow(app fyne.App, words []Word) {
-	showWordsWindow = app.NewWindow("Learn words")
-	showWordsWindow.Resize(fyne.Size{
+func InitShowWordsWindow(app fyne.App, words []Word) ShowWordsWindow {
+	window := ShowWordsWindow{
+		currentWord:      0,
+		roundWords:       words,
+		window:           app.NewWindow("Learn words"),
+		input:            widget.NewEntry(),
+		translationLabel: widget.NewLabel(""),
+		correctWordLabel: widget.NewLabel(""),
+	}
+	window.nextBtn = widget.NewButton("Next", window.onNextBtnClick)
+	window.closeBtn = widget.NewButton("Close", window.onCloseBtnClick)
+	return window
+}
+
+func (w *ShowWordsWindow) onNextBtnClick() {
+	if strings.ToUpper(w.input.Text) != strings.ToUpper(w.roundWords[w.currentWord].Original) {
+		w.correctWordLabel.SetText(w.roundWords[w.currentWord].Original)
+		return
+	}
+	if w.currentWord+1 == len(w.roundWords) {
+		dialog.ShowError(errors.New("Слова закончились"), w.window)
+		return
+	}
+
+	w.currentWord++
+	w.correctWordLabel.SetText("")
+	w.input.SetText("")
+	w.translationLabel.SetText(w.roundWords[w.currentWord].Translation)
+}
+
+func (w *ShowWordsWindow) onCloseBtnClick() {
+
+}
+
+func (w *ShowWordsWindow) Show() {
+	w.window.Resize(fyne.Size{
 		Width:  300,
 		Height: 200,
 	})
-	roundWords = words
 
-	showWordsWindow.SetContent(container.NewBorder(
-		originalLabel,
-		container.NewHBox(nextBtn, layout.NewSpacer(), closeBtn),
+	w.window.SetContent(container.NewBorder(
+		w.translationLabel,
+		container.NewHBox(w.nextBtn, layout.NewSpacer(), w.closeBtn),
 		nil,
 		nil,
-		container.NewVBox(input, correctWordLabel),
+		container.NewVBox(w.input, w.correctWordLabel),
 	))
 
-	originalLabel.SetText(roundWords[currentWord].Translation)
-	closeBtn.Disable()
-	showWordsWindow.Show()
-}
-
-func onNextBtnClick() {
-	if strings.ToUpper(input.Text) != strings.ToUpper(roundWords[currentWord].Original) {
-		correctWordLabel.SetText(roundWords[currentWord].Original)
-		return
-	}
-	if currentWord+1 == len(roundWords) {
-		dialog.ShowError(errors.New("Слова закончились"), showWordsWindow)
-		return
-	}
-
-	currentWord++
-	correctWordLabel.SetText("")
-	input.SetText("")
-	originalLabel.SetText(roundWords[currentWord].Translation)
-}
-
-func onCloseBtnClick() {
-
+	w.translationLabel.SetText(w.roundWords[w.currentWord].Translation)
+	w.closeBtn.Disable()
+	w.window.Show()
 }
