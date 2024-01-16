@@ -7,16 +7,18 @@ import (
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
+	"strings"
 )
 
 var (
-	currentWord     = 0
-	roundWords      []Word
-	showWordsWindow fyne.Window
-	nextBtn         = widget.NewButton("Next", onNextBtnClick)
-	closeBtn        = widget.NewButton("Close", onCloseBtnClick)
-	input           = widget.NewEntry()
-	label           = widget.NewLabel("")
+	currentWord      = 0
+	roundWords       []Word
+	showWordsWindow  fyne.Window
+	nextBtn          = widget.NewButton("Start", onNextBtnClick)
+	closeBtn         = widget.NewButton("Close", onCloseBtnClick)
+	input            = widget.NewEntry()
+	originalLabel    = widget.NewLabel("")
+	correctWordLabel = widget.NewLabel("")
 )
 
 func showWindow(app fyne.App, words []Word) {
@@ -28,21 +30,32 @@ func showWindow(app fyne.App, words []Word) {
 	roundWords = words
 
 	showWordsWindow.SetContent(container.NewBorder(
-		label, container.NewHBox(nextBtn, layout.NewSpacer(), closeBtn), nil, nil, input,
+		originalLabel,
+		container.NewHBox(nextBtn, layout.NewSpacer(), closeBtn),
+		nil,
+		nil,
+		container.NewVBox(input, correctWordLabel),
 	))
-	label.SetText(roundWords[0].Original)
 
+	originalLabel.SetText(roundWords[currentWord].Translation)
+	closeBtn.Disable()
 	showWordsWindow.Show()
 }
 
 func onNextBtnClick() {
-	if currentWord == len(roundWords) {
+	if strings.ToUpper(input.Text) != strings.ToUpper(roundWords[currentWord].Original) {
+		correctWordLabel.SetText(roundWords[currentWord].Original)
+		return
+	}
+	if currentWord+1 == len(roundWords) {
 		dialog.ShowError(errors.New("Слова закончились"), showWordsWindow)
 		return
 	}
-	label.SetText(roundWords[currentWord].Original)
-	currentWord++
 
+	currentWord++
+	correctWordLabel.SetText("")
+	input.SetText("")
+	originalLabel.SetText(roundWords[currentWord].Translation)
 }
 
 func onCloseBtnClick() {

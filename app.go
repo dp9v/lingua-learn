@@ -7,18 +7,8 @@ import (
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/widget"
+	"math/rand"
 )
-
-var data = []Word{{
-	Original:    "Dekuji",
-	Translation: "Спасибо",
-}, {
-	Original:    "Ahoi",
-	Translation: "Привет",
-}, {
-	Original:    "Chao",
-	Translation: "Пока",
-}}
 
 type Word struct {
 	Original    string
@@ -35,11 +25,19 @@ func main() {
 
 	startBtn := widget.NewButton("Run check", func() {
 		if len(data) == 0 {
-			dialog.NewError(errors.New("Список ошибок пуст"), myWindow).Show()
+			dialog.NewError(errors.New("список слов пуст"), myWindow).Show()
 		} else {
-			showWindow(myApp, data)
+			showWindow(myApp, getRandomWords(5))
 		}
 	})
 	myWindow.SetContent(container.NewCenter(startBtn))
 	myWindow.ShowAndRun()
+}
+
+func getRandomWords(count int) []Word {
+	result := make([]Word, count)
+	for i := 0; i < count; i++ {
+		result[i] = data[rand.Intn(len(data))]
+	}
+	return result
 }
