@@ -5,6 +5,7 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
+	"fyne.io/fyne/v2/driver/desktop"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
 	"strings"
@@ -16,20 +17,41 @@ type ShowWordsWindow struct {
 	window           fyne.Window
 	nextBtn          *widget.Button
 	closeBtn         *widget.Button
-	input            *widget.Entry
+	input            *customEntry
 	translationLabel *widget.Label
 	correctWordLabel *widget.Label
 }
 
-func InitShowWordsWindow(app fyne.App, words []Word) ShowWordsWindow {
+type customEntry struct {
+	widget.Entry
+	parent *ShowWordsWindow
+}
+
+func (m *customEntry) TypedShortcut(s fyne.Shortcut) {
+	altReturn := &desktop.CustomShortcut{
+		KeyName:  fyne.KeyReturn,
+		Modifier: fyne.KeyModifierAlt,
+	}
+	if _, ok := s.(*desktop.CustomShortcut); !ok {
+		m.Entry.TypedShortcut(s)
+		return
+	}
+	if s.ShortcutName() == altReturn.ShortcutName() {
+		m.parent.onNextBtnClick()
+	}
+}
+
+func NewShowWordsWindow(app fyne.App, words []Word) ShowWordsWindow {
 	window := ShowWordsWindow{
 		currentWord:      0,
 		roundWords:       words,
 		window:           app.NewWindow("Learn words"),
-		input:            widget.NewEntry(),
+		input:            &customEntry{},
 		translationLabel: widget.NewLabel(""),
 		correctWordLabel: widget.NewLabel(""),
 	}
+	window.input.ExtendBaseWidget(window.input)
+	window.input.parent = &window
 	window.nextBtn = widget.NewButton("Next", window.onNextBtnClick)
 	window.closeBtn = widget.NewButton("Close", window.onCloseBtnClick)
 	return window
@@ -52,7 +74,7 @@ func (w *ShowWordsWindow) onNextBtnClick() {
 }
 
 func (w *ShowWordsWindow) onCloseBtnClick() {
-
+	w.window.Close()
 }
 
 func (w *ShowWordsWindow) Show() {
@@ -70,6 +92,5 @@ func (w *ShowWordsWindow) Show() {
 	))
 
 	w.translationLabel.SetText(w.roundWords[w.currentWord].Translation)
-	w.closeBtn.Disable()
 	w.window.Show()
 }

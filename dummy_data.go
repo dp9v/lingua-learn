@@ -208,5 +208,32 @@ var data = []Word{
 	}, {
 		Original:    "Zůstat",
 		Translation: "Остаться",
+	}, {
+		Original:    "cvičit",
+		Translation: "Делать упражнения, тренироваться",
+	}, {
+		Original:    "Sportovec",
+		Translation: "Спортсмен",
+	}, {
+		Original:    "kluk",
+		Translation: "Мальчик",
+	}, {
+		Original:    "lidi",
+		Translation: "Люди",
+	}, {
+		Original:    "kuchař",
+		Translation: "Повар",
+	}, {
+		Original:    "dlouho",
+		Translation: "Долго",
+	}, {
+		Original:    "procházet se",
+		Translation: "Ходить, прогуливаться",
+	}, {
+		Original:    "vůbec",
+		Translation: "Вообще",
+	}, {
+		Original:    "teď",
+		Translation: "Сейчас",
 	},
 }
