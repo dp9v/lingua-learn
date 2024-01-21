@@ -19,10 +19,10 @@ func main() {
 	})
 
 	startBtn := widget.NewButton("Run check", func() {
-		if len(data) == 0 {
+		if len(groups["All"]) == 0 {
 			dialog.NewError(errors.New("список слов пуст"), myWindow).Show()
 		} else {
-			window := gui.NewShowWordsWindow(myApp, data.Shuffle())
+			window := gui.NewShowWordsWindow(myApp, groups["All"].Shuffle())
 			window.Show()
 			//showWindow(myApp, getRandomWords(5))
 		}
