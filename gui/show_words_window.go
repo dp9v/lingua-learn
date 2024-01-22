@@ -17,7 +17,7 @@ type ShowWordsWindow struct {
 	window           fyne.Window
 	nextBtn          *widget.Button
 	closeBtn         *widget.Button
-	input            *OnClickEntry
+	input            *OnKeyEntry
 	translationLabel *widget.Label
 	correctWordLabel *widget.Label
 }
@@ -30,7 +30,7 @@ func NewShowWordsWindow(app fyne.App, words common.Words) ShowWordsWindow {
 		translationLabel: widget.NewLabel(""),
 		correctWordLabel: widget.NewLabel(""),
 	}
-	window.input = NewOnClickEntry(window.onNextBtnClick)
+	window.input = NewOnKeyEntry(window.onNextBtnClick)
 	window.nextBtn = widget.NewButton("Next", window.onNextBtnClick)
 	window.closeBtn = widget.NewButton("Close", window.onCloseBtnClick)
 	return window
