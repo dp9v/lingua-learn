@@ -26,7 +26,7 @@ func NewShowWordsWindow(app fyne.App, words common.Words) ShowWordsWindow {
 	window := ShowWordsWindow{
 		currentWord:      0,
 		roundWords:       words,
-		window:           app.NewWindow("Learn words"),
+		window:           app.NewWindow("                                              "),
 		translationLabel: widget.NewLabel(""),
 		correctWordLabel: widget.NewLabel(""),
 	}

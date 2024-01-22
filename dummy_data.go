@@ -3,7 +3,7 @@ package main
 import "learn_words/common"
 
 var groups = common.WordGroups{
-	"All": {
+	"Words": {
 		{
 			Original:    "Cesta",
 			Translation: "Путь",
@@ -238,6 +238,87 @@ var groups = common.WordGroups{
 		}, {
 			Original:    "teď",
 			Translation: "Сейчас",
+		},
+	},
+	"Modal verbs + mam": {
+		{
+			Original:    "já mám",
+			Translation: "Я имею",
+		}, {
+			Original:    "Ty máš",
+			Translation: "Ты имеешь",
+		}, {
+			Original:    "Ona má",
+			Translation: "Она имеет",
+		}, {
+			Original:    "My máme",
+			Translation: "Мы имеем",
+		}, {
+			Original:    "Vy máte",
+			Translation: "Вы имеете",
+		}, {
+			Original:    "Oni mají",
+			Translation: "Они имеют",
+		},
+
+		{
+			Original:    "já chci",
+			Translation: "Я хочу",
+		}, {
+			Original:    "Ty chceš",
+			Translation: "Ты хочешь",
+		}, {
+			Original:    "On chce",
+			Translation: "Он хочет",
+		}, {
+			Original:    "My chceme",
+			Translation: "Мы хотим",
+		}, {
+			Original:    "Vy chcete",
+			Translation: "Вы хотите",
+		}, {
+			Original:    "Oni chtějí",
+			Translation: "Они хотят",
+		},
+
+		{
+			Original:    "já můžu",
+			Translation: "Я могу",
+		}, {
+			Original:    "Ty můžeš",
+			Translation: "Ты можешь",
+		}, {
+			Original:    "On může",
+			Translation: "Он может",
+		}, {
+			Original:    "My můžeme",
+			Translation: "Мы можем",
+		}, {
+			Original:    "Vy můžete",
+			Translation: "Вы можете",
+		}, {
+			Original:    "Oni můžou",
+			Translation: "Они могут",
+		},
+
+		{
+			Original:    "já musím",
+			Translation: "Я должен",
+		}, {
+			Original:    "Ty musíš",
+			Translation: "Ты должен",
+		}, {
+			Original:    "On musí",
+			Translation: "Он должен",
+		}, {
+			Original:    "My musíme",
+			Translation: "Мы должны",
+		}, {
+			Original:    "Vy musíte",
+			Translation: "Вы должны",
+		}, {
+			Original:    "Oni musí",
+			Translation: "Они должны",
 		},
 	},
 }

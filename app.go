@@ -18,15 +18,16 @@ func main() {
 		Height: 300,
 	})
 
+	groupSelector := widget.NewSelect(groups.GetAllGroups(), func(s string) {})
 	startBtn := widget.NewButton("Run check", func() {
-		if len(groups["All"]) == 0 {
+		words := groups.GetWords(groupSelector.Selected)
+		if len(words) == 0 {
 			dialog.NewError(errors.New("список слов пуст"), myWindow).Show()
 		} else {
-			window := gui.NewShowWordsWindow(myApp, groups["All"].Shuffle())
+			window := gui.NewShowWordsWindow(myApp, words.Shuffle(10))
 			window.Show()
-			//showWindow(myApp, getRandomWords(5))
 		}
 	})
-	myWindow.SetContent(container.NewCenter(startBtn))
+	myWindow.SetContent(container.NewCenter(container.NewVBox(groupSelector, startBtn)))
 	myWindow.ShowAndRun()
 }
