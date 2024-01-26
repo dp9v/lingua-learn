@@ -113,7 +113,7 @@ var groups = common.WordGroups{
 			Original:    "Nějaky",
 			Translation: "Какой-нибудь",
 		}, {
-			Original:    "Zpǎtky",
+			Original:    "zpátky",
 			Translation: "Назад",
 		}, {
 			Original:    "Musíte",
@@ -238,6 +238,42 @@ var groups = common.WordGroups{
 		}, {
 			Original:    "teď",
 			Translation: "Сейчас",
+		},
+	},
+	"New words": {
+		{
+			Original:    "sněžit",
+			Translation: "Идёт снег",
+		}, {
+			Original:    "od rána do večera",
+			Translation: "С утра до вечера",
+		}, {
+			Original:    "vařit",
+			Translation: "Готовить",
+		}, {
+			Original:    "hudba",
+			Translation: "Музыка",
+		}, {
+			Original:    "poslouchat",
+			Translation: "Слушать",
+		}, {
+			Original:    "těšit se",
+			Translation: "Очень сильно ждать",
+		}, {
+			Original:    "zajímat se o",
+			Translation: "Чем-то интересоваться",
+		}, {
+			Original:    "protože",
+			Translation: "Потому",
+		}, {
+			Original:    "vzhůru",
+			Translation: "Бодрый",
+		}, {
+			Original:    "většinou",
+			Translation: "В общем, преимуществено",
+		}, {
+			Original:    "zase",
+			Translation: "Снова",
 		},
 	},
 	"Modal verbs + mam": {
