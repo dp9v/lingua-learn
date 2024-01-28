@@ -37,6 +37,7 @@ func NewShowWordsWindow(app fyne.App, words common.Words) ShowWordsWindow {
 }
 
 func (w *ShowWordsWindow) onNextBtnClick() {
+	defer w.focusInput()
 	if strings.ToUpper(w.input.Text) != strings.ToUpper(w.roundWords[w.currentWord].Original) {
 		w.correctWordLabel.SetText(w.roundWords[w.currentWord].Original)
 		return
@@ -55,8 +56,12 @@ func (w *ShowWordsWindow) nextWord() {
 	}
 	w.currentWord++
 	w.correctWordLabel.SetText("")
-	w.input.SetText("")
 	w.translationLabel.SetText(w.roundWords[w.currentWord].Translation)
+	w.input.SetText("")
+}
+
+func (w *ShowWordsWindow) focusInput() {
+	w.window.Canvas().Focus(w.input)
 }
 
 func (w *ShowWordsWindow) onCloseBtnClick() {
