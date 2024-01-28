@@ -33,32 +33,23 @@ func (w Words) Shuffle(count int) Words {
 	return shuffled[:count]
 }
 
-func (wg WordGroups) GetWords(groupName string) Words {
-	if groupName == "All" {
-		return wg.getAll()
-	}
-	group, ok := wg[groupName]
-	if ok {
-		return group
-	}
-	return make(Words, 0)
-}
-
-func (wg WordGroups) GetAllGroups() []string {
-	res := make([]string, len(wg)+1)
-	i := 0
-	res[i] = "All"
-	for groupName := range wg {
-		i++
-		res[i] = groupName
+func (wg WordGroups) GetWords(nameGroups []string) Words {
+	var res Words
+	for _, groupName := range nameGroups {
+		group, ok := wg[groupName]
+		if ok {
+			res = append(res, group...)
+		}
 	}
 	return res
 }
 
-func (wg WordGroups) getAll() Words {
-	var res Words
-	for _, words := range wg {
-		res = append(res, words...)
+func (wg WordGroups) GetAllGroups() []string {
+	res := make([]string, len(wg))
+	i := 0
+	for groupName := range wg {
+		res[i] = groupName
+		i++
 	}
 	return res
 }

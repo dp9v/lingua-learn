@@ -18,7 +18,7 @@ func main() {
 		Height: 300,
 	})
 
-	groupSelector := widget.NewSelect(groups.GetAllGroups(), func(s string) {})
+	groupSelector := widget.NewCheckGroup(groups.GetAllGroups(), func(strings []string) {})
 	startBtn := widget.NewButton("Run check", func() {
 		words := groups.GetWords(groupSelector.Selected)
 		if len(words) == 0 {
@@ -28,6 +28,6 @@ func main() {
 			window.Show()
 		}
 	})
-	myWindow.SetContent(container.NewCenter(container.NewVBox(groupSelector, startBtn)))
+	myWindow.SetContent(container.NewVBox(groupSelector, startBtn))
 	myWindow.ShowAndRun()
 }
