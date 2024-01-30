@@ -1,8 +1,6 @@
-package main
+package common
 
-import "learn_words/common"
-
-var groups = common.WordGroups{
+var Groups = WordGroups{
 	"Words": {
 		{
 			Original:    "Cesta",
