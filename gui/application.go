@@ -21,7 +21,7 @@ type Application struct {
 	label   *widget.Label
 }
 
-func NewGuiApplication() *Application {
+func NewApplication() *Application {
 	myApp := app.New()
 	myWindow := myApp.NewWindow("")
 	res := Application{
