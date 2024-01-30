@@ -8,12 +8,16 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
+type Activity interface {
+	GetContent() fyne.CanvasObject
+	GetTitle() string
+}
+
 type GuiApplication struct {
-	app       fyne.App
-	w         fyne.Window
-	container fyne.CanvasObject
-	state     string
-	backBtn   *widget.Button
+	app     fyne.App
+	w       fyne.Window
+	content Activity
+	backBtn *widget.Button
 }
 
 func NewGuiApplication() *GuiApplication {
@@ -30,19 +34,24 @@ func NewGuiApplication() *GuiApplication {
 }
 
 func (app *GuiApplication) switchContent() {
-	if app.container == nil || app.state == "w2" {
-		app.update(NewMainWindow("test").getContent())
-		app.state = "w1"
+	if app.content == nil || app.content.GetTitle() == "test" {
+		app.update(NewMainWindow("test2"))
 	} else {
-		app.update(NewMainWindow2("test2").getContent())
-		app.state = "w2"
+		app.update(NewMainWindow2("test"))
 	}
 }
 
-func (app *GuiApplication) update(content fyne.CanvasObject) {
-	app.container = container.NewBorder(
+func (app *GuiApplication) update(content Activity) {
+	app.content = content
+	app.w.SetContent(app.getMainContainer())
+}
+
+func (app *GuiApplication) getMainContainer() *fyne.Container {
+	return container.NewBorder(
 		container.NewHBox(layout.NewSpacer(), app.backBtn),
-		nil, nil, nil, content,
+		nil,
+		nil,
+		nil,
+		app.content.GetContent(),
 	)
-	app.w.SetContent(app.container)
 }

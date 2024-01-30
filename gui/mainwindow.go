@@ -13,6 +13,14 @@ type MainWindow struct {
 	startBtn   *widget.Button
 }
 
+func (w *MainWindow) GetContent() fyne.CanvasObject {
+	return container.NewVBox(w.checkGroup, w.startBtn)
+}
+
+func (w *MainWindow) GetTitle() string {
+	return w.Title
+}
+
 func NewMainWindow(title string) *MainWindow {
 
 	groupSelector := widget.NewCheckGroup(common.Groups.GetAllGroups(), func(strings []string) {})
@@ -24,8 +32,4 @@ func NewMainWindow(title string) *MainWindow {
 		checkGroup: groupSelector,
 		startBtn:   startBtn,
 	}
-}
-
-func (w MainWindow) getContent() fyne.CanvasObject {
-	return container.NewVBox(w.checkGroup, w.startBtn)
 }
