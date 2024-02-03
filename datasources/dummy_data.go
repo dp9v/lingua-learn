@@ -238,7 +238,7 @@ var Groups = WordGroups{
 			Translation: "Сейчас",
 		},
 	},
-	"New words": {
+	"WordsLesson7": {
 		{
 			Original:    "sněžit",
 			Translation: "Идёт снег",
@@ -264,14 +264,100 @@ var Groups = WordGroups{
 			Original:    "protože",
 			Translation: "Потому",
 		}, {
-			Original:    "vzhůru",
-			Translation: "Бодрый",
+			Original:    "být vzhůru",
+			Translation: "Бодорствовать",
 		}, {
 			Original:    "většinou",
 			Translation: "В общем, преимуществено",
 		}, {
 			Original:    "zase",
 			Translation: "Снова",
+		},
+	},
+	"Rodina": {
+		{
+			Original:    "manželka",
+			Translation: "Жена",
+		},
+		{
+			Original:    "otec",
+			Translation: "Отец",
+		},
+		{
+			Original:    "tatínek",
+			Translation: "Папа",
+		},
+		{
+			Original:    "matka",
+			Translation: "Мать",
+		},
+		{
+			Original:    "rodiče",
+			Translation: "Родители",
+		},
+		{
+			Original:    "syn",
+			Translation: "Сын",
+		},
+		{
+			Original:    "dcera",
+			Translation: "Дочь",
+		},
+		{
+			Original:    "bratr",
+			Translation: "Брат",
+		},
+		{
+			Original:    "sestra",
+			Translation: "Сестра",
+		},
+		{
+			Original:    "sourozenci",
+			Translation: "Сиблинги",
+		},
+		{
+			Original:    "dědeček",
+			Translation: "Дедушка",
+		},
+		{
+			Original:    "babička",
+			Translation: "Бабушка",
+		},
+		{
+			Original:    "strýc",
+			Translation: "Дядя",
+		},
+		{
+			Original:    "teta",
+			Translation: "Тётя",
+		},
+		{
+			Original:    "neteř",
+			Translation: "Племянница",
+		},
+		{
+			Original:    "synovec",
+			Translation: "Племянник",
+		},
+		{
+			Original:    "neteř",
+			Translation: "",
+		},
+		{
+			Original:    "tchán",
+			Translation: "Отец супруга",
+		},
+		{
+			Original:    "tchyně",
+			Translation: "Мать супруга",
+		},
+		{
+			Original:    "zeť",
+			Translation: "зять",
+		},
+		{
+			Original:    "snacha",
+			Translation: "невестка",
 		},
 	},
 	"Modal verbs + mam": {
