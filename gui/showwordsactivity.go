@@ -7,14 +7,14 @@ import (
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
-	"learn_words/common"
+	"learn_words/datasources"
 	"strings"
 )
 
 type ShowWordsActivity struct {
 	app              *Application
 	currentWord      int
-	roundWords       common.Words
+	roundWords       datasources.Words
 	nextBtn          *widget.Button
 	input            *OnKeyEntry
 	translationLabel *widget.Label
@@ -36,7 +36,7 @@ func (a *ShowWordsActivity) GetTitle() string {
 	return "Show words"
 }
 
-func NewShowWordsActivity(app *Application, words common.Words) *ShowWordsActivity {
+func NewShowWordsActivity(app *Application, words datasources.Words) *ShowWordsActivity {
 	activity := ShowWordsActivity{
 		app:              app,
 		currentWord:      0,

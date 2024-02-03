@@ -1,4 +1,4 @@
-package common
+package datasources
 
 var Groups = WordGroups{
 	"Words": {
