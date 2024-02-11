@@ -3,11 +3,18 @@
 name: Publis TG android
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      message:
+        required: true
+      version:
+        default: "undefined"
+        
 
 jobs:
 
   publish:
+    name: Publish
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -28,5 +35,7 @@ jobs:
       with:
         to: ${{ secrets.TG_TO }}
         token: ${{ secrets.TG_TOKEN }}
-        message: "Test"
         document: /home/runner/work/lingua-learn/lingua-learn/fyne-cross/dist/android-arm/lingua_learn.apk
+        message: |
+          message: ${{ github.event.inputs.message }}
+          version: ${{ github.event.inputs.version }}
