@@ -1,4 +1,4 @@
-package common
+package datasources
 
 var Groups = WordGroups{
 	"Words": {
@@ -238,7 +238,7 @@ var Groups = WordGroups{
 			Translation: "Сейчас",
 		},
 	},
-	"New words": {
+	"WordsLesson7": {
 		{
 			Original:    "sněžit",
 			Translation: "Идёт снег",
@@ -264,14 +264,157 @@ var Groups = WordGroups{
 			Original:    "protože",
 			Translation: "Потому",
 		}, {
-			Original:    "vzhůru",
-			Translation: "Бодрый",
+			Original:    "být vzhůru",
+			Translation: "Бодорствовать",
 		}, {
 			Original:    "většinou",
 			Translation: "В общем, преимуществено",
 		}, {
 			Original:    "zase",
 			Translation: "Снова",
+		},
+	},
+	"WordsLesson8": {
+		{
+			Original:    "ale",
+			Translation: "Но",
+		}, {
+			Original:    "stupňů",
+			Translation: "Градус",
+		}, {
+			Original:    "10 stupňů",
+			Translation: "Десять градусов",
+		}, {
+			Original:    "kancelář",
+			Translation: "Офис",
+		}, {
+			Original:    "nemám nic nového",
+			Translation: "Нет ничего нового",
+		}, {
+			Original:    "O víkendu",
+			Translation: "В выходные",
+		}, {
+			Original:    "pozdě",
+			Translation: "Поздно",
+		}, {
+			Original:    "skřivánek",
+			Translation: "Жаворонок",
+		}, {
+			Original:    "mít návštěvu",
+			Translation: "Принимать гостей",
+		}, {
+			Original:    "brzy",
+			Translation: "Рано",
+		}, {
+			Original:    "půjčit",
+			Translation: "Одолжить, занять, взять напрокат",
+		}, {
+			Original:    "pracovní doba",
+			Translation: "Рабочие часы",
+		}, {
+			Original:    "pobočka",
+			Translation: "Филиал",
+		}, {
+			Original:    "spisovatel",
+			Translation: "Писатель",
+		}, {
+			Original:    "vědec",
+			Translation: "Ученый",
+		}, {
+			Original:    "štíhlý",
+			Translation: "Стройный",
+		}, {
+			Original:    "hledat",
+			Translation: "Искать",
+		}, {
+			Original:    "všemu rozumím",
+			Translation: "Все понял",
+		},
+	},
+	"Rodina": {
+		{
+			Original:    "manželka",
+			Translation: "Жена",
+		},
+		{
+			Original:    "otec",
+			Translation: "Отец",
+		},
+		{
+			Original:    "tatínek",
+			Translation: "Папа",
+		},
+		{
+			Original:    "matka",
+			Translation: "Мать",
+		},
+		{
+			Original:    "rodiče",
+			Translation: "Родители",
+		},
+		{
+			Original:    "syn",
+			Translation: "Сын",
+		},
+		{
+			Original:    "dcera",
+			Translation: "Дочь",
+		},
+		{
+			Original:    "bratr",
+			Translation: "Брат",
+		},
+		{
+			Original:    "sestra",
+			Translation: "Сестра",
+		},
+		{
+			Original:    "sourozenci",
+			Translation: "Сиблинги",
+		},
+		{
+			Original:    "dědeček",
+			Translation: "Дедушка",
+		},
+		{
+			Original:    "babička",
+			Translation: "Бабушка",
+		},
+		{
+			Original:    "strýc",
+			Translation: "Дядя",
+		},
+		{
+			Original:    "teta",
+			Translation: "Тётя",
+		},
+		{
+			Original:    "neteř",
+			Translation: "Племянница",
+		},
+		{
+			Original:    "synovec",
+			Translation: "Племянник",
+		},
+		{
+			Original:    "neteř",
+			Translation: "",
+		},
+		{
+			Original:    "tchán",
+			Translation: "Отец супруга",
+		},
+		{
+			Original:    "tchyně",
+			Translation: "Мать супруга",
+		},
+		{
+			Original:    "zeť",
+			Translation: "зять",
+		},
+		{
+			Original:    "snacha",
+			Translation: "невестка",
 		},
 	},
 	"Modal verbs + mam": {

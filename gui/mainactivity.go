@@ -6,18 +6,19 @@ import (
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/widget"
-	"learn_words/common"
+	"learn_words/datasources"
 )
 
 type MainActivity struct {
-	app        *Application
-	title      string
-	checkGroup *widget.CheckGroup
-	startBtn   *widget.Button
+	app           *Application
+	title         string
+	checkGroup    *widget.CheckGroup
+	startBtn      *widget.Button
+	showGroupsBtn *widget.Button
 }
 
 func (a *MainActivity) GetContent() fyne.CanvasObject {
-	return container.NewVBox(a.checkGroup, a.startBtn)
+	return container.NewVBox(a.checkGroup, a.startBtn, a.showGroupsBtn)
 }
 
 func (a *MainActivity) GetTitle() string {
@@ -26,19 +27,23 @@ func (a *MainActivity) GetTitle() string {
 
 func NewMainActivity(app *Application, title string) *MainActivity {
 
-	groupSelector := widget.NewCheckGroup(common.Groups.GetAllGroups(), func(strings []string) {})
+	groupSelector := widget.NewCheckGroup(datasources.Groups.GetAllGroups(), func(strings []string) {})
 	startBtn := widget.NewButton("Run check", func() {
-		words := common.Groups.GetWords(groupSelector.Selected)
+		words := datasources.Groups.GetWords(groupSelector.Selected)
 		if len(words) == 0 {
 			dialog.NewError(errors.New("список слов пуст"), app.w).Show()
 		} else {
 			app.update(NewShowWordsActivity(app, words.Shuffle(10)))
 		}
 	})
+	showGroupsBtn := widget.NewButton("ShowGroups", func() {
+		app.update(NewShowGroupsActivity(app, datasources.NewDummyDataSource()))
+	})
 	return &MainActivity{
-		app:        app,
-		title:      title,
-		checkGroup: groupSelector,
-		startBtn:   startBtn,
+		app:           app,
+		title:         title,
+		checkGroup:    groupSelector,
+		startBtn:      startBtn,
+		showGroupsBtn: showGroupsBtn,
 	}
 }

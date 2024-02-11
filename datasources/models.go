@@ -1,15 +1,15 @@
-package common
+package datasources
 
 import "math/rand"
+
+type Word struct {
+	Original    string `json:"original"`
+	Translation string `json:"translation"`
+}
 
 type WordGroups map[string]Words
 
 type Words []Word
-
-type Word struct {
-	Original    string
-	Translation string
-}
 
 func (w Words) GetRandomWords(count int) Words {
 	result := make(Words, count)
