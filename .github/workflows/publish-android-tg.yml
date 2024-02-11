@@ -14,7 +14,6 @@ on:
 jobs:
 
   publish:
-    name: Publish
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -30,7 +29,7 @@ jobs:
     - name: Build app
       run: fyne-cross android -arch arm -name lingua_learn -app-id com.dp9v.lingua_learn
 
-    - name: publish
+    - name: Publish
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TG_TO }}
