@@ -12,16 +12,16 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    # - name: Set up Go
-    #   uses: actions/setup-go@v4
-    #   with:
-    #     go-version: '1.20'
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.20'
 
-    # - name: Install fyne-cross
-    #   run: go install github.com/fyne-io/fyne-cross@latest
+    - name: Install fyne-cross
+      run: go install github.com/fyne-io/fyne-cross@latest
 
-    # - name: Build app
-    #   run: fyne-cross android -arch arm -name lingua_learn -app-id com.dp9v.lingua_learn
+    - name: Build app
+      run: fyne-cross android -arch arm -name lingua_learn -app-id com.dp9v.lingua_learn
 
     - name: publish
       uses: appleboy/telegram-action@master
@@ -29,4 +29,4 @@ jobs:
         to: ${{ secrets.TG_TO }}
         token: ${{ secrets.TG_TOKEN }}
         message: "Test"
-        debug: true
+        document: /home/runner/work/lingua-learn/lingua-learn/fyne-cross/dist/android-arm/lingua_learn.apk
