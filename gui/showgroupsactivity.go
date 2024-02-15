@@ -4,6 +4,7 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/data/binding"
+	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/widget"
 	"learn_words/datasources"
 )
@@ -23,8 +24,12 @@ func (s *ShowGroupsActivity) GetTitle() string {
 }
 
 func NewShowGroupsActivity(app *Application, source datasources.DataSource) *ShowGroupsActivity {
-	groups := source.ReadAllGroups().GetAllGroups()
-	groupsBinding := binding.BindStringList(&groups)
+	groups, err := source.ReadAllGroups()
+	if err != nil {
+		dialog.NewError(err, app.w).Show()
+		return nil
+	}
+	groupsBinding := binding.BindStringList(groups.GetAllGroups())
 
 	groupList := widget.NewListWithData(groupsBinding,
 		func() fyne.CanvasObject {

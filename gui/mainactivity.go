@@ -11,6 +11,7 @@ import (
 
 type MainActivity struct {
 	app           *Application
+	ds            *datasources.DataSource
 	title         string
 	checkGroup    *widget.CheckGroup
 	startBtn      *widget.Button
@@ -25,9 +26,14 @@ func (a *MainActivity) GetTitle() string {
 	return a.title
 }
 
-func NewMainActivity(app *Application, title string) *MainActivity {
+func NewMainActivity(app *Application, title string, ds datasources.DataSource) *MainActivity {
+	groups, err := ds.ReadAllGroups()
+	if err != nil {
+		dialog.ShowError(err, app.w)
+		return nil
+	}
 
-	groupSelector := widget.NewCheckGroup(datasources.Groups.GetAllGroups(), func(strings []string) {})
+	groupSelector := widget.NewCheckGroup(*groups.GetAllGroups(), func(strings []string) {})
 	startBtn := widget.NewButton("Run check", func() {
 		words := datasources.Groups.GetWords(groupSelector.Selected)
 		if len(words) == 0 {
