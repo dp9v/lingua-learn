@@ -12,7 +12,7 @@ type GithubDataSource struct {
 }
 
 func (g *GithubDataSource) ReadAllGroups() (*WordGroups, error) {
-	content, err := common.LoadRepositoryContent(WORDS_URL)
+	content, err := common.LoadGithubRepositoryContent(WORDS_URL)
 	if err != nil {
 		return nil, fmt.Errorf("error while reading group list: %v", err)
 	}
@@ -31,4 +31,8 @@ func (g *GithubDataSource) ReadAllGroups() (*WordGroups, error) {
 		result[repositoryContent.GetShortName()] = words
 	}
 	return &result, nil
+}
+
+func NewGithubDataSource() DataSource {
+	return &GithubDataSource{}
 }

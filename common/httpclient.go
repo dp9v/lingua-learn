@@ -8,23 +8,23 @@ import (
 	"strings"
 )
 
-type RepositoryContent struct {
+type GithubRepositoryContent struct {
 	Name        string `json:"name"`
 	Url         string `json:"url"`
 	DownloadUrl string `json:"download_url"`
 }
 
-func (c *RepositoryContent) GetShortName() string {
-	return strings.Split(c.Name, ".")[1]
+func (c *GithubRepositoryContent) GetShortName() string {
+	return strings.Split(c.Name, ".")[0]
 }
 
-func LoadRepositoryContent(url string) (*[]RepositoryContent, error) {
+func LoadGithubRepositoryContent(url string) (*[]GithubRepositoryContent, error) {
 	body, err := LoadPageContent(url)
 	if err != nil {
 		return nil, fmt.Errorf("error reading url body: %v", err)
 	}
 
-	result := &[]RepositoryContent{}
+	result := &[]GithubRepositoryContent{}
 	err = json.Unmarshal([]byte(body), result)
 	if err != nil {
 		return nil, fmt.Errorf("error parsing body json: %v", err)
