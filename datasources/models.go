@@ -3,6 +3,7 @@ package datasources
 import "math/rand"
 
 type Word struct {
+	PairId      int64  `json:"pair_id"`
 	Original    string `json:"original"`
 	Translation string `json:"translation"`
 }
@@ -44,12 +45,12 @@ func (wg WordGroups) GetWords(nameGroups []string) Words {
 	return res
 }
 
-func (wg WordGroups) GetAllGroups() []string {
+func (wg WordGroups) GetAllGroups() *[]string {
 	res := make([]string, len(wg))
 	i := 0
 	for groupName := range wg {
 		res[i] = groupName
 		i++
 	}
-	return res
+	return &res
 }

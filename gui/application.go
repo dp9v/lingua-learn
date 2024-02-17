@@ -1,11 +1,14 @@
 package gui
 
 import (
+	"encoding/json"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
+	"learn_words/datasources"
 )
 
 type Activity interface {
@@ -14,15 +17,16 @@ type Activity interface {
 }
 
 type Application struct {
-	app     fyne.App
-	w       fyne.Window
-	content Activity
-	backBtn *widget.Button
-	label   *widget.Label
+	app            fyne.App
+	w              fyne.Window
+	content        Activity
+	backBtn        *widget.Button
+	updateWordsBtn *widget.Button
+	label          *widget.Label
 }
 
-func NewApplication() *Application {
-	myApp := app.New()
+func NewApplication(appId string) *Application {
+	myApp := app.NewWithID(appId)
 	myWindow := myApp.NewWindow("")
 	res := Application{
 		app:   myApp,
@@ -31,13 +35,14 @@ func NewApplication() *Application {
 	}
 	res.label.TextStyle = fyne.TextStyle{Bold: true}
 	res.backBtn = widget.NewButton(" << ", res.showMainActivity)
+	res.updateWordsBtn = widget.NewButton("Update words", res.updateWords)
 	res.showMainActivity()
 	res.w.ShowAndRun()
 	return &res
 }
 
 func (app *Application) showMainActivity() {
-	app.update(NewMainActivity(app, "Main"))
+	app.update(NewMainActivity(app, "Main", datasources.NewPreferencesDataSource(app.app)))
 }
 
 func (app *Application) update(content Activity) {
@@ -50,9 +55,25 @@ func (app *Application) update(content Activity) {
 func (app *Application) getMainContainer() *fyne.Container {
 	return container.NewBorder(
 		container.NewHBox(app.label, layout.NewSpacer(), app.backBtn),
-		nil,
+		app.updateWordsBtn,
 		nil,
 		nil,
 		app.content.GetContent(),
 	)
+}
+
+// Temp function to upload groups to Pref from dummyData
+func (a *Application) updateWords() {
+	pref := a.app.Preferences()
+	groups := datasources.Groups.GetAllGroups()
+	pref.SetStringList("groups", *groups)
+	for groupName, words := range datasources.Groups {
+		wordsJson, err := json.Marshal(words)
+		if err != nil {
+			dialog.NewError(err, a.w)
+			return
+		}
+		pref.SetString(groupName+"__words", string(wordsJson))
+	}
+	a.showMainActivity()
 }
