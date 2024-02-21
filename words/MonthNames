@@ -1,0 +1,14 @@
+[
+    {"Original": "Leden", "Translation": "Январь"},
+    {"Original": "Únor", "Translation": "Февраль"},
+    {"Original": "Březen", "Translation": "Март"},
+    {"Original": "Duben", "Translation": "Апрель"},
+    {"Original": "Květen", "Translation": "Май"},
+    {"Original": "Červen", "Translation": "Июнь"},
+    {"Original": "Červenec", "Translation": "Июль"},
+    {"Original": "Srpen", "Translation": "Август"},
+    {"Original": "Září", "Translation": "Сентябрь"},
+    {"Original": "Říjen", "Translation": "Октябрь"},
+    {"Original": "Listopad", "Translation": "Ноябрь"},
+    {"Original": "Prosinec", "Translation": "Декабрь"}
+]
