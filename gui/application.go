@@ -65,9 +65,10 @@ func (app *Application) getMainContainer() *fyne.Container {
 // Temp function to upload groups to Pref from dummyData
 func (a *Application) updateWords() {
 	pref := a.app.Preferences()
-	groups := datasources.Groups.GetAllGroups()
+	allGroups, _ := datasources.NewGithubDataSource().ReadAllGroups()
+	groups := allGroups.GetAllGroups()
 	pref.SetStringList("groups", *groups)
-	for groupName, words := range datasources.Groups {
+	for groupName, words := range *allGroups {
 		wordsJson, err := json.Marshal(words)
 		if err != nil {
 			dialog.NewError(err, a.w)

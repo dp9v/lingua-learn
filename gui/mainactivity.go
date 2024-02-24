@@ -35,7 +35,7 @@ func NewMainActivity(app *Application, title string, ds datasources.DataSource) 
 
 	groupSelector := widget.NewCheckGroup(*groups.GetAllGroups(), func(strings []string) {})
 	startBtn := widget.NewButton("Run check", func() {
-		words := datasources.Groups.GetWords(groupSelector.Selected)
+		words := groups.GetWords(groupSelector.Selected)
 		if len(words) == 0 {
 			dialog.NewError(errors.New("список слов пуст"), app.w).Show()
 		} else {
@@ -43,7 +43,7 @@ func NewMainActivity(app *Application, title string, ds datasources.DataSource) 
 		}
 	})
 	showGroupsBtn := widget.NewButton("ShowGroups", func() {
-		app.update(NewShowGroupsActivity(app, datasources.NewDummyDataSource()))
+		app.update(NewShowGroupsActivity(app, datasources.NewPreferencesDataSource(app.app)))
 	})
 	return &MainActivity{
 		app:           app,
