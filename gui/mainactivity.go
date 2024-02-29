@@ -39,7 +39,7 @@ func NewMainActivity(app *Application, title string, ds datasources.DataSource) 
 		if len(words) == 0 {
 			dialog.NewError(errors.New("список слов пуст"), app.w).Show()
 		} else {
-			app.update(NewShowWordsActivity(app, words.Shuffle(10)))
+			app.update(NewShowWordsActivity(app, words.Shuffle(15)))
 		}
 	})
 	showGroupsBtn := widget.NewButton("ShowGroups", func() {
