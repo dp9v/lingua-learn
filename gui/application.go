@@ -42,7 +42,10 @@ func NewApplication(appId string) *Application {
 }
 
 func (app *Application) showMainActivity() {
-	app.update(NewMainActivity(app, "Main", datasources.NewPreferencesDataSource(app.app)))
+	activity := NewMainActivity(app, "Main", datasources.NewPreferencesDataSource(app.app))
+	if activity != nil {
+		app.update(activity)
+	}
 }
 
 func (app *Application) update(content Activity) {
@@ -63,18 +66,18 @@ func (app *Application) getMainContainer() *fyne.Container {
 }
 
 // Temp function to upload groups to Pref from dummyData
-func (a *Application) updateWords() {
-	pref := a.app.Preferences()
+func (app *Application) updateWords() {
+	pref := app.app.Preferences()
 	allGroups, _ := datasources.NewGithubDataSource().ReadAllGroups()
 	groups := allGroups.GetAllGroups()
 	pref.SetStringList("groups", *groups)
 	for groupName, words := range *allGroups {
 		wordsJson, err := json.Marshal(words)
 		if err != nil {
-			dialog.NewError(err, a.w)
+			dialog.NewError(err, app.w)
 			return
 		}
 		pref.SetString(groupName+"__words", string(wordsJson))
 	}
-	a.showMainActivity()
+	app.showMainActivity()
 }

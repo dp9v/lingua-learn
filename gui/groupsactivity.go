@@ -9,37 +9,37 @@ import (
 	"learn_words/datasources"
 )
 
-type ShowGroupsActivity struct {
+type GroupsActivity struct {
 	app       *Application
 	source    datasources.DataSource
 	groupList *widget.List
 }
 
-func (a *ShowGroupsActivity) GetContent() fyne.CanvasObject {
+func (a *GroupsActivity) GetContent() fyne.CanvasObject {
 	return container.NewBorder(nil, nil, nil, nil, a.groupList)
 }
 
-func (s *ShowGroupsActivity) GetTitle() string {
+func (s *GroupsActivity) GetTitle() string {
 	return "Group list"
 }
 
-func NewShowGroupsActivity(app *Application, source datasources.DataSource) *ShowGroupsActivity {
+func NewShowGroupsActivity(app *Application, source datasources.DataSource) *GroupsActivity {
 	groups, err := source.ReadAllGroups()
 	if err != nil {
 		dialog.NewError(err, app.w).Show()
-		return nil
+		*groups = make(datasources.WordGroups)
 	}
 	groupsBinding := binding.BindStringList(groups.GetAllGroups())
 
 	groupList := widget.NewListWithData(groupsBinding,
 		func() fyne.CanvasObject {
-			return widget.NewLabel("template")
+			return container.NewBorder(nil, nil, nil, widget.NewButton("-", nil), widget.NewLabel("template"))
 		},
 		func(item binding.DataItem, object fyne.CanvasObject) {
 			object.(*widget.Label).Bind(item.(binding.String))
 		},
 	)
-	return &ShowGroupsActivity{
+	return &GroupsActivity{
 		app:       app,
 		source:    source,
 		groupList: groupList,
