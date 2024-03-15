@@ -3,7 +3,7 @@ package models
 import (
 	"encoding/json"
 	"fyne.io/fyne/v2"
-	"math/rand/v2"
+	"math/rand"
 )
 
 type Word struct {
