@@ -6,12 +6,13 @@ import (
 	"fyne.io/fyne/v2/data/binding"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/widget"
-	"learn_words/datasources"
+	v2 "learn_words/datasources/v2"
+	"learn_words/datasources/v2/models"
 )
 
 type GroupsActivity struct {
 	app       *Application
-	source    datasources.DataSource
+	source    v2.DataSourceV2
 	groupList *widget.List
 }
 
@@ -23,13 +24,13 @@ func (s *GroupsActivity) GetTitle() string {
 	return "Group list"
 }
 
-func NewShowGroupsActivity(app *Application, source datasources.DataSource) *GroupsActivity {
+func NewShowGroupsActivity(app *Application, source v2.DataSourceV2) *GroupsActivity {
 	groups, err := source.ReadAllGroups()
 	if err != nil {
 		dialog.NewError(err, app.w).Show()
-		*groups = make(datasources.WordGroups)
+		*groups = make(models.Groups)
 	}
-	groupsBinding := binding.BindStringList(groups.GetAllGroups())
+	groupsBinding := binding.BindStringList(groups.AsList().Names())
 
 	groupList := widget.NewListWithData(groupsBinding,
 		func() fyne.CanvasObject {

@@ -1,7 +1,6 @@
 package gui
 
 import (
-	"encoding/json"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
@@ -9,6 +8,8 @@ import (
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
 	"learn_words/datasources"
+	v2 "learn_words/datasources/v2"
+	"learn_words/datasources/v2/models"
 )
 
 type Activity interface {
@@ -42,7 +43,7 @@ func NewApplication(appId string) *Application {
 }
 
 func (app *Application) showMainActivity() {
-	activity := NewMainActivity(app, "Main", datasources.NewPreferencesDataSource(app.app))
+	activity := NewMainActivity(app, "Main", v2.NewPreferencesDataSource(app.app))
 	if activity != nil {
 		app.update(activity)
 	}
@@ -67,17 +68,36 @@ func (app *Application) getMainContainer() *fyne.Container {
 
 // Temp function to upload groups to Pref from dummyData
 func (app *Application) updateWords() {
-	pref := app.app.Preferences()
+	writeDatasource := v2.NewPreferencesDataSource(app.app)
 	allGroups, _ := datasources.NewGithubDataSource().ReadAllGroups()
-	groups := allGroups.GetAllGroups()
-	pref.SetStringList("groups", *groups)
+	wordIdCounter := int64(0)
+	groupIdCounter := int64(0)
+
 	for groupName, words := range *allGroups {
-		wordsJson, err := json.Marshal(words)
+		wordIds := make([]int64, len(words))
+		for i, word := range words {
+			err := writeDatasource.AddWord(&models.Word{
+				Id:          wordIdCounter,
+				Original:    word.Original,
+				Translation: word.Translation,
+			}, true)
+			if err != nil {
+				dialog.ShowError(err, app.w)
+				return
+			}
+			wordIds[i] = wordIdCounter
+			wordIdCounter++
+		}
+		err := writeDatasource.AddGroup(&models.Group{
+			Id:    groupIdCounter,
+			Name:  groupName,
+			Words: wordIds,
+		}, true)
 		if err != nil {
-			dialog.NewError(err, app.w)
+			dialog.ShowError(err, app.w)
 			return
 		}
-		pref.SetString(groupName+"__words", string(wordsJson))
+		groupIdCounter++
 	}
 	app.showMainActivity()
 }
