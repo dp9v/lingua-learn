@@ -1,14 +1,14 @@
 package gui
 
 import (
-	"encoding/json"
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
 	"learn_words/datasources"
+	v2 "learn_words/datasources/v2"
+	"learn_words/datasources/v2/models"
 )
 
 type Activity interface {
@@ -17,16 +17,23 @@ type Activity interface {
 }
 
 type Application struct {
+	Content        Activity
 	app            fyne.App
 	w              fyne.Window
-	content        Activity
 	backBtn        *widget.Button
 	updateWordsBtn *widget.Button
 	label          *widget.Label
 }
 
-func NewApplication(appId string) *Application {
-	myApp := app.NewWithID(appId)
+type TestApplication struct {
+	*Application
+}
+
+func (t TestApplication) update(content Activity) {
+
+}
+
+func NewApplication(myApp fyne.App) *Application {
 	myWindow := myApp.NewWindow("")
 	res := Application{
 		app:   myApp,
@@ -42,13 +49,16 @@ func NewApplication(appId string) *Application {
 }
 
 func (app *Application) showMainActivity() {
-	app.update(NewMainActivity(app, "Main", datasources.NewPreferencesDataSource(app.app)))
+	activity := NewMainActivity(app, "Main", v2.NewPreferencesDataSource(app.app))
+	if activity != nil {
+		app.update(activity)
+	}
 }
 
 func (app *Application) update(content Activity) {
-	app.content = content
+	app.Content = content
 	app.w.SetTitle(content.GetTitle())
-	app.label.SetText(app.content.GetTitle())
+	app.label.SetText(app.Content.GetTitle())
 	app.w.SetContent(app.getMainContainer())
 }
 
@@ -58,23 +68,42 @@ func (app *Application) getMainContainer() *fyne.Container {
 		app.updateWordsBtn,
 		nil,
 		nil,
-		app.content.GetContent(),
+		app.Content.GetContent(),
 	)
 }
 
 // Temp function to upload groups to Pref from dummyData
-func (a *Application) updateWords() {
-	pref := a.app.Preferences()
+func (app *Application) updateWords() {
+	writeDatasource := v2.NewPreferencesDataSource(app.app)
 	allGroups, _ := datasources.NewGithubDataSource().ReadAllGroups()
-	groups := allGroups.GetAllGroups()
-	pref.SetStringList("groups", *groups)
+	wordIdCounter := int64(0)
+	groupIdCounter := int64(0)
+
 	for groupName, words := range *allGroups {
-		wordsJson, err := json.Marshal(words)
+		wordIds := make([]int64, len(words))
+		for i, word := range words {
+			err := writeDatasource.AddWord(&models.Word{
+				Id:          wordIdCounter,
+				Original:    word.Original,
+				Translation: word.Translation,
+			}, true)
+			if err != nil {
+				dialog.ShowError(err, app.w)
+				return
+			}
+			wordIds[i] = wordIdCounter
+			wordIdCounter++
+		}
+		err := writeDatasource.AddGroup(&models.Group{
+			Id:    groupIdCounter,
+			Name:  groupName,
+			Words: wordIds,
+		}, true)
 		if err != nil {
-			dialog.NewError(err, a.w)
+			dialog.ShowError(err, app.w)
 			return
 		}
-		pref.SetString(groupName+"__words", string(wordsJson))
+		groupIdCounter++
 	}
-	a.showMainActivity()
+	app.showMainActivity()
 }

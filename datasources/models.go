@@ -12,14 +12,6 @@ type WordGroups map[string]Words
 
 type Words []Word
 
-func (w Words) GetRandomWords(count int) Words {
-	result := make(Words, count)
-	for i := 0; i < count; i++ {
-		result[i] = (w)[rand.Intn(len(w))]
-	}
-	return result
-}
-
 func (w Words) Shuffle(count int) Words {
 	if count <= 0 || count > len(w) {
 		count = len(w)

@@ -1,7 +1,12 @@
 package main
 
-import "learn_words/gui"
+import (
+	"fyne.io/fyne/v2/app"
+	"learn_words/gui"
+)
 
 func main() {
-	gui.NewApplication("com.dp9v.lingua-learn")
+	gui.NewApplication(
+		app.NewWithID("com.dp9v.lingua-learn"),
+	)
 }
