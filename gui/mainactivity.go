@@ -13,17 +13,17 @@ import (
 )
 
 type MainActivity struct {
+	CheckGroup    *widget.CheckGroup
+	StartBtn      *widget.Button
+	ShowGroupsBtn *widget.Button
 	app           *Application
 	ds            v2.DataSourceV2
 	groups        *models.Groups
 	title         string
-	checkGroup    *widget.CheckGroup
-	startBtn      *widget.Button
-	showGroupsBtn *widget.Button
 }
 
 func (a *MainActivity) GetContent() fyne.CanvasObject {
-	return container.NewVBox(a.checkGroup, a.startBtn, a.showGroupsBtn)
+	return container.NewVBox(a.CheckGroup, a.StartBtn, a.ShowGroupsBtn)
 }
 
 func (a *MainActivity) GetTitle() string {
@@ -37,14 +37,14 @@ func (a *MainActivity) refresh() {
 		return
 	}
 	a.groups = groups
-	a.checkGroup.Options = *groups.AsList().Names()
-	a.checkGroup.SetSelected([]string{})
+	a.CheckGroup.Options = *groups.AsList().Names()
+	a.CheckGroup.SetSelected([]string{})
 }
 
 func (a *MainActivity) startBtnClick() {
 	var wordIds []int64
 	r := regexp.MustCompile("\\(id: (\\d+)\\)")
-	for _, s := range a.checkGroup.Selected {
+	for _, s := range a.CheckGroup.Selected {
 		id, err := strconv.Atoi(r.FindStringSubmatch(s)[1])
 		if err != nil {
 			dialog.ShowError(err, a.app.w)
@@ -73,12 +73,12 @@ func NewMainActivity(app *Application, title string, ds v2.DataSourceV2) *MainAc
 	res := &MainActivity{
 		app:           app,
 		title:         title,
-		checkGroup:    groupSelector,
-		startBtn:      startBtn,
-		showGroupsBtn: showGroupsBtn,
+		CheckGroup:    groupSelector,
+		StartBtn:      startBtn,
+		ShowGroupsBtn: showGroupsBtn,
 		ds:            ds,
 	}
-	res.startBtn.OnTapped = res.startBtnClick
+	res.StartBtn.OnTapped = res.startBtnClick
 	res.refresh()
 	return res
 }

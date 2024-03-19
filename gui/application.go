@@ -2,7 +2,6 @@ package gui
 
 import (
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/layout"
@@ -18,16 +17,23 @@ type Activity interface {
 }
 
 type Application struct {
+	Content        Activity
 	app            fyne.App
 	w              fyne.Window
-	content        Activity
 	backBtn        *widget.Button
 	updateWordsBtn *widget.Button
 	label          *widget.Label
 }
 
-func NewApplication(appId string) *Application {
-	myApp := app.NewWithID(appId)
+type TestApplication struct {
+	*Application
+}
+
+func (t TestApplication) update(content Activity) {
+
+}
+
+func NewApplication(myApp fyne.App) *Application {
 	myWindow := myApp.NewWindow("")
 	res := Application{
 		app:   myApp,
@@ -50,9 +56,9 @@ func (app *Application) showMainActivity() {
 }
 
 func (app *Application) update(content Activity) {
-	app.content = content
+	app.Content = content
 	app.w.SetTitle(content.GetTitle())
-	app.label.SetText(app.content.GetTitle())
+	app.label.SetText(app.Content.GetTitle())
 	app.w.SetContent(app.getMainContainer())
 }
 
@@ -62,7 +68,7 @@ func (app *Application) getMainContainer() *fyne.Container {
 		app.updateWordsBtn,
 		nil,
 		nil,
-		app.content.GetContent(),
+		app.Content.GetContent(),
 	)
 }
 
