@@ -37,7 +37,8 @@ func NewShowGroupsActivity(app *Application, source v2.DataSourceV2) *GroupsActi
 			return container.NewBorder(nil, nil, nil, widget.NewButton("-", nil), widget.NewLabel("template"))
 		},
 		func(item binding.DataItem, object fyne.CanvasObject) {
-			object.(*widget.Label).Bind(item.(binding.String))
+			text := object.(*fyne.Container).Objects[0].(*widget.Label)
+			text.Bind(item.(binding.String))
 		},
 	)
 	return &GroupsActivity{

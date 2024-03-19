@@ -12,9 +12,9 @@ import (
 )
 
 type ShowWordsActivity struct {
+	RoundWords       models.WordList
 	app              *Application
 	currentWord      int
-	roundWords       models.WordList
 	nextBtn          *widget.Button
 	input            *OnKeyEntry
 	translationLabel *widget.Label
@@ -22,7 +22,7 @@ type ShowWordsActivity struct {
 }
 
 func (a *ShowWordsActivity) GetContent() fyne.CanvasObject {
-	a.translationLabel.SetText(a.roundWords[a.currentWord].Translation)
+	a.translationLabel.SetText(a.RoundWords[a.currentWord].Translation)
 	return container.NewBorder(
 		a.translationLabel,
 		container.NewHBox(layout.NewSpacer(), a.nextBtn),
@@ -40,7 +40,7 @@ func NewShowWordsActivity(app *Application, words models.WordList) *ShowWordsAct
 	activity := ShowWordsActivity{
 		app:              app,
 		currentWord:      0,
-		roundWords:       words,
+		RoundWords:       words,
 		translationLabel: widget.NewLabel(""),
 		correctWordLabel: widget.NewLabel(""),
 	}
@@ -51,11 +51,11 @@ func NewShowWordsActivity(app *Application, words models.WordList) *ShowWordsAct
 
 func (a *ShowWordsActivity) onNextBtnClick() {
 	defer a.focusInput()
-	if strings.ToUpper(a.input.Text) != strings.ToUpper(a.roundWords[a.currentWord].Original) {
-		a.correctWordLabel.SetText(a.roundWords[a.currentWord].Original)
+	if strings.ToUpper(a.input.Text) != strings.ToUpper(a.RoundWords[a.currentWord].Original) {
+		a.correctWordLabel.SetText(a.RoundWords[a.currentWord].Original)
 		return
 	}
-	if a.currentWord+1 == len(a.roundWords) {
+	if a.currentWord+1 == len(a.RoundWords) {
 		dialog.ShowError(errors.New("Слова закончились"), a.app.w)
 		return
 	}
@@ -65,11 +65,11 @@ func (a *ShowWordsActivity) onNextBtnClick() {
 
 func (a *ShowWordsActivity) nextWord() {
 	if len(a.correctWordLabel.Text) != 0 {
-		a.roundWords = append(a.roundWords, a.roundWords[a.currentWord])
+		a.RoundWords = append(a.RoundWords, a.RoundWords[a.currentWord])
 	}
 	a.currentWord++
 	a.correctWordLabel.SetText("")
-	a.translationLabel.SetText(a.roundWords[a.currentWord].Translation)
+	a.translationLabel.SetText(a.RoundWords[a.currentWord].Translation)
 	a.input.SetText("")
 }
 
