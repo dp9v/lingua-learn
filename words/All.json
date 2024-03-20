@@ -119,5 +119,9 @@
   {"Original": "aktivity", "Translation": "занятия"},
   {"Original": "pohoda", "Translation": "благодать"},
   {"Original": "nemovitost", "Translation": "недвижимость"},
-  {"Original": "peníze", "Translation": "деньги"}
+  {"Original": "peníze", "Translation": "деньги"},
+  {"Original": "narozeniny", "Translation": "день рождения"},
+  {"Original": "studovat", "Translation": "Учиться"},
+  {"Original": "sněhulák", "Translation": "снеговик"},
+  {"Original": "obvaz", "Translation": "Повязка"}
 ]
