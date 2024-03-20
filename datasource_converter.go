@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func main() {
+func Convert() {
 	var groupCounter int64
 	var wordsCounter int64
 	groups := make(models.Groups)
