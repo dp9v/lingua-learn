@@ -39,9 +39,3 @@ jobs:
 
     - name: Test
       run: go test -v ./...
-      
-    - name: Install fyne-cross
-      run: go install github.com/fyne-io/fyne-cross@latest
-
-    - name: Build app
-      run: fyne-cross android -arch arm -name lingua_learn -app-id com.dp9v.lingua_learn
