@@ -16,8 +16,8 @@ jobs:
 
     - name: debug
       run: |
-        echo ${{ github.head.ref }}
-        echo ${{ github.base.ref }}
+        echo ${{ github.head_ref }}
+        echo ${{ github.base_ref }}
         echo ${{ github.ref }}
 
     - name: Set up Go
