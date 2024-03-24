@@ -40,4 +40,5 @@ jobs:
           git config --global user.name 'dp9v'
           git config --global user.email 'polkovnikov13@gmail.com'
           git commit -am "Sync words"
-          git push
+          git branch
+          git push origin
