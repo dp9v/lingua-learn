@@ -13,13 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-
-    - name: debug
-      run: |
-        echo ${{ github.head_ref }}
-        echo ${{ github.base_ref }}
-        echo ${{ github.ref }}
-
+    
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
@@ -47,4 +41,4 @@ jobs:
           git config --global user.email 'polkovnikov13@gmail.com'
           git commit -am "Sync words"
           git branch
-          git push origin ${{ github.head.ref }}
+          git push origin HEAD:${{ github.head_ref }}
