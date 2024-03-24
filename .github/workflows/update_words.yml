@@ -41,4 +41,4 @@ jobs:
           git config --global user.email 'polkovnikov13@gmail.com'
           git commit -am "Sync words"
           git branch
-          git push origin
+          git push origin ${{ github.head.ref }}
