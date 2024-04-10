@@ -60,7 +60,7 @@ func readWords(file os.DirEntry) models.WordList {
 }
 
 func saveWords(words models.Words) {
-	wordsJson, err := json.Marshal(words)
+	wordsJson, err := json.MarshalIndent(words, "", "  ")
 	if err != nil {
 		panic(err)
 	}
@@ -72,7 +72,7 @@ func saveWords(words models.Words) {
 }
 
 func saveGroups(groups models.Groups) {
-	wordsJson, err := json.Marshal(groups)
+	wordsJson, err := json.MarshalIndent(groups, "", "  ")
 	if err != nil {
 		panic(err)
 	}
