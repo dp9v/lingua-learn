@@ -20,7 +20,7 @@ func (a *GroupsActivity) GetContent() fyne.CanvasObject {
 	return container.NewBorder(nil, nil, nil, nil, a.groupList)
 }
 
-func (s *GroupsActivity) GetTitle() string {
+func (a *GroupsActivity) GetTitle() string {
 	return "Group list"
 }
 

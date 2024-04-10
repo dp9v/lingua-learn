@@ -12,6 +12,7 @@ type GithubRepositoryContent struct {
 	Name        string `json:"name"`
 	Url         string `json:"url"`
 	DownloadUrl string `json:"download_url"`
+	Type        string `json:"type"`
 }
 
 func (c *GithubRepositoryContent) GetShortName() string {
