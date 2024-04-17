@@ -19,6 +19,9 @@ func (g *GithubDataSource) ReadAllGroups() (*WordGroups, error) {
 
 	result := make(WordGroups)
 	for _, repositoryContent := range *content {
+		if repositoryContent.Type != "file" {
+			continue
+		}
 		content, err := common.LoadPageContent(repositoryContent.DownloadUrl)
 		if err != nil {
 			return nil, fmt.Errorf("error while reading group content: %v", err)

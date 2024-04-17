@@ -75,7 +75,10 @@ func (app *Application) getMainContainer() *fyne.Container {
 // Temp function to upload groups to Pref from dummyData
 func (app *Application) updateWords() {
 	writeDatasource := v2.NewPreferencesDataSource(app.app)
-	allGroups, _ := datasources.NewGithubDataSource().ReadAllGroups()
+	allGroups, err := datasources.NewGithubDataSource().ReadAllGroups()
+	if err != nil {
+		dialog.ShowError(err, app.w)
+	}
 	wordIdCounter := int64(0)
 	groupIdCounter := int64(0)
 
