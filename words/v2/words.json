@@ -1051,13 +1051,13 @@
   },
   "288": {
     "id": 288,
-    "original": "Maso",
-    "translation": "Мясо"
+    "original": "batoh",
+    "translation": "рюкзак"
   },
   "289": {
     "id": 289,
-    "original": "Slepice",
-    "translation": "Курица"
+    "original": "pojištění",
+    "translation": "страховка"
   },
   "29": {
     "id": 29,
@@ -1066,53 +1066,53 @@
   },
   "290": {
     "id": 290,
-    "original": "Kuře",
-    "translation": "Цыплёнок"
+    "original": "foťák",
+    "translation": "фотоаппарат"
   },
   "291": {
     "id": 291,
-    "original": "Kachna",
-    "translation": "Утка"
+    "original": "jízdenka",
+    "translation": "билет"
   },
   "292": {
     "id": 292,
-    "original": "Husa",
-    "translation": "Гусь"
+    "original": "kufr",
+    "translation": "чемодан"
   },
   "293": {
     "id": 293,
-    "original": "Krůta",
-    "translation": "Индейка"
+    "original": "letenka",
+    "translation": "авиабилет"
   },
   "294": {
     "id": 294,
-    "original": "Vepřové",
-    "translation": "Свинина"
+    "original": "nabíječka",
+    "translation": "зарядное устройство"
   },
   "295": {
     "id": 295,
-    "original": "Telecí",
-    "translation": "Телятина"
+    "original": "řidičák",
+    "translation": "водительское удостоверение"
   },
   "296": {
     "id": 296,
-    "original": "Skopové",
-    "translation": "Баранина"
+    "original": "průvodce",
+    "translation": "путеводитель"
   },
   "297": {
     "id": 297,
-    "original": "Hovězí",
-    "translation": "Говядина"
+    "original": "vízum",
+    "translation": "виза"
   },
   "298": {
     "id": 298,
-    "original": "Králík",
-    "translation": "Кролик"
+    "original": "jsem zvyklý na",
+    "translation": "я привык к"
   },
   "299": {
     "id": 299,
-    "original": "Salám",
-    "translation": "Колбаса"
+    "original": "to same",
+    "translation": "то же самое"
   },
   "3": {
     "id": 3,
@@ -1126,53 +1126,53 @@
   },
   "300": {
     "id": 300,
-    "original": "Párek",
-    "translation": "Сосиска"
+    "original": "kecat",
+    "translation": "болтать, сплетничать"
   },
   "301": {
     "id": 301,
-    "original": "Slanina",
-    "translation": "Бекон"
+    "original": "rozhodování",
+    "translation": "принятие решение"
   },
   "302": {
     "id": 302,
-    "original": "Šunka",
-    "translation": "Ветчина"
+    "original": "občas",
+    "translation": "иногда"
   },
   "303": {
     "id": 303,
-    "original": "Vejce",
-    "translation": "Яйцо"
+    "original": "plavat",
+    "translation": "плавать"
   },
   "304": {
     "id": 304,
-    "original": "Ryby",
-    "translation": "Рыба"
+    "original": "bažina",
+    "translation": "болото"
   },
   "305": {
     "id": 305,
-    "original": "Mořské plody",
-    "translation": "Морепродукты"
+    "original": "lod'",
+    "translation": "лодка"
   },
   "306": {
     "id": 306,
-    "original": "Kaviár",
-    "translation": "Икра"
+    "original": "člun",
+    "translation": "шлюпка"
   },
   "307": {
     "id": 307,
-    "original": "Chléb",
-    "translation": "Хлеб"
+    "original": "bankovní karta",
+    "translation": "банковская карта"
   },
   "308": {
     "id": 308,
-    "original": "Sýr",
-    "translation": "Сыр"
+    "original": "prohlížet si",
+    "translation": "просматривать"
   },
   "309": {
     "id": 309,
-    "original": "Cukr",
-    "translation": "Сахар"
+    "original": "opalovat se",
+    "translation": "загорать"
   },
   "31": {
     "id": 31,
@@ -1181,53 +1181,53 @@
   },
   "310": {
     "id": 310,
-    "original": "Sůl",
-    "translation": "Соль"
+    "original": "ztratit",
+    "translation": "потерять"
   },
   "311": {
     "id": 311,
-    "original": "Rýže",
-    "translation": "Рис"
+    "original": "Maso",
+    "translation": "Мясо"
   },
   "312": {
     "id": 312,
-    "original": "Makaróny",
-    "translation": "Макароны"
+    "original": "Slepice",
+    "translation": "Курица"
   },
   "313": {
     "id": 313,
-    "original": "Nudle",
-    "translation": "Лапша"
+    "original": "Kuře",
+    "translation": "Цыплёнок"
   },
   "314": {
     "id": 314,
-    "original": "Máslo",
-    "translation": "Сливочное масло"
+    "original": "Kachna",
+    "translation": "Утка"
   },
   "315": {
     "id": 315,
-    "original": "Olej",
-    "translation": "Растительное масло"
+    "original": "Husa",
+    "translation": "Гусь"
   },
   "316": {
     "id": 316,
-    "original": "Mléko",
-    "translation": "Молоко"
+    "original": "Krůta",
+    "translation": "Индейка"
   },
   "317": {
     "id": 317,
-    "original": "Jogurt",
-    "translation": "Йогурт"
+    "original": "Vepřové",
+    "translation": "Свинина"
   },
   "318": {
     "id": 318,
-    "original": "Kyselá smetana",
-    "translation": "Сметана"
+    "original": "Telecí",
+    "translation": "Телятина"
   },
   "319": {
     "id": 319,
-    "original": "Smetana",
-    "translation": "Сливки"
+    "original": "Skopové",
+    "translation": "Баранина"
   },
   "32": {
     "id": 32,
@@ -1236,53 +1236,53 @@
   },
   "320": {
     "id": 320,
-    "original": "Zelenina",
-    "translation": "Овощи"
+    "original": "Hovězí",
+    "translation": "Говядина"
   },
   "321": {
     "id": 321,
-    "original": "Rajče",
-    "translation": "Помидор"
+    "original": "Králík",
+    "translation": "Кролик"
   },
   "322": {
     "id": 322,
-    "original": "Okurka",
-    "translation": "Огурец"
+    "original": "Salám",
+    "translation": "Колбаса"
   },
   "323": {
     "id": 323,
-    "original": "Mrkev",
-    "translation": "Морковь"
+    "original": "Párek",
+    "translation": "Сосиска"
   },
   "324": {
     "id": 324,
-    "original": "Brambory",
-    "translation": "Картофель"
+    "original": "Slanina",
+    "translation": "Бекон"
   },
   "325": {
     "id": 325,
-    "original": "Cibule",
-    "translation": "Лук"
+    "original": "Šunka",
+    "translation": "Ветчина"
   },
   "326": {
     "id": 326,
-    "original": "Česnek",
-    "translation": "Чеснок"
+    "original": "Vejce",
+    "translation": "Яйцо"
   },
   "327": {
     "id": 327,
-    "original": "Zelí",
-    "translation": "Капуста"
+    "original": "Ryby",
+    "translation": "Рыба"
   },
   "328": {
     "id": 328,
-    "original": "Petržel",
-    "translation": "Петрушка"
+    "original": "Mořské plody",
+    "translation": "Морепродукты"
   },
   "329": {
     "id": 329,
-    "original": "Pepř",
-    "translation": "Перец"
+    "original": "Kaviár",
+    "translation": "Икра"
   },
   "33": {
     "id": 33,
@@ -1291,53 +1291,53 @@
   },
   "330": {
     "id": 330,
-    "original": "Jablko",
-    "translation": "Яблоко"
+    "original": "Chléb",
+    "translation": "Хлеб"
   },
   "331": {
     "id": 331,
-    "original": "Hruška",
-    "translation": "Груша"
+    "original": "Sýr",
+    "translation": "Сыр"
   },
   "332": {
     "id": 332,
-    "original": "Citrón",
-    "translation": "Лимон"
+    "original": "Cukr",
+    "translation": "Сахар"
   },
   "333": {
     "id": 333,
-    "original": "Pomeranč",
-    "translation": "Апельсин"
+    "original": "Sůl",
+    "translation": "Соль"
   },
   "334": {
     "id": 334,
-    "original": "Jahoda",
-    "translation": "Клубника"
+    "original": "Rýže",
+    "translation": "Рис"
   },
   "335": {
     "id": 335,
-    "original": "Mandarinka",
-    "translation": "Мандарин"
+    "original": "Makaróny",
+    "translation": "Макароны"
   },
   "336": {
     "id": 336,
-    "original": "Švestka",
-    "translation": "Слива"
+    "original": "Nudle",
+    "translation": "Лапша"
   },
   "337": {
     "id": 337,
-    "original": "Broskev",
-    "translation": "Персик"
+    "original": "Máslo",
+    "translation": "Сливочное масло"
   },
   "338": {
     "id": 338,
-    "original": "Meruňka",
-    "translation": "Абрикос"
+    "original": "Olej",
+    "translation": "Растительное масло"
   },
   "339": {
     "id": 339,
-    "original": "Banán",
-    "translation": "Банан"
+    "original": "Mléko",
+    "translation": "Молоко"
   },
   "34": {
     "id": 34,
@@ -1346,53 +1346,53 @@
   },
   "340": {
     "id": 340,
-    "original": "Vodní meloun",
-    "translation": "Арбуз"
+    "original": "Jogurt",
+    "translation": "Йогурт"
   },
   "341": {
     "id": 341,
-    "original": "Víno",
-    "translation": "Вино"
+    "original": "Kyselá smetana",
+    "translation": "Сметана"
   },
   "342": {
     "id": 342,
-    "original": "Šampaňské",
-    "translation": "Шампанское"
+    "original": "Smetana",
+    "translation": "Сливки"
   },
   "343": {
     "id": 343,
-    "original": "Káva",
-    "translation": "Кофе"
+    "original": "Zelenina",
+    "translation": "Овощи"
   },
   "344": {
     "id": 344,
-    "original": "Limonáda",
-    "translation": "Лимонад"
+    "original": "Rajče",
+    "translation": "Помидор"
   },
   "345": {
     "id": 345,
-    "original": "Sok",
-    "translation": "Сок"
+    "original": "Okurka",
+    "translation": "Огурец"
   },
   "346": {
     "id": 346,
-    "original": "Pivo",
-    "translation": "Пиво"
+    "original": "Mrkev",
+    "translation": "Морковь"
   },
   "347": {
     "id": 347,
-    "original": "Čaj",
-    "translation": "Чай"
+    "original": "Brambory",
+    "translation": "Картофель"
   },
   "348": {
     "id": 348,
-    "original": "Voda",
-    "translation": "Вода"
+    "original": "Cibule",
+    "translation": "Лук"
   },
   "349": {
     "id": 349,
-    "original": "Nealkoholický nápoj",
-    "translation": "Безалкогольный напиток"
+    "original": "Česnek",
+    "translation": "Чеснок"
   },
   "35": {
     "id": 35,
@@ -1401,53 +1401,53 @@
   },
   "350": {
     "id": 350,
-    "original": "manželka",
-    "translation": "Жена"
+    "original": "Zelí",
+    "translation": "Капуста"
   },
   "351": {
     "id": 351,
-    "original": "otec",
-    "translation": "Отец"
+    "original": "Petržel",
+    "translation": "Петрушка"
   },
   "352": {
     "id": 352,
-    "original": "tatínek",
-    "translation": "Папа"
+    "original": "Pepř",
+    "translation": "Перец"
   },
   "353": {
     "id": 353,
-    "original": "matka",
-    "translation": "Мать"
+    "original": "Jablko",
+    "translation": "Яблоко"
   },
   "354": {
     "id": 354,
-    "original": "rodiče",
-    "translation": "Родители"
+    "original": "Hruška",
+    "translation": "Груша"
   },
   "355": {
     "id": 355,
-    "original": "syn",
-    "translation": "Сын"
+    "original": "Citrón",
+    "translation": "Лимон"
   },
   "356": {
     "id": 356,
-    "original": "dcera",
-    "translation": "Дочь"
+    "original": "Pomeranč",
+    "translation": "Апельсин"
   },
   "357": {
     "id": 357,
-    "original": "bratr",
-    "translation": "Брат"
+    "original": "Jahoda",
+    "translation": "Клубника"
   },
   "358": {
     "id": 358,
-    "original": "sestra",
-    "translation": "Сестра"
+    "original": "Mandarinka",
+    "translation": "Мандарин"
   },
   "359": {
     "id": 359,
-    "original": "sourozenci",
-    "translation": "Сиблинги"
+    "original": "Švestka",
+    "translation": "Слива"
   },
   "36": {
     "id": 36,
@@ -1456,53 +1456,53 @@
   },
   "360": {
     "id": 360,
-    "original": "dědeček",
-    "translation": "Дедушка"
+    "original": "Broskev",
+    "translation": "Персик"
   },
   "361": {
     "id": 361,
-    "original": "babička",
-    "translation": "Бабушка"
+    "original": "Meruňka",
+    "translation": "Абрикос"
   },
   "362": {
     "id": 362,
-    "original": "strýc",
-    "translation": "Дядя"
+    "original": "Banán",
+    "translation": "Банан"
   },
   "363": {
     "id": 363,
-    "original": "teta",
-    "translation": "Тётя"
+    "original": "Vodní meloun",
+    "translation": "Арбуз"
   },
   "364": {
     "id": 364,
-    "original": "neteř",
-    "translation": "Племянница"
+    "original": "Víno",
+    "translation": "Вино"
   },
   "365": {
     "id": 365,
-    "original": "synovec",
-    "translation": "Племянник"
+    "original": "Šampaňské",
+    "translation": "Шампанское"
   },
   "366": {
     "id": 366,
-    "original": "neteř",
-    "translation": ""
+    "original": "Káva",
+    "translation": "Кофе"
   },
   "367": {
     "id": 367,
-    "original": "tchán",
-    "translation": "Отец супруга"
+    "original": "Limonáda",
+    "translation": "Лимонад"
   },
   "368": {
     "id": 368,
-    "original": "tchyně",
-    "translation": "Мать супруга"
+    "original": "Sok",
+    "translation": "Сок"
   },
   "369": {
     "id": 369,
-    "original": "zeť",
-    "translation": "зять"
+    "original": "Pivo",
+    "translation": "Пиво"
   },
   "37": {
     "id": 37,
@@ -1511,18 +1511,163 @@
   },
   "370": {
     "id": 370,
-    "original": "snacha",
-    "translation": "невестка"
+    "original": "Čaj",
+    "translation": "Чай"
+  },
+  "371": {
+    "id": 371,
+    "original": "Voda",
+    "translation": "Вода"
+  },
+  "372": {
+    "id": 372,
+    "original": "Nealkoholický nápoj",
+    "translation": "Безалкогольный напиток"
+  },
+  "373": {
+    "id": 373,
+    "original": "manželka",
+    "translation": "Жена"
+  },
+  "374": {
+    "id": 374,
+    "original": "otec",
+    "translation": "Отец"
+  },
+  "375": {
+    "id": 375,
+    "original": "tatínek",
+    "translation": "Папа"
+  },
+  "376": {
+    "id": 376,
+    "original": "matka",
+    "translation": "Мать"
+  },
+  "377": {
+    "id": 377,
+    "original": "rodiče",
+    "translation": "Родители"
+  },
+  "378": {
+    "id": 378,
+    "original": "syn",
+    "translation": "Сын"
+  },
+  "379": {
+    "id": 379,
+    "original": "dcera",
+    "translation": "Дочь"
   },
   "38": {
     "id": 38,
     "original": "Křižovatka",
     "translation": "Перекресток"
   },
+  "380": {
+    "id": 380,
+    "original": "bratr",
+    "translation": "Брат"
+  },
+  "381": {
+    "id": 381,
+    "original": "sestra",
+    "translation": "Сестра"
+  },
+  "382": {
+    "id": 382,
+    "original": "sourozenci",
+    "translation": "Сиблинги"
+  },
+  "383": {
+    "id": 383,
+    "original": "dědeček",
+    "translation": "Дедушка"
+  },
+  "384": {
+    "id": 384,
+    "original": "babička",
+    "translation": "Бабушка"
+  },
+  "385": {
+    "id": 385,
+    "original": "strýc",
+    "translation": "Дядя"
+  },
+  "386": {
+    "id": 386,
+    "original": "teta",
+    "translation": "Тётя"
+  },
+  "387": {
+    "id": 387,
+    "original": "neteř",
+    "translation": "Племянница"
+  },
+  "388": {
+    "id": 388,
+    "original": "synovec",
+    "translation": "Племянник"
+  },
+  "389": {
+    "id": 389,
+    "original": "neteř",
+    "translation": ""
+  },
   "39": {
     "id": 39,
     "original": "Byla návštěva",
     "translation": "Были гостях"
+  },
+  "390": {
+    "id": 390,
+    "original": "tchán",
+    "translation": "Отец супруга"
+  },
+  "391": {
+    "id": 391,
+    "original": "tchyně",
+    "translation": "Мать супруга"
+  },
+  "392": {
+    "id": 392,
+    "original": "zeť",
+    "translation": "зять"
+  },
+  "393": {
+    "id": 393,
+    "original": "snacha",
+    "translation": "невестка"
+  },
+  "394": {
+    "id": 394,
+    "original": "kalhoty",
+    "translation": "брюки"
+  },
+  "395": {
+    "id": 395,
+    "original": "tričko",
+    "translation": "футболка"
+  },
+  "396": {
+    "id": 396,
+    "original": "šaty",
+    "translation": "платье"
+  },
+  "397": {
+    "id": 397,
+    "original": "sukně",
+    "translation": "юбка"
+  },
+  "398": {
+    "id": 398,
+    "original": "košile",
+    "translation": "рубашка"
+  },
+  "399": {
+    "id": 399,
+    "original": "mikina",
+    "translation": "свитер"
   },
   "4": {
     "id": 4,
@@ -1534,15 +1679,135 @@
     "original": "Navštívit",
     "translation": "Посещать, ходить в гости"
   },
+  "400": {
+    "id": 400,
+    "original": "sako",
+    "translation": "пиджак"
+  },
+  "401": {
+    "id": 401,
+    "original": "kabát",
+    "translation": "пальто"
+  },
+  "402": {
+    "id": 402,
+    "original": "vesta",
+    "translation": "жилет"
+  },
+  "403": {
+    "id": 403,
+    "original": "bunda",
+    "translation": "куртка"
+  },
+  "404": {
+    "id": 404,
+    "original": "kraťasy",
+    "translation": "шорты"
+  },
+  "405": {
+    "id": 405,
+    "original": "overal",
+    "translation": "комбинезон"
+  },
+  "406": {
+    "id": 406,
+    "original": "kalhotky",
+    "translation": "трусы"
+  },
+  "407": {
+    "id": 407,
+    "original": "pásek",
+    "translation": "пояс"
+  },
+  "408": {
+    "id": 408,
+    "original": "ponožka",
+    "translation": "носок"
+  },
+  "409": {
+    "id": 409,
+    "original": "punčochy",
+    "translation": "чулки"
+  },
   "41": {
     "id": 41,
     "original": "Dávat dárky",
     "translation": "Дарить подарки"
   },
+  "410": {
+    "id": 410,
+    "original": "klobouk",
+    "translation": "шляпа"
+  },
+  "411": {
+    "id": 411,
+    "original": "rukavice",
+    "translation": "перчатки"
+  },
+  "412": {
+    "id": 412,
+    "original": "šála",
+    "translation": "шарф"
+  },
+  "413": {
+    "id": 413,
+    "original": "kravata",
+    "translation": "галстук"
+  },
+  "414": {
+    "id": 414,
+    "original": "boty",
+    "translation": "обувь"
+  },
+  "415": {
+    "id": 415,
+    "original": "sandály",
+    "translation": "сандалии"
+  },
+  "416": {
+    "id": 416,
+    "original": "tenisky",
+    "translation": "кроссовки"
+  },
+  "417": {
+    "id": 417,
+    "original": "papuče",
+    "translation": "тапочки"
+  },
+  "418": {
+    "id": 418,
+    "original": "opasek",
+    "translation": "ремень"
+  },
+  "419": {
+    "id": 419,
+    "original": "rukáv",
+    "translation": "рукав"
+  },
   "42": {
     "id": 42,
     "original": "Dostat",
     "translation": "Получить"
+  },
+  "420": {
+    "id": 420,
+    "original": "kapuce",
+    "translation": "капюшон"
+  },
+  "421": {
+    "id": 421,
+    "original": "zip",
+    "translation": "молния"
+  },
+  "422": {
+    "id": 422,
+    "original": "knoflík",
+    "translation": "пуговица"
+  },
+  "423": {
+    "id": 423,
+    "original": "podprsenka",
+    "translation": "бюстгальтер"
   },
   "43": {
     "id": 43,
