@@ -1,127 +1,627 @@
 [
-  {"Original": "Cesta", "Translation": "Путь"},
-  {"Original": "Zeď", "Translation": "Стена"},
-  {"Original": "Zítra", "Translation": "Завтра"},
-  {"Original": "Střecha", "Translation": "Крыша"},
-  {"Original": "Cestovat", "Translation": "Путешествовать"},
-  {"Original": "Co znamená..?", "Translation": "Что значит ..."},
-  {"Original": "Jak se řekne", "Translation": "Как это произносится"},
-  {"Original": "Náhoda", "Translation": "Совпадение"},
-  {"Original": "Určitě", "Translation": "Конечно, однозначно, определенно"},
-  {"Original": "Nizozemsko", "Translation": "Нидерланды"},
-  {"Original": "Žák", "Translation": "Школьник/ученик"},
-  {"Original": "Počasí", "Translation": "Погода"},
-  {"Original": "Zajímavý", "Translation": "Интересный"},
-  {"Original": "Budova", "Translation": "Здание"},
-  {"Original": "Ošklivý", "Translation": "Безобразный"},
-  {"Original": "Obyčejný", "Translation": "Обычный"},
-  {"Original": "Nudný", "Translation": "Скучный"},
-  {"Original": "Pohodlný", "Translation": "Удобный"},
-  {"Original": "Obývák", "Translation": "Зал/гостинная"},
-  {"Original": "Předsíň", "Translation": "Прихожая"},
-  {"Original": "Levní", "Translation": "Дешевый"},
-  {"Original": "Mrakodrap", "Translation": "Небоскреб"},
-  {"Original": "Sklep", "Translation": "Подвал"},
-  {"Original": "Zahrada", "Translation": "Придомовая территория"},
-  {"Original": "Záchod", "Translation": "Туалет"},
-  {"Original": "Gauč", "Translation": "Диван"},
-  {"Original": "Koberec", "Translation": "Ковер"},
-  {"Original": "Skříň", "Translation": "Шкаф"},
-  {"Original": "Zrcadlo", "Translation": "Зеркало"},
-  {"Original": "Šedý", "Translation": "Серый/седой"},
-  {"Original": "Nic", "Translation": "Ничего"},
-  {"Original": "Dovolená", "Translation": "Отпуск"},
-  {"Original": "Uprostřed", "Translation": "Посередине"},
-  {"Original": "Kde se ti libilo?", "Translation": "Где тебе понравилось"},
-  {"Original": "Jet na výlet", "Translation": "Отправиться в путешествие"},
-  {"Original": "Nějaky", "Translation": "Какой-нибудь"},
-  {"Original": "zpátky", "Translation": "Назад"},
-  {"Original": "Musíte", "Translation": "Must"},
-  {"Original": "Křižovatka", "Translation": "Перекресток"},
-  {"Original": "Byla návštěva", "Translation": "Были гостях"},
-  {"Original": "Navštívit", "Translation": "Посещать, ходить в гости"},
-  {"Original": "Dávat dárky", "Translation": "Дарить подарки"},
-  {"Original": "Dostat", "Translation": "Получить"},
-  {"Original": "Svetr", "Translation": "Свитер"},
-  {"Original": "Směr", "Translation": "Наприавление"},
-  {"Original": "Přítel", "Translation": "Друг"},
-  {"Original": "Herec", "Translation": "Актер"},
-  {"Original": "Úředník", "Translation": "Чиновник/клерк"},
-  {"Original": "Strom", "Translation": "Дерево"},
-  {"Original": "Snídat", "Translation": "Завртакать"},
-  {"Original": "Snídaně", "Translation": "Завртак"},
-  {"Original": "Večeřet", "Translation": "Ужинать"},
-  {"Original": "Večeře", "Translation": "Ужин"},
-  {"Original": "Hledat", "Translation": "Искать"},
-  {"Original": "Spěchat", "Translation": "Спешить"},
-  {"Original": "Zřídka", "Translation": "Редко"},
-  {"Original": "Občas", "Translation": "Иногда"},
-  {"Original": "Hodně", "Translation": "Много"},
-  {"Original": "Zavináč", "Translation": "@"},
-  {"Original": "Žízeň", "Translation": "Жажда"},
-  {"Original": "Hlad", "Translation": "Голод"},
-  {"Original": "Chlad", "Translation": "Холод"},
-  {"Original": "Zkouška", "Translation": "Экзамен"},
-  {"Original": "Opakovat", "Translation": "Повторять"},
-  {"Original": "Zvyknout", "Translation": "Привыкать"},
-  {"Original": "Sejdeme se", "Translation": "Встретимся/пересечемся"},
-  {"Original": "Chutnat", "Translation": "Нравиться по вкусу"},
-  {"Original": "Vyhovovat", "Translation": "Подходить, соответсвовать"},
-  {"Original": "Zůstat", "Translation": "Остаться"},
-  {"Original": "cvičit", "Translation": "Делать упражнения, тренироваться"},
-  {"Original": "Sportovec", "Translation": "Спортсмен"},
-  {"Original": "kluk", "Translation": "Мальчик"},
-  {"Original": "lidi", "Translation": "Люди"},
-  {"Original": "kuchař", "Translation": "Повар"},
-  {"Original": "dlouho", "Translation": "Долго"},
-  {"Original": "procházet se", "Translation": "Ходить, прогуливаться"},
-  {"Original": "vůbec", "Translation": "Вообще"},
-  {"Original": "teď", "Translation": "Сейчас"},
-  {"Original": "sněžit", "Translation": "Идёт снег"},
-  {"Original": "od rána do večera", "Translation": "С утра до вечера"},
-  {"Original": "vařit", "Translation": "Готовить"},
-  {"Original": "hudba", "Translation": "Музыка"},
-  {"Original": "poslouchat", "Translation": "Слушать"},
-  {"Original": "těšit se", "Translation": "Очень сильно ждать"},
-  {"Original": "zajímat se o", "Translation": "Чем-то интересоваться"},
-  {"Original": "protože", "Translation": "Потому"},
-  {"Original": "být vzhůru", "Translation": "Бодорствовать"},
-  {"Original": "většinou", "Translation": "В общем, преимуществено"},
-  {"Original": "zase", "Translation": "Снова"},
-  {"Original": "ale", "Translation": "Но"},
-  {"Original": "stupňů", "Translation": "Градус"},
-  {"Original": "10 stupňů", "Translation": "Десять градусов"},
-  {"Original": "kancelář", "Translation": "Офис"},
-  {"Original": "nemám nic nového", "Translation": "Нет ничего нового"},
-  {"Original": "O víkendu", "Translation": "В выходные"},
-  {"Original": "pozdě", "Translation": "Поздно"},
-  {"Original": "skřivánek", "Translation": "Жаворонок"},
-  {"Original": "mít návštěvu", "Translation": "Принимать гостей"},
-  {"Original": "brzy", "Translation": "Рано"},
-  {"Original": "půjčit", "Translation": "Одолжить, занять, взять напрокат"},
-  {"Original": "pracovní doba", "Translation": "Рабочие часы"},
-  {"Original": "pobočka", "Translation": "Филиал"},
-  {"Original": "spisovatel", "Translation": "Писатель"},
-  {"Original": "vědec", "Translation": "Ученый"},
-  {"Original": "štíhlý", "Translation": "Стройный"},
-  {"Original": "hledat", "Translation": "Искать"},
-  {"Original": "všemu rozumím", "Translation": "Все понял"},
-  {"Original": "vítr", "Translation": "ветер"},
-  {"Original": "jenom", "Translation": "только"},
-  {"Original": "to je těžké", "Translation": "это тяжело"},
-  {"Original": "rozumím všemu", "Translation": "я понимаю все"},
-  {"Original": "letos", "Translation": "в этом году"},
-  {"Original": "drahý", "Translation": "дорогой"},
-  {"Original": "spolu", "Translation": "вместе"},
-  {"Original": "vesnice", "Translation": "деревня"},
-  {"Original": "víc", "Translation": "больше, еще"},
-  {"Original": "doprava", "Translation": "транспорт"},
-  {"Original": "aktivity", "Translation": "занятия"},
-  {"Original": "pohoda", "Translation": "благодать"},
-  {"Original": "nemovitost", "Translation": "недвижимость"},
-  {"Original": "peníze", "Translation": "деньги"},
-  {"Original": "narozeniny", "Translation": "день рождения"},
-  {"Original": "studovat", "Translation": "Учиться"},
-  {"Original": "sněhulák", "Translation": "снеговик"},
-  {"Original": "obvaz", "Translation": "Повязка"}
+  {
+    "id": 1,
+    "original": "Cesta",
+    "translation": "Путь"
+  },
+  {
+    "id": 2,
+    "original": "Zeď",
+    "translation": "Стена"
+  },
+  {
+    "id": 3,
+    "original": "Zítra",
+    "translation": "Завтра"
+  },
+  {
+    "id": 4,
+    "original": "Střecha",
+    "translation": "Крыша"
+  },
+  {
+    "id": 5,
+    "original": "Cestovat",
+    "translation": "Путешествовать"
+  },
+  {
+    "id": 6,
+    "original": "Co znamená..?",
+    "translation": "Что значит ..."
+  },
+  {
+    "id": 7,
+    "original": "Jak se řekne",
+    "translation": "Как это произносится"
+  },
+  {
+    "id": 8,
+    "original": "Náhoda",
+    "translation": "Совпадение"
+  },
+  {
+    "id": 9,
+    "original": "Určitě",
+    "translation": "Конечно, однозначно, определенно"
+  },
+  {
+    "id": 10,
+    "original": "Nizozemsko",
+    "translation": "Нидерланды"
+  },
+  {
+    "id": 11,
+    "original": "Žák",
+    "translation": "Школьник/ученик"
+  },
+  {
+    "id": 12,
+    "original": "Počasí",
+    "translation": "Погода"
+  },
+  {
+    "id": 13,
+    "original": "Zajímavý",
+    "translation": "Интересный"
+  },
+  {
+    "id": 14,
+    "original": "Budova",
+    "translation": "Здание"
+  },
+  {
+    "id": 15,
+    "original": "Ošklivý",
+    "translation": "Безобразный"
+  },
+  {
+    "id": 16,
+    "original": "Obyčejný",
+    "translation": "Обычный"
+  },
+  {
+    "id": 17,
+    "original": "Nudný",
+    "translation": "Скучный"
+  },
+  {
+    "id": 19,
+    "original": "Obývák",
+    "translation": "Зал/гостинная"
+  },
+  {
+    "id": 20,
+    "original": "Předsíň",
+    "translation": "Прихожая"
+  },
+  {
+    "id": 21,
+    "original": "Levní",
+    "translation": "Дешевый"
+  },
+  {
+    "id": 22,
+    "original": "Mrakodrap",
+    "translation": "Небоскреб"
+  },
+  {
+    "id": 23,
+    "original": "Sklep",
+    "translation": "Подвал"
+  },
+  {
+    "id": 24,
+    "original": "Zahrada",
+    "translation": "Придомовая территория"
+  },
+  {
+    "id": 25,
+    "original": "Záchod",
+    "translation": "Туалет"
+  },
+  {
+    "id": 26,
+    "original": "Gauč",
+    "translation": "Диван"
+  },
+  {
+    "id": 27,
+    "original": "Koberec",
+    "translation": "Ковер"
+  },
+  {
+    "id": 28,
+    "original": "Skříň",
+    "translation": "Шкаф"
+  },
+  {
+    "id": 29,
+    "original": "Zrcadlo",
+    "translation": "Зеркало"
+  },
+  {
+    "id": 30,
+    "original": "Šedý",
+    "translation": "Серый/седой"
+  },
+  {
+    "id": 31,
+    "original": "Nic",
+    "translation": "Ничего"
+  },
+  {
+    "id": 32,
+    "original": "Dovolená",
+    "translation": "Отпуск"
+  },
+  {
+    "id": 33,
+    "original": "Uprostřed",
+    "translation": "Посередине"
+  },
+  {
+    "id": 34,
+    "original": "Kde se ti libilo?",
+    "translation": "Где тебе понравилось"
+  },
+  {
+    "id": 35,
+    "original": "Jet na výlet",
+    "translation": "Отправиться в путешествие"
+  },
+  {
+    "id": 36,
+    "original": "Nějaky",
+    "translation": "Какой-нибудь"
+  },
+  {
+    "id": 37,
+    "original": "zpátky",
+    "translation": "Назад"
+  },
+  {
+    "id": 38,
+    "original": "Musíte",
+    "translation": "Must"
+  },
+  {
+    "id": 39,
+    "original": "Křižovatka",
+    "translation": "Перекресток"
+  },
+  {
+    "id": 40,
+    "original": "Byla návštěva",
+    "translation": "Были гостях"
+  },
+  {
+    "id": 41,
+    "original": "Navštívit",
+    "translation": "Посещать, ходить в гости"
+  },
+  {
+    "id": 42,
+    "original": "Dávat dárky",
+    "translation": "Дарить подарки"
+  },
+  {
+    "id": 43,
+    "original": "Dostat",
+    "translation": "Получить"
+  },
+  {
+    "id": 44,
+    "original": "Svetr",
+    "translation": "Свитер"
+  },
+  {
+    "id": 45,
+    "original": "Směr",
+    "translation": "Наприавление"
+  },
+  {
+    "id": 46,
+    "original": "Přítel",
+    "translation": "Друг"
+  },
+  {
+    "id": 47,
+    "original": "Herec",
+    "translation": "Актер"
+  },
+  {
+    "id": 48,
+    "original": "Úředník",
+    "translation": "Чиновник/клерк"
+  },
+  {
+    "id": 49,
+    "original": "Strom",
+    "translation": "Дерево"
+  },
+  {
+    "id": 50,
+    "original": "Snídat",
+    "translation": "Завртакать"
+  },
+  {
+    "id": 51,
+    "original": "Snídaně",
+    "translation": "Завртак"
+  },
+  {
+    "id": 52,
+    "original": "Večeřet",
+    "translation": "Ужинать"
+  },
+  {
+    "id": 53,
+    "original": "Večeře",
+    "translation": "Ужин"
+  },
+  {
+    "id": 54,
+    "original": "Hledat",
+    "translation": "Искать"
+  },
+  {
+    "id": 55,
+    "original": "Spěchat",
+    "translation": "Спешить"
+  },
+  {
+    "id": 56,
+    "original": "Zřídka",
+    "translation": "Редко"
+  },
+  {
+    "id": 57,
+    "original": "Občas",
+    "translation": "Иногда"
+  },
+  {
+    "id": 58,
+    "original": "Hodně",
+    "translation": "Много"
+  },
+  {
+    "id": 59,
+    "original": "Zavináč",
+    "translation": "@"
+  },
+  {
+    "id": 60,
+    "original": "Žízeň",
+    "translation": "Жажда"
+  },
+  {
+    "id": 61,
+    "original": "Hlad",
+    "translation": "Голод"
+  },
+  {
+    "id": 62,
+    "original": "Chlad",
+    "translation": "Холод"
+  },
+  {
+    "id": 63,
+    "original": "Zkouška",
+    "translation": "Экзамен"
+  },
+  {
+    "id": 64,
+    "original": "Opakovat",
+    "translation": "Повторять"
+  },
+  {
+    "id": 65,
+    "original": "Zvyknout",
+    "translation": "Привыкать"
+  },
+  {
+    "id": 66,
+    "original": "Sejdeme se",
+    "translation": "Встретимся/пересечемся"
+  },
+  {
+    "id": 67,
+    "original": "Chutnat",
+    "translation": "Нравиться по вкусу"
+  },
+  {
+    "id": 68,
+    "original": "Vyhovovat",
+    "translation": "Подходить, соответсвовать"
+  },
+  {
+    "id": 69,
+    "original": "Zůstat",
+    "translation": "Остаться"
+  },
+  {
+    "id": 70,
+    "original": "cvičit",
+    "translation": "Делать упражнения, тренироваться"
+  },
+  {
+    "id": 71,
+    "original": "Sportovec",
+    "translation": "Спортсмен"
+  },
+  {
+    "id": 72,
+    "original": "kluk",
+    "translation": "Мальчик"
+  },
+  {
+    "id": 73,
+    "original": "lidi",
+    "translation": "Люди"
+  },
+  {
+    "id": 74,
+    "original": "kuchař",
+    "translation": "Повар"
+  },
+  {
+    "id": 75,
+    "original": "dlouho",
+    "translation": "Долго"
+  },
+  {
+    "id": 76,
+    "original": "procházet se",
+    "translation": "Ходить, прогуливаться"
+  },
+  {
+    "id": 77,
+    "original": "vůbec",
+    "translation": "Вообще"
+  },
+  {
+    "id": 78,
+    "original": "teď",
+    "translation": "Сейчас"
+  },
+  {
+    "id": 79,
+    "original": "sněžit",
+    "translation": "Идёт снег"
+  },
+  {
+    "id": 80,
+    "original": "od rána do večera",
+    "translation": "С утра до вечера"
+  },
+  {
+    "id": 81,
+    "original": "vařit",
+    "translation": "Готовить"
+  },
+  {
+    "id": 82,
+    "original": "hudba",
+    "translation": "Музыка"
+  },
+  {
+    "id": 83,
+    "original": "poslouchat",
+    "translation": "Слушать"
+  },
+  {
+    "id": 84,
+    "original": "těšit se",
+    "translation": "Очень сильно ждать"
+  },
+  {
+    "id": 85,
+    "original": "zajímat se o",
+    "translation": "Чем-то интересоваться"
+  },
+  {
+    "id": 86,
+    "original": "protože",
+    "translation": "Потому"
+  },
+  {
+    "id": 87,
+    "original": "být vzhůru",
+    "translation": "Бодорствовать"
+  },
+  {
+    "id": 88,
+    "original": "většinou",
+    "translation": "В общем, преимуществено"
+  },
+  {
+    "id": 89,
+    "original": "zase",
+    "translation": "Снова"
+  },
+  {
+    "id": 90,
+    "original": "ale",
+    "translation": "Но"
+  },
+  {
+    "id": 91,
+    "original": "stupňů",
+    "translation": "Градус"
+  },
+  {
+    "id": 92,
+    "original": "10 stupňů",
+    "translation": "Десять градусов"
+  },
+  {
+    "id": 93,
+    "original": "kancelář",
+    "translation": "Офис"
+  },
+  {
+    "id": 94,
+    "original": "nemám nic nového",
+    "translation": "Нет ничего нового"
+  },
+  {
+    "id": 95,
+    "original": "O víkendu",
+    "translation": "В выходные"
+  },
+  {
+    "id": 96,
+    "original": "pozdě",
+    "translation": "Поздно"
+  },
+  {
+    "id": 97,
+    "original": "skřivánek",
+    "translation": "Жаворонок"
+  },
+  {
+    "id": 98,
+    "original": "mít návštěvu",
+    "translation": "Принимать гостей"
+  },
+  {
+    "id": 99,
+    "original": "brzy",
+    "translation": "Рано"
+  },
+  {
+    "id": 100,
+    "original": "půjčit",
+    "translation": "Одолжить, занять, взять напрокат"
+  },
+  {
+    "id": 101,
+    "original": "pracovní doba",
+    "translation": "Рабочие часы"
+  },
+  {
+    "id": 102,
+    "original": "pobočka",
+    "translation": "Филиал"
+  },
+  {
+    "id": 103,
+    "original": "spisovatel",
+    "translation": "Писатель"
+  },
+  {
+    "id": 104,
+    "original": "vědec",
+    "translation": "Ученый"
+  },
+  {
+    "id": 105,
+    "original": "štíhlý",
+    "translation": "Стройный"
+  },
+  {
+    "id": 106,
+    "original": "hledat",
+    "translation": "Искать"
+  },
+  {
+    "id": 107,
+    "original": "všemu rozumím",
+    "translation": "Все понял"
+  },
+  {
+    "id": 108,
+    "original": "vítr",
+    "translation": "ветер"
+  },
+  {
+    "id": 109,
+    "original": "jenom",
+    "translation": "только"
+  },
+  {
+    "id": 110,
+    "original": "to je těžké",
+    "translation": "это тяжело"
+  },
+  {
+    "id": 111,
+    "original": "rozumím všemu",
+    "translation": "я понимаю все"
+  },
+  {
+    "id": 112,
+    "original": "letos",
+    "translation": "в этом году"
+  },
+  {
+    "id": 113,
+    "original": "drahý",
+    "translation": "дорогой"
+  },
+  {
+    "id": 114,
+    "original": "spolu",
+    "translation": "вместе"
+  },
+  {
+    "id": 115,
+    "original": "vesnice",
+    "translation": "деревня"
+  },
+  {
+    "id": 116,
+    "original": "víc",
+    "translation": "больше, еще"
+  },
+  {
+    "id": 117,
+    "original": "doprava",
+    "translation": "транспорт"
+  },
+  {
+    "id": 118,
+    "original": "aktivity",
+    "translation": "занятия"
+  },
+  {
+    "id": 119,
+    "original": "pohoda",
+    "translation": "благодать"
+  },
+  {
+    "id": 120,
+    "original": "nemovitost",
+    "translation": "недвижимость"
+  },
+  {
+    "id": 121,
+    "original": "peníze",
+    "translation": "деньги"
+  },
+  {
+    "id": 122,
+    "original": "narozeniny",
+    "translation": "день рождения"
+  },
+  {
+    "id": 123,
+    "original": "studovat",
+    "translation": "Учиться"
+  },
+  {
+    "id": 124,
+    "original": "sněhulák",
+    "translation": "снеговик"
+  },
+  {
+    "id": 125,
+    "original": "obvaz",
+    "translation": "Повязка"
+  },
+  {
+    "id": 311,
+    "original": "ztratit",
+    "translation": "потерять"
+  }
 ]

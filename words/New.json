@@ -1,152 +1,837 @@
 [
-  {"Original": "Čast", "Translation": "Часть"},
-  {"Original": "Obrovský", "Translation": "Огромный"},
-  {"Original": "Vítr", "Translation": "Ветер"},
-  {"Original": "Zataženo", "Translation": "Пасмурно"},
-  {"Original": "Nic moc", "Translation": "Так себе"},
-  {"Original": "Teď a tady", "Translation": "Здеть и сейчас"},
-  {"Original": "Používat", "Translation": "Использовать"},
-  {"Original": "Monitor", "Translation": "Монитор"},
-  {"Original": "Různý", "Translation": "Разный"},
-  {"Original": "Inzerát", "Translation": "Объявление"},
-  {"Original": "Tužka", "Translation": "Карандаш"},
-  {"Original": "Sporák", "Translation": "Плита"},
-  {"Original": "Za týden", "Translation": "В неделю"},
-  {"Original": "Potraviny", "Translation": "Продукты"},
-  {"Original": "Mléčné výrobky", "Translation": "Молочные продукты"},
-  {"Original": "Snažit se", "Translation": "Стараться"},
-  {"Original": "Zákazník", "Translation": "Клиент"},
-  {"Original": "Brambůrky", "Translation": "Чипсы"},
-  {"Original": "někam", "Translation": "Куда-то"},
-  {"Original": "možná", "Translation": "Возможно"},
-  {"Original": "hlas", "Translation": "Голос"},
-  {"Original": "foukat", "Translation": "Дуть"},
-  {"Original": "houska", "Translation": "Булка"},
-  {"Original": "buchta", "Translation": "Пирог"},
-  {"Original": "ani jednou", "Translation": "Ни разу"},
-  {"Original": "měsíc", "Translation": "Месяц"},
-  {"Original": "lék", "Translation": "Лекарство"},
-  {"Original": "cigareta", "Translation": "Сигарета"},
-  {"Original": "vybírat", "Translation": "Выбирать"},
-  {"Original": "dostat", "Translation": "Получить"},
-  {"Original": "dočkat se", "Translation": "Дождаться"},
-  {"Original": "fronta", "Translation": "Очередь"},
-  {"Original": "zapsat se", "Translation": "Записаться"},
-  {"Original": "pro jistotu", "Translation": "На всякий случай"},
-  {"Original": "o víkendnu", "Translation": "в выходные"},
-  {"Original": "doufat", "Translation": "надеяться"},
-  {"Original": "každé", "Translation": "Каждое"},
-  {"Original": "Snídani", "Translation": "Завтрак"},
-  {"Original": "koukat na", "Translation": "Смотреть на"},
-  {"Original": "spát", "Translation": "Спать"},
-  {"Original": "snídat", "Translation": "Завтракать"},
-  {"Original": "časopis", "Translation": "Журнал"},
-  {"Original": "skupina", "Translation": "группа"},
-  {"Original": "trenér", "Translation": "тренер"},
-  {"Original": "chodím na box", "Translation": "занимаюсь боксом"},
-  {"Original": "ptát se", "Translation": "спрашивать"},
-  {"Original": "podnebí", "Translation": "климат"},
-  {"Original": "roční období", "Translation": "времена года"},
-  {"Original": "střídat se", "Translation": "меняться"},
-  {"Original": "švestka", "Translation": "слива"},
-  {"Original": "broskev", "Translation": "персик"},
-  {"Original": "houba", "Translation": "гриб"},
-  {"Original": "bruslit", "Translation": "кататься на коньках"},
-  {"Original": "koulovat se", "Translation": "играть в снежки"},
-  {"Original": "podobný", "Translation": "похожий"},
-  {"Original": "vybitý", "Translation": "разряженный"},
-  {"Original": "volit", "Translation": "избирать"},
-  {"Original": "jenom", "Translation": "только"},
-  {"Original": "po", "Translation": "после"},
-  {"Original": "poprvé", "Translation": "впервые"},
-  {"Original": "možná", "Translation": "возможно"},
-  {"Original": "asi", "Translation": "наверное, может быть"},
-  {"Original": "stát", "Translation": "стоять"},
-  {"Original": "bát se", "Translation": "бояться"},
-  {"Original": "období", "Translation": "период"},
-  {"Original": "sbírat houby", "Translation": "собирать грибы"},
-  {"Original": "lesní plody", "Translation": "лесные плоды"},
-  {"Original": "jet k moři", "Translation": "ехать к морю"},
-  {"Original": "plavat, koupat se", "Translation": "плавать, купаться"},
-  {"Original": "nebo", "Translation": "или"},
-  {"Original": "slunce", "Translation": "солнце"},
-  {"Original": "plánovat", "Translation": "планировать"},
-  {"Original": "Rakousko", "Translation": "Австрия"},
-  {"Original": "vedle", "Translation": "рядом"},
-  {"Original": "lístek", "Translation": "билет"},
-  {"Original": "deštník", "Translation": "зонтик"},
-  {"Original": "překvapit", "Translation": "удивить"},
-  {"Original": "volby", "Translation": "выборы"},
-  {"Original": "Předpověd´počasí", "Translation": "прогноз погоды"},
-  {"Original": "nad nulou, pod nulou", "Translation": "выше нуля, ниже нуля"},
-  {"Original": "to je na mně moc", "Translation": "это для меня слишком много"},
-  {"Original": "rýma", "Translation": "насморк"},
-  {"Original": "je mi zima", "Translation": "мне холодно"},
-  {"Original": "unavený", "Translation": "уставший"},
-  {"Original": "ropa", "Translation": "нефть"},
-  {"Original": "používat", "Translation": "использовать"},
-  {"Original": "lux", "Translation": "пылесос"},
-  {"Original": "podporovat", "Translation": "поддерживать"},
-  {"Original": "umělá inteligence", "Translation": "искусственный интеллект"},
-  {"Original": "jistý", "Translation": "уверенный"},
-  {"Original": "přestěhovat se", "Translation": "переехать"},
-  {"Original": "podniknout něco", "Translation": "что-то делать, организовать"},
-    {"Original": "poušt'", "Translation": "пустыня"},
-    {"Original": "minulý rok", "Translation": "прошлый год"},
-    {"Original": "zpráva", "Translation": "новость"},
-    {"Original": "více než", "Translation": "больше чем"},
-    {"Original": "kolem", "Translation": "вокруг"},
-    {"Original": "zvláštní", "Translation": "странный"},
-    {"Original": "důležitý", "Translation": "важный"},
-    {"Original": "užitečný", "Translation": "полезный"},
-    {"Original": "vláda", "Translation": "правительство"},
-    {"Original": "schůzka", "Translation": "встреча"},
-    {"Original": "hodina", "Translation": "урок/час"},
-    {"Original": "pohovor", "Translation": "собеседование"},
-    {"Original": "učit", "Translation": "обучать"},
-    {"Original": "povinnost", "Translation": "обязанность"},
-    {"Original": "3 roky zpátky", "Translation": "3 года назад"},
-    {"Original": "ten", "Translation": "тот"},
-    {"Original": "čumět", "Translation": "глазеть"},
-    {"Original": "vypnout", "Translation": "выключить"},
-    {"Original": "nálada", "Translation": "настроение"},
-    {"Original": "kterýkoliv", "Translation": "любой/какой-угодно"},
-    {"Original": "pomalu", "Translation": "медленно"},
-    {"Original": "špatně připraven", "Translation": "плохо подготовлен"},
-    {"Original": "často", "Translation": "часто"},
-    {"Original": "horolezectví", "Translation": "альпинизм"},
-    {"Original": "běžet", "Translation": "бежать"},
-    {"Original": "za rok", "Translation": "через год"},
-    {"Original": "kapsa", "Translation": "карман"},
-    {"Original": "řidič", "Translation": "водитель"},
-    {"Original": "čas", "Translation": "время"},
-    {"Original": "kvůli", "Translation": "из-за"},
-    {"Original": "díky", "Translation": "благодаря"},
-    {"Original": "uložit", "Translation": "сохранить (документ)"},
-    {"Original": "řádek", "Translation": "строчка"},
-    {"Original": "soubor", "Translation": "папка"},
-    {"Original": "smazat", "Translation": "стереть"},    
-    {"Original": "batoh", "Translation": "рюкзак"},
-    {"Original": "pojištění", "Translation": "страховка"},
-    {"Original": "foťák", "Translation": "фотоаппарат"},
-    {"Original": "jízdenka", "Translation": "билет"},
-    {"Original": "kufr", "Translation": "чемодан"},
-    {"Original": "letenka", "Translation": "авиабилет"},
-    {"Original": "nabíječka", "Translation": "зарядное устройство"},
-    {"Original": "řidičák", "Translation": "водительское удостоверение"},
-    {"Original": "průvodce", "Translation": "путеводитель"},
-    {"Original": "vízum", "Translation": "виза"},
-    {"Original": "jsem zvyklý na", "Translation": "я привык к"},
-    {"Original": "to same", "Translation": "то же самое"},
-    {"Original": "kecat", "Translation": "болтать, сплетничать"},
-    {"Original": "rozhodování", "Translation": "принятие решение"},
-    {"Original": "občas", "Translation": "иногда"},
-    {"Original": "plavat", "Translation": "плавать"},
-    {"Original": "bažina", "Translation": "болото"},
-    {"Original": "lod'", "Translation": "лодка"},
-    {"Original": "člun", "Translation": "шлюпка"},
-    {"Original": "bankovní karta", "Translation": "банковская карта"},
-    {"Original": "prohlížet si", "Translation": "просматривать"},
-    {"Original": "opalovat se", "Translation": "загорать"},
-    {"Original": "ztratit", "Translation": "потерять"}
+  {
+    "id": 162,
+    "original": "Čast",
+    "translation": "Часть"
+  },
+  {
+    "id": 163,
+    "original": "Obrovský",
+    "translation": "Огромный"
+  },
+  {
+    "id": 164,
+    "original": "Vítr",
+    "translation": "Ветер"
+  },
+  {
+    "id": 165,
+    "original": "Zataženo",
+    "translation": "Пасмурно"
+  },
+  {
+    "id": 166,
+    "original": "Nic moc",
+    "translation": "Так себе"
+  },
+  {
+    "id": 167,
+    "original": "Teď a tady",
+    "translation": "Здеть и сейчас"
+  },
+  {
+    "id": 168,
+    "original": "Používat",
+    "translation": "Использовать"
+  },
+  {
+    "id": 169,
+    "original": "Monitor",
+    "translation": "Монитор"
+  },
+  {
+    "id": 170,
+    "original": "Různý",
+    "translation": "Разный"
+  },
+  {
+    "id": 171,
+    "original": "Inzerát",
+    "translation": "Объявление"
+  },
+  {
+    "id": 172,
+    "original": "Tužka",
+    "translation": "Карандаш"
+  },
+  {
+    "id": 173,
+    "original": "Sporák",
+    "translation": "Плита"
+  },
+  {
+    "id": 174,
+    "original": "Za týden",
+    "translation": "В неделю"
+  },
+  {
+    "id": 175,
+    "original": "Potraviny",
+    "translation": "Продукты"
+  },
+  {
+    "id": 176,
+    "original": "Mléčné výrobky",
+    "translation": "Молочные продукты"
+  },
+  {
+    "id": 177,
+    "original": "Snažit se",
+    "translation": "Стараться"
+  },
+  {
+    "id": 178,
+    "original": "Zákazník",
+    "translation": "Клиент"
+  },
+  {
+    "id": 179,
+    "original": "Brambůrky",
+    "translation": "Чипсы"
+  },
+  {
+    "id": 180,
+    "original": "někam",
+    "translation": "Куда-то"
+  },
+  {
+    "id": 181,
+    "original": "možná",
+    "translation": "Возможно"
+  },
+  {
+    "id": 182,
+    "original": "hlas",
+    "translation": "Голос"
+  },
+  {
+    "id": 183,
+    "original": "foukat",
+    "translation": "Дуть"
+  },
+  {
+    "id": 184,
+    "original": "houska",
+    "translation": "Булка"
+  },
+  {
+    "id": 185,
+    "original": "buchta",
+    "translation": "Пирог"
+  },
+  {
+    "id": 186,
+    "original": "ani jednou",
+    "translation": "Ни разу"
+  },
+  {
+    "id": 187,
+    "original": "měsíc",
+    "translation": "Месяц"
+  },
+  {
+    "id": 188,
+    "original": "lék",
+    "translation": "Лекарство"
+  },
+  {
+    "id": 189,
+    "original": "cigareta",
+    "translation": "Сигарета"
+  },
+  {
+    "id": 190,
+    "original": "vybírat",
+    "translation": "Выбирать"
+  },
+  {
+    "id": 191,
+    "original": "dostat",
+    "translation": "Получить"
+  },
+  {
+    "id": 192,
+    "original": "dočkat se",
+    "translation": "Дождаться"
+  },
+  {
+    "id": 193,
+    "original": "fronta",
+    "translation": "Очередь"
+  },
+  {
+    "id": 194,
+    "original": "zapsat se",
+    "translation": "Записаться"
+  },
+  {
+    "id": 195,
+    "original": "pro jistotu",
+    "translation": "На всякий случай"
+  },
+  {
+    "id": 196,
+    "original": "o víkendnu",
+    "translation": "в выходные"
+  },
+  {
+    "id": 197,
+    "original": "doufat",
+    "translation": "надеяться"
+  },
+  {
+    "id": 198,
+    "original": "každé",
+    "translation": "Каждое"
+  },
+  {
+    "id": 199,
+    "original": "Snídani",
+    "translation": "Завтрак"
+  },
+  {
+    "id": 200,
+    "original": "koukat na",
+    "translation": "Смотреть на"
+  },
+  {
+    "id": 201,
+    "original": "spát",
+    "translation": "Спать"
+  },
+  {
+    "id": 202,
+    "original": "snídat",
+    "translation": "Завтракать"
+  },
+  {
+    "id": 203,
+    "original": "časopis",
+    "translation": "Журнал"
+  },
+  {
+    "id": 204,
+    "original": "skupina",
+    "translation": "группа"
+  },
+  {
+    "id": 205,
+    "original": "trenér",
+    "translation": "тренер"
+  },
+  {
+    "id": 206,
+    "original": "chodím na box",
+    "translation": "занимаюсь боксом"
+  },
+  {
+    "id": 207,
+    "original": "ptát se",
+    "translation": "спрашивать"
+  },
+  {
+    "id": 208,
+    "original": "podnebí",
+    "translation": "климат"
+  },
+  {
+    "id": 209,
+    "original": "roční období",
+    "translation": "времена года"
+  },
+  {
+    "id": 210,
+    "original": "střídat se",
+    "translation": "меняться"
+  },
+  {
+    "id": 211,
+    "original": "švestka",
+    "translation": "слива"
+  },
+  {
+    "id": 212,
+    "original": "broskev",
+    "translation": "персик"
+  },
+  {
+    "id": 213,
+    "original": "houba",
+    "translation": "гриб"
+  },
+  {
+    "id": 214,
+    "original": "bruslit",
+    "translation": "кататься на коньках"
+  },
+  {
+    "id": 215,
+    "original": "koulovat se",
+    "translation": "играть в снежки"
+  },
+  {
+    "id": 216,
+    "original": "podobný",
+    "translation": "похожий"
+  },
+  {
+    "id": 217,
+    "original": "vybitý",
+    "translation": "разряженный"
+  },
+  {
+    "id": 218,
+    "original": "volit",
+    "translation": "избирать"
+  },
+  {
+    "id": 219,
+    "original": "jenom",
+    "translation": "только"
+  },
+  {
+    "id": 220,
+    "original": "po",
+    "translation": "после"
+  },
+  {
+    "id": 221,
+    "original": "poprvé",
+    "translation": "впервые"
+  },
+  {
+    "id": 222,
+    "original": "možná",
+    "translation": "возможно"
+  },
+  {
+    "id": 223,
+    "original": "asi",
+    "translation": "наверное, может быть"
+  },
+  {
+    "id": 224,
+    "original": "stát",
+    "translation": "стоять"
+  },
+  {
+    "id": 225,
+    "original": "bát se",
+    "translation": "бояться"
+  },
+  {
+    "id": 226,
+    "original": "období",
+    "translation": "период"
+  },
+  {
+    "id": 227,
+    "original": "sbírat houby",
+    "translation": "собирать грибы"
+  },
+  {
+    "id": 228,
+    "original": "lesní plody",
+    "translation": "лесные плоды"
+  },
+  {
+    "id": 229,
+    "original": "jet k moři",
+    "translation": "ехать к морю"
+  },
+  {
+    "id": 230,
+    "original": "plavat, koupat se",
+    "translation": "плавать, купаться"
+  },
+  {
+    "id": 231,
+    "original": "nebo",
+    "translation": "или"
+  },
+  {
+    "id": 232,
+    "original": "slunce",
+    "translation": "солнце"
+  },
+  {
+    "id": 233,
+    "original": "plánovat",
+    "translation": "планировать"
+  },
+  {
+    "id": 234,
+    "original": "Rakousko",
+    "translation": "Австрия"
+  },
+  {
+    "id": 235,
+    "original": "vedle",
+    "translation": "рядом"
+  },
+  {
+    "id": 236,
+    "original": "lístek",
+    "translation": "билет"
+  },
+  {
+    "id": 237,
+    "original": "deštník",
+    "translation": "зонтик"
+  },
+  {
+    "id": 238,
+    "original": "překvapit",
+    "translation": "удивить"
+  },
+  {
+    "id": 239,
+    "original": "volby",
+    "translation": "выборы"
+  },
+  {
+    "id": 240,
+    "original": "Předpověď počasí",
+    "translation": "прогноз погоды"
+  },
+  {
+    "id": 241,
+    "original": "nad nulou, pod nulou",
+    "translation": "выше нуля, ниже нуля"
+  },
+  {
+    "id": 242,
+    "original": "to je na mně moc",
+    "translation": "это для меня слишком много"
+  },
+  {
+    "id": 243,
+    "original": "rýma",
+    "translation": "насморк"
+  },
+  {
+    "id": 244,
+    "original": "je mi zima",
+    "translation": "мне холодно"
+  },
+  {
+    "id": 245,
+    "original": "unavený",
+    "translation": "уставший"
+  },
+  {
+    "id": 246,
+    "original": "ropa",
+    "translation": "нефть"
+  },
+  {
+    "id": 247,
+    "original": "používat",
+    "translation": "использовать"
+  },
+  {
+    "id": 248,
+    "original": "lux",
+    "translation": "пылесос"
+  },
+  {
+    "id": 249,
+    "original": "podporovat",
+    "translation": "поддерживать"
+  },
+  {
+    "id": 250,
+    "original": "umělá inteligence",
+    "translation": "искусственный интеллект"
+  },
+  {
+    "id": 251,
+    "original": "jistý",
+    "translation": "уверенный"
+  },
+  {
+    "id": 252,
+    "original": "přestěhovat se",
+    "translation": "переехать"
+  },
+  {
+    "id": 253,
+    "original": "podniknout něco",
+    "translation": "что-то делать, организовать"
+  },
+  {
+    "id": 254,
+    "original": "poušt'",
+    "translation": "пустыня"
+  },
+  {
+    "id": 255,
+    "original": "minulý rok",
+    "translation": "прошлый год"
+  },
+  {
+    "id": 256,
+    "original": "zpráva",
+    "translation": "новость"
+  },
+  {
+    "id": 257,
+    "original": "více než",
+    "translation": "больше чем"
+  },
+  {
+    "id": 258,
+    "original": "kolem",
+    "translation": "вокруг"
+  },
+  {
+    "id": 259,
+    "original": "zvláštní",
+    "translation": "странный"
+  },
+  {
+    "id": 260,
+    "original": "důležitý",
+    "translation": "важный"
+  },
+  {
+    "id": 261,
+    "original": "užitečný",
+    "translation": "полезный"
+  },
+  {
+    "id": 262,
+    "original": "vláda",
+    "translation": "правительство"
+  },
+  {
+    "id": 263,
+    "original": "schůzka",
+    "translation": "встреча"
+  },
+  {
+    "id": 264,
+    "original": "hodina",
+    "translation": "урок/час"
+  },
+  {
+    "id": 265,
+    "original": "pohovor",
+    "translation": "собеседование"
+  },
+  {
+    "id": 266,
+    "original": "učit",
+    "translation": "обучать"
+  },
+  {
+    "id": 267,
+    "original": "povinnost",
+    "translation": "обязанность"
+  },
+  {
+    "id": 268,
+    "original": "3 roky zpátky",
+    "translation": "3 года назад"
+  },
+  {
+    "id": 269,
+    "original": "ten",
+    "translation": "тот"
+  },
+  {
+    "id": 270,
+    "original": "čumět",
+    "translation": "глазеть"
+  },
+  {
+    "id": 271,
+    "original": "vypnout",
+    "translation": "выключить"
+  },
+  {
+    "id": 272,
+    "original": "nálada",
+    "translation": "настроение"
+  },
+  {
+    "id": 273,
+    "original": "kterýkoliv",
+    "translation": "любой/какой-угодно"
+  },
+  {
+    "id": 274,
+    "original": "pomalu",
+    "translation": "медленно"
+  },
+  {
+    "id": 275,
+    "original": "špatně připraven",
+    "translation": "плохо подготовлен"
+  },
+  {
+    "id": 276,
+    "original": "často",
+    "translation": "часто"
+  },
+  {
+    "id": 277,
+    "original": "horolezectví",
+    "translation": "альпинизм"
+  },
+  {
+    "id": 278,
+    "original": "běžet",
+    "translation": "бежать"
+  },
+  {
+    "id": 279,
+    "original": "za rok",
+    "translation": "через год"
+  },
+  {
+    "id": 280,
+    "original": "kapsa",
+    "translation": "карман"
+  },
+  {
+    "id": 281,
+    "original": "řidič",
+    "translation": "водитель"
+  },
+  {
+    "id": 282,
+    "original": "čas",
+    "translation": "время"
+  },
+  {
+    "id": 283,
+    "original": "kvůli",
+    "translation": "из-за"
+  },
+  {
+    "id": 284,
+    "original": "díky",
+    "translation": "благодаря"
+  },
+  {
+    "id": 285,
+    "original": "uložit",
+    "translation": "сохранить (документ)"
+  },
+  {
+    "id": 286,
+    "original": "řádek",
+    "translation": "строчка"
+  },
+  {
+    "id": 287,
+    "original": "soubor",
+    "translation": "папка"
+  },
+  {
+    "id": 288,
+    "original": "smazat",
+    "translation": "стереть"
+  },
+  {
+    "id": 289,
+    "original": "batoh",
+    "translation": "рюкзак"
+  },
+  {
+    "id": 290,
+    "original": "pojištění",
+    "translation": "страховка"
+  },
+  {
+    "id": 291,
+    "original": "foťák",
+    "translation": "фотоаппарат"
+  },
+  {
+    "id": 292,
+    "original": "jízdenka",
+    "translation": "билет"
+  },
+  {
+    "id": 293,
+    "original": "kufr",
+    "translation": "чемодан"
+  },
+  {
+    "id": 294,
+    "original": "letenka",
+    "translation": "авиабилет"
+  },
+  {
+    "id": 295,
+    "original": "nabíječka",
+    "translation": "зарядное устройство"
+  },
+  {
+    "id": 296,
+    "original": "řidičák",
+    "translation": "водительское удостоверение"
+  },
+  {
+    "id": 297,
+    "original": "průvodce",
+    "translation": "путеводитель"
+  },
+  {
+    "id": 298,
+    "original": "vízum",
+    "translation": "виза"
+  },
+  {
+    "id": 299,
+    "original": "jsem zvyklý na",
+    "translation": "я привык к"
+  },
+  {
+    "id": 300,
+    "original": "to same",
+    "translation": "то же самое"
+  },
+  {
+    "id": 301,
+    "original": "kecat",
+    "translation": "болтать, сплетничать"
+  },
+  {
+    "id": 302,
+    "original": "rozhodování",
+    "translation": "принятие решение"
+  },
+  {
+    "id": 303,
+    "original": "občas",
+    "translation": "иногда"
+  },
+  {
+    "id": 304,
+    "original": "plavat",
+    "translation": "плавать"
+  },
+  {
+    "id": 305,
+    "original": "bažina",
+    "translation": "болото"
+  },
+  {
+    "id": 306,
+    "original": "lod'",
+    "translation": "лодка"
+  },
+  {
+    "id": 307,
+    "original": "člun",
+    "translation": "шлюпка"
+  },
+  {
+    "id": 308,
+    "original": "bankovní karta",
+    "translation": "банковская карта"
+  },
+  {
+    "id": 309,
+    "original": "prohlížet si",
+    "translation": "просматривать"
+  },
+  {
+    "id": 310,
+    "original": "opalovat se",
+    "translation": "загорать"
+  },
+  {
+    "id": 424,
+    "original": "špatný",
+    "translation": "плохой"
+  },
+  {
+    "id": 425,
+    "original": "oranžový",
+    "translation": "оранжевый"
+  },
+  {
+    "id": 426,
+    "original": "fialový",
+    "translation": "фиолетовый"
+  },
+  {
+    "id": 427,
+    "original": "žlutý",
+    "translation": "желтый"
+  },
+  {
+    "id": 428,
+    "original": "barevný",
+    "translation": "цветной"
+  },
+  {
+    "id": 429,
+    "original": "pruhovaný",
+    "translation": "полосатый"
+  },
+  {
+    "id": 430,
+    "original": "puntíkovaný",
+    "translation": "в горошек"
+  },
+  {
+    "id": 431,
+    "original": "levný",
+    "translation": "дешевый"
+  },
+  {
+    "id": 432,
+    "original": "plná penze",
+    "translation": "полный пансион"
+  },
+  {
+    "id": 433,
+    "original": "polopenze",
+    "translation": "полупансион"
+  },
+  {
+    "id": 434,
+    "original": "žádat",
+    "translation": "просить"
+  },
+  {
+    "id": 435,
+    "original": "společnost",
+    "translation": "компания"
+  },
+  {
+    "id": 436,
+    "original": "mít zpoždění",
+    "translation": "иметь задержку"
+  },
+  {
+    "id": 437,
+    "original": "mít štěstí",
+    "translation": "иметь удачу"
+  },
+  {
+    "id": 438,
+    "original": "přestup",
+    "translation": "пересадка"
+  },
+  {
+    "id": 439,
+    "original": "jdu pěšky",
+    "translation": "иду пешком"
+  },
+  {
+    "id": 440,
+    "original": "pohodlný",
+    "translation": "удобный"
+  },
+  {
+    "id": 441,
+    "original": "knihkupectví",
+    "translation": "книжный магазин"
+  }
 ]
