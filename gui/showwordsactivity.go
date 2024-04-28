@@ -2,11 +2,13 @@ package gui
 
 import (
 	"errors"
+	"fmt"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
+	"learn_words/common"
 	"learn_words/datasources/v2/models"
 	"strings"
 )
@@ -50,17 +52,45 @@ func NewShowWordsActivity(app *Application, words models.WordList) *ShowWordsAct
 }
 
 func (a *ShowWordsActivity) onNextBtnClick() {
-	defer a.focusInput()
-	if strings.ToUpper(a.input.Text) != strings.ToUpper(a.RoundWords[a.currentWord].Original) {
-		a.correctWordLabel.SetText(a.RoundWords[a.currentWord].Original)
-		return
+	var answer = strings.ToLower(a.input.Text)
+	var correctAnswer = strings.ToLower(a.RoundWords[a.currentWord].Original)
+	if answer != correctAnswer {
+		if common.Normalize(answer) == common.Normalize(correctAnswer) {
+			dialog.NewConfirm(
+				"Is correct",
+				fmt.Sprintf("You answer is not correct because of diacritic."+
+					"Do you want to accept it? \n Your answer is: %s \n Correct answer is: %s", answer, correctAnswer),
+				a.onAnswer,
+				a.app.w,
+			).Show()
+		} else {
+			a.onAnswer(false)
+		}
+	} else {
+		a.onAnswer(true)
 	}
-	if a.currentWord+1 == len(a.RoundWords) {
-		dialog.ShowError(errors.New("Слова закончились"), a.app.w)
-		return
-	}
+}
 
+func (a *ShowWordsActivity) onAnswer(isCorrect bool) {
+	defer a.focusInput()
+	if isCorrect {
+		a.onCorrectAnswer()
+	} else {
+		a.onWrongAnswer()
+	}
+}
+
+func (a *ShowWordsActivity) onCorrectAnswer() {
+	defer a.focusInput()
+	if a.currentWord+1 == len(a.RoundWords) {
+		dialog.ShowError(errors.New("no more words"), a.app.w)
+		return
+	}
 	a.nextWord()
+}
+
+func (a *ShowWordsActivity) onWrongAnswer() {
+	a.correctWordLabel.SetText(a.RoundWords[a.currentWord].Original)
 }
 
 func (a *ShowWordsActivity) nextWord() {
