@@ -10,7 +10,7 @@ import (
 
 func Convert() {
 	var groupCounter int64
-	var wordsCounter int64
+	wordsCounter := getMaxId()
 	groups := make(models.Groups)
 	words := make(models.Words)
 	files, err := os.ReadDir("./words")
@@ -22,13 +22,16 @@ func Convert() {
 			continue
 		}
 		var wordIds []int64
-		groupWords := readWords(file)
+		groupWords := readV1Words(file)
 
-		for _, word := range groupWords {
-			word.Id = wordsCounter
-			wordIds = append(wordIds, wordsCounter)
-			words[wordsCounter] = word
-			wordsCounter++
+		for i, word := range groupWords {
+			if word.Id == 0 {
+				groupWords[i].Id = wordsCounter
+				word.Id = wordsCounter
+				wordsCounter++
+			}
+			wordIds = append(wordIds, word.Id)
+			words[word.Id] = word
 		}
 		groupName := strings.Replace(file.Name(), ".json", "", 1)
 		groups[groupCounter] = models.Group{
@@ -36,27 +39,34 @@ func Convert() {
 			Name:  groupName,
 			Words: wordIds,
 		}
+		updateV1Group(file, groupWords)
 		groupCounter++
 	}
 	saveWords(words)
 	saveGroups(groups)
 }
 
-func readWords(file os.DirEntry) models.WordList {
-	absPath, err := filepath.Abs(filepath.Join("words", file.Name()))
+func getMaxId() int64 {
+	filePath, err := filepath.Abs(filepath.Join("words", "v2", "words.json"))
 	if err != nil {
 		panic(err)
 	}
-	fileContent, err := os.ReadFile(absPath)
+	file, err := os.ReadFile(filePath)
 	if err != nil {
 		panic(err)
 	}
-	groupWords := models.WordList{}
-	err = json.Unmarshal(fileContent, &groupWords)
+	var words models.Words
+	err = json.Unmarshal(file, &words)
 	if err != nil {
 		panic(err)
 	}
-	return groupWords
+	maxId := int64(1)
+	for _, word := range words {
+		if word.Id > maxId {
+			maxId = word.Id
+		}
+	}
+	return maxId
 }
 
 func saveWords(words models.Words) {
@@ -77,6 +87,38 @@ func saveGroups(groups models.Groups) {
 		panic(err)
 	}
 	filePath, err := filepath.Abs(filepath.Join("words", "v2", "groups.json"))
+	err = os.WriteFile(filePath, wordsJson, 0777)
+	if err != nil {
+		panic(err)
+	}
+}
+
+func readV1Words(file os.DirEntry) models.WordList {
+	absPath, err := filepath.Abs(filepath.Join("words", file.Name()))
+	if err != nil {
+		panic(err)
+	}
+	fileContent, err := os.ReadFile(absPath)
+	if err != nil {
+		panic(err)
+	}
+	groupWords := models.WordList{}
+	err = json.Unmarshal(fileContent, &groupWords)
+	if err != nil {
+		panic(err)
+	}
+	return groupWords
+}
+
+func updateV1Group(file os.DirEntry, words models.WordList) {
+	wordsJson, err := json.MarshalIndent(words, "", "  ")
+	if err != nil {
+		panic(err)
+	}
+	filePath, err := filepath.Abs(filepath.Join("words", file.Name()))
+	if err != nil {
+		panic(err)
+	}
 	err = os.WriteFile(filePath, wordsJson, 0777)
 	if err != nil {
 		panic(err)
