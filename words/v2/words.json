@@ -1,2122 +1,2122 @@
 {
-  "0": {
-    "id": 0,
+  "1": {
+    "id": 1,
     "original": "Cesta",
     "translation": "Путь"
   },
-  "1": {
-    "id": 1,
-    "original": "Zeď",
-    "translation": "Стена"
-  },
   "10": {
     "id": 10,
-    "original": "Žák",
-    "translation": "Школьник/ученик"
+    "original": "Nizozemsko",
+    "translation": "Нидерланды"
   },
   "100": {
     "id": 100,
-    "original": "pracovní doba",
-    "translation": "Рабочие часы"
+    "original": "půjčit",
+    "translation": "Одолжить, занять, взять напрокат"
   },
   "101": {
     "id": 101,
-    "original": "pobočka",
-    "translation": "Филиал"
+    "original": "pracovní doba",
+    "translation": "Рабочие часы"
   },
   "102": {
     "id": 102,
-    "original": "spisovatel",
-    "translation": "Писатель"
+    "original": "pobočka",
+    "translation": "Филиал"
   },
   "103": {
     "id": 103,
-    "original": "vědec",
-    "translation": "Ученый"
+    "original": "spisovatel",
+    "translation": "Писатель"
   },
   "104": {
     "id": 104,
-    "original": "štíhlý",
-    "translation": "Стройный"
+    "original": "vědec",
+    "translation": "Ученый"
   },
   "105": {
     "id": 105,
-    "original": "hledat",
-    "translation": "Искать"
+    "original": "štíhlý",
+    "translation": "Стройный"
   },
   "106": {
     "id": 106,
-    "original": "všemu rozumím",
-    "translation": "Все понял"
+    "original": "hledat",
+    "translation": "Искать"
   },
   "107": {
     "id": 107,
-    "original": "vítr",
-    "translation": "ветер"
+    "original": "všemu rozumím",
+    "translation": "Все понял"
   },
   "108": {
     "id": 108,
-    "original": "jenom",
-    "translation": "только"
+    "original": "vítr",
+    "translation": "ветер"
   },
   "109": {
     "id": 109,
-    "original": "to je těžké",
-    "translation": "это тяжело"
-  },
-  "11": {
-    "id": 11,
-    "original": "Počasí",
-    "translation": "Погода"
-  },
-  "110": {
-    "id": 110,
-    "original": "rozumím všemu",
-    "translation": "я понимаю все"
-  },
-  "111": {
-    "id": 111,
-    "original": "letos",
-    "translation": "в этом году"
-  },
-  "112": {
-    "id": 112,
-    "original": "drahý",
-    "translation": "дорогой"
-  },
-  "113": {
-    "id": 113,
-    "original": "spolu",
-    "translation": "вместе"
-  },
-  "114": {
-    "id": 114,
-    "original": "vesnice",
-    "translation": "деревня"
-  },
-  "115": {
-    "id": 115,
-    "original": "víc",
-    "translation": "больше, еще"
-  },
-  "116": {
-    "id": 116,
-    "original": "doprava",
-    "translation": "транспорт"
-  },
-  "117": {
-    "id": 117,
-    "original": "aktivity",
-    "translation": "занятия"
-  },
-  "118": {
-    "id": 118,
-    "original": "pohoda",
-    "translation": "благодать"
-  },
-  "119": {
-    "id": 119,
-    "original": "nemovitost",
-    "translation": "недвижимость"
-  },
-  "12": {
-    "id": 12,
-    "original": "Zajímavý",
-    "translation": "Интересный"
-  },
-  "120": {
-    "id": 120,
-    "original": "peníze",
-    "translation": "деньги"
-  },
-  "121": {
-    "id": 121,
-    "original": "narozeniny",
-    "translation": "день рождения"
-  },
-  "122": {
-    "id": 122,
-    "original": "studovat",
-    "translation": "Учиться"
-  },
-  "123": {
-    "id": 123,
-    "original": "sněhulák",
-    "translation": "снеговик"
-  },
-  "124": {
-    "id": 124,
-    "original": "obvaz",
-    "translation": "Повязка"
-  },
-  "125": {
-    "id": 125,
-    "original": "já mám",
-    "translation": "Я имею"
-  },
-  "126": {
-    "id": 126,
-    "original": "Ty máš",
-    "translation": "Ты имеешь"
-  },
-  "127": {
-    "id": 127,
-    "original": "Ona má",
-    "translation": "Она имеет"
-  },
-  "128": {
-    "id": 128,
-    "original": "My máme",
-    "translation": "Мы имеем"
-  },
-  "129": {
-    "id": 129,
-    "original": "Vy máte",
-    "translation": "Вы имеете"
-  },
-  "13": {
-    "id": 13,
-    "original": "Budova",
-    "translation": "Здание"
-  },
-  "130": {
-    "id": 130,
-    "original": "Oni mají",
-    "translation": "Они имеют"
-  },
-  "131": {
-    "id": 131,
-    "original": "já chci",
-    "translation": "Я хочу"
-  },
-  "132": {
-    "id": 132,
-    "original": "Ty chceš",
-    "translation": "Ты хочешь"
-  },
-  "133": {
-    "id": 133,
-    "original": "On chce",
-    "translation": "Он хочет"
-  },
-  "134": {
-    "id": 134,
-    "original": "My chceme",
-    "translation": "Мы хотим"
-  },
-  "135": {
-    "id": 135,
-    "original": "Vy chcete",
-    "translation": "Вы хотите"
-  },
-  "136": {
-    "id": 136,
-    "original": "Oni chtějí",
-    "translation": "Они хотят"
-  },
-  "137": {
-    "id": 137,
-    "original": "já můžu",
-    "translation": "Я могу"
-  },
-  "138": {
-    "id": 138,
-    "original": "Ty můžeš",
-    "translation": "Ты можешь"
-  },
-  "139": {
-    "id": 139,
-    "original": "On může",
-    "translation": "Он может"
-  },
-  "14": {
-    "id": 14,
-    "original": "Ošklivý",
-    "translation": "Безобразный"
-  },
-  "140": {
-    "id": 140,
-    "original": "My můžeme",
-    "translation": "Мы можем"
-  },
-  "141": {
-    "id": 141,
-    "original": "Vy můžete",
-    "translation": "Вы можете"
-  },
-  "142": {
-    "id": 142,
-    "original": "Oni můžou",
-    "translation": "Они могут"
-  },
-  "143": {
-    "id": 143,
-    "original": "já musím",
-    "translation": "Я должен"
-  },
-  "144": {
-    "id": 144,
-    "original": "Ty musíš",
-    "translation": "Ты должен"
-  },
-  "145": {
-    "id": 145,
-    "original": "On musí",
-    "translation": "Он должен"
-  },
-  "146": {
-    "id": 146,
-    "original": "My musíme",
-    "translation": "Мы должны"
-  },
-  "147": {
-    "id": 147,
-    "original": "Vy musíte",
-    "translation": "Вы должны"
-  },
-  "148": {
-    "id": 148,
-    "original": "Oni musí",
-    "translation": "Они должны"
-  },
-  "149": {
-    "id": 149,
-    "original": "Leden",
-    "translation": "Январь"
-  },
-  "15": {
-    "id": 15,
-    "original": "Obyčejný",
-    "translation": "Обычный"
-  },
-  "150": {
-    "id": 150,
-    "original": "Únor",
-    "translation": "Февраль"
-  },
-  "151": {
-    "id": 151,
-    "original": "Březen",
-    "translation": "Март"
-  },
-  "152": {
-    "id": 152,
-    "original": "Duben",
-    "translation": "Апрель"
-  },
-  "153": {
-    "id": 153,
-    "original": "Květen",
-    "translation": "Май"
-  },
-  "154": {
-    "id": 154,
-    "original": "Červen",
-    "translation": "Июнь"
-  },
-  "155": {
-    "id": 155,
-    "original": "Červenec",
-    "translation": "Июль"
-  },
-  "156": {
-    "id": 156,
-    "original": "Srpen",
-    "translation": "Август"
-  },
-  "157": {
-    "id": 157,
-    "original": "Září",
-    "translation": "Сентябрь"
-  },
-  "158": {
-    "id": 158,
-    "original": "Říjen",
-    "translation": "Октябрь"
-  },
-  "159": {
-    "id": 159,
-    "original": "Listopad",
-    "translation": "Ноябрь"
-  },
-  "16": {
-    "id": 16,
-    "original": "Nudný",
-    "translation": "Скучный"
-  },
-  "160": {
-    "id": 160,
-    "original": "Prosinec",
-    "translation": "Декабрь"
-  },
-  "161": {
-    "id": 161,
-    "original": "Čast",
-    "translation": "Часть"
-  },
-  "162": {
-    "id": 162,
-    "original": "Obrovský",
-    "translation": "Огромный"
-  },
-  "163": {
-    "id": 163,
-    "original": "Vítr",
-    "translation": "Ветер"
-  },
-  "164": {
-    "id": 164,
-    "original": "Zataženo",
-    "translation": "Пасмурно"
-  },
-  "165": {
-    "id": 165,
-    "original": "Nic moc",
-    "translation": "Так себе"
-  },
-  "166": {
-    "id": 166,
-    "original": "Teď a tady",
-    "translation": "Здеть и сейчас"
-  },
-  "167": {
-    "id": 167,
-    "original": "Používat",
-    "translation": "Использовать"
-  },
-  "168": {
-    "id": 168,
-    "original": "Monitor",
-    "translation": "Монитор"
-  },
-  "169": {
-    "id": 169,
-    "original": "Různý",
-    "translation": "Разный"
-  },
-  "17": {
-    "id": 17,
-    "original": "Pohodlný",
-    "translation": "Удобный"
-  },
-  "170": {
-    "id": 170,
-    "original": "Inzerát",
-    "translation": "Объявление"
-  },
-  "171": {
-    "id": 171,
-    "original": "Tužka",
-    "translation": "Карандаш"
-  },
-  "172": {
-    "id": 172,
-    "original": "Sporák",
-    "translation": "Плита"
-  },
-  "173": {
-    "id": 173,
-    "original": "Za týden",
-    "translation": "В неделю"
-  },
-  "174": {
-    "id": 174,
-    "original": "Potraviny",
-    "translation": "Продукты"
-  },
-  "175": {
-    "id": 175,
-    "original": "Mléčné výrobky",
-    "translation": "Молочные продукты"
-  },
-  "176": {
-    "id": 176,
-    "original": "Snažit se",
-    "translation": "Стараться"
-  },
-  "177": {
-    "id": 177,
-    "original": "Zákazník",
-    "translation": "Клиент"
-  },
-  "178": {
-    "id": 178,
-    "original": "Brambůrky",
-    "translation": "Чипсы"
-  },
-  "179": {
-    "id": 179,
-    "original": "někam",
-    "translation": "Куда-то"
-  },
-  "18": {
-    "id": 18,
-    "original": "Obývák",
-    "translation": "Зал/гостинная"
-  },
-  "180": {
-    "id": 180,
-    "original": "možná",
-    "translation": "Возможно"
-  },
-  "181": {
-    "id": 181,
-    "original": "hlas",
-    "translation": "Голос"
-  },
-  "182": {
-    "id": 182,
-    "original": "foukat",
-    "translation": "Дуть"
-  },
-  "183": {
-    "id": 183,
-    "original": "houska",
-    "translation": "Булка"
-  },
-  "184": {
-    "id": 184,
-    "original": "buchta",
-    "translation": "Пирог"
-  },
-  "185": {
-    "id": 185,
-    "original": "ani jednou",
-    "translation": "Ни разу"
-  },
-  "186": {
-    "id": 186,
-    "original": "měsíc",
-    "translation": "Месяц"
-  },
-  "187": {
-    "id": 187,
-    "original": "lék",
-    "translation": "Лекарство"
-  },
-  "188": {
-    "id": 188,
-    "original": "cigareta",
-    "translation": "Сигарета"
-  },
-  "189": {
-    "id": 189,
-    "original": "vybírat",
-    "translation": "Выбирать"
-  },
-  "19": {
-    "id": 19,
-    "original": "Předsíň",
-    "translation": "Прихожая"
-  },
-  "190": {
-    "id": 190,
-    "original": "dostat",
-    "translation": "Получить"
-  },
-  "191": {
-    "id": 191,
-    "original": "dočkat se",
-    "translation": "Дождаться"
-  },
-  "192": {
-    "id": 192,
-    "original": "fronta",
-    "translation": "Очередь"
-  },
-  "193": {
-    "id": 193,
-    "original": "zapsat se",
-    "translation": "Записаться"
-  },
-  "194": {
-    "id": 194,
-    "original": "pro jistotu",
-    "translation": "На всякий случай"
-  },
-  "195": {
-    "id": 195,
-    "original": "o víkendnu",
-    "translation": "в выходные"
-  },
-  "196": {
-    "id": 196,
-    "original": "doufat",
-    "translation": "надеяться"
-  },
-  "197": {
-    "id": 197,
-    "original": "každé",
-    "translation": "Каждое"
-  },
-  "198": {
-    "id": 198,
-    "original": "Snídani",
-    "translation": "Завтрак"
-  },
-  "199": {
-    "id": 199,
-    "original": "koukat na",
-    "translation": "Смотреть на"
-  },
-  "2": {
-    "id": 2,
-    "original": "Zítra",
-    "translation": "Завтра"
-  },
-  "20": {
-    "id": 20,
-    "original": "Levní",
-    "translation": "Дешевый"
-  },
-  "200": {
-    "id": 200,
-    "original": "spát",
-    "translation": "Спать"
-  },
-  "201": {
-    "id": 201,
-    "original": "snídat",
-    "translation": "Завтракать"
-  },
-  "202": {
-    "id": 202,
-    "original": "časopis",
-    "translation": "Журнал"
-  },
-  "203": {
-    "id": 203,
-    "original": "skupina",
-    "translation": "группа"
-  },
-  "204": {
-    "id": 204,
-    "original": "trenér",
-    "translation": "тренер"
-  },
-  "205": {
-    "id": 205,
-    "original": "chodím na box",
-    "translation": "занимаюсь боксом"
-  },
-  "206": {
-    "id": 206,
-    "original": "ptát se",
-    "translation": "спрашивать"
-  },
-  "207": {
-    "id": 207,
-    "original": "podnebí",
-    "translation": "климат"
-  },
-  "208": {
-    "id": 208,
-    "original": "roční období",
-    "translation": "времена года"
-  },
-  "209": {
-    "id": 209,
-    "original": "střídat se",
-    "translation": "меняться"
-  },
-  "21": {
-    "id": 21,
-    "original": "Mrakodrap",
-    "translation": "Небоскреб"
-  },
-  "210": {
-    "id": 210,
-    "original": "švestka",
-    "translation": "слива"
-  },
-  "211": {
-    "id": 211,
-    "original": "broskev",
-    "translation": "персик"
-  },
-  "212": {
-    "id": 212,
-    "original": "houba",
-    "translation": "гриб"
-  },
-  "213": {
-    "id": 213,
-    "original": "bruslit",
-    "translation": "кататься на коньках"
-  },
-  "214": {
-    "id": 214,
-    "original": "koulovat se",
-    "translation": "играть в снежки"
-  },
-  "215": {
-    "id": 215,
-    "original": "podobný",
-    "translation": "похожий"
-  },
-  "216": {
-    "id": 216,
-    "original": "vybitý",
-    "translation": "разряженный"
-  },
-  "217": {
-    "id": 217,
-    "original": "volit",
-    "translation": "избирать"
-  },
-  "218": {
-    "id": 218,
     "original": "jenom",
     "translation": "только"
   },
+  "11": {
+    "id": 11,
+    "original": "Žák",
+    "translation": "Школьник/ученик"
+  },
+  "110": {
+    "id": 110,
+    "original": "to je těžké",
+    "translation": "это тяжело"
+  },
+  "111": {
+    "id": 111,
+    "original": "rozumím všemu",
+    "translation": "я понимаю все"
+  },
+  "112": {
+    "id": 112,
+    "original": "letos",
+    "translation": "в этом году"
+  },
+  "113": {
+    "id": 113,
+    "original": "drahý",
+    "translation": "дорогой"
+  },
+  "114": {
+    "id": 114,
+    "original": "spolu",
+    "translation": "вместе"
+  },
+  "115": {
+    "id": 115,
+    "original": "vesnice",
+    "translation": "деревня"
+  },
+  "116": {
+    "id": 116,
+    "original": "víc",
+    "translation": "больше, еще"
+  },
+  "117": {
+    "id": 117,
+    "original": "doprava",
+    "translation": "транспорт"
+  },
+  "118": {
+    "id": 118,
+    "original": "aktivity",
+    "translation": "занятия"
+  },
+  "119": {
+    "id": 119,
+    "original": "pohoda",
+    "translation": "благодать"
+  },
+  "12": {
+    "id": 12,
+    "original": "Počasí",
+    "translation": "Погода"
+  },
+  "120": {
+    "id": 120,
+    "original": "nemovitost",
+    "translation": "недвижимость"
+  },
+  "121": {
+    "id": 121,
+    "original": "peníze",
+    "translation": "деньги"
+  },
+  "122": {
+    "id": 122,
+    "original": "narozeniny",
+    "translation": "день рождения"
+  },
+  "123": {
+    "id": 123,
+    "original": "studovat",
+    "translation": "Учиться"
+  },
+  "124": {
+    "id": 124,
+    "original": "sněhulák",
+    "translation": "снеговик"
+  },
+  "125": {
+    "id": 125,
+    "original": "obvaz",
+    "translation": "Повязка"
+  },
+  "126": {
+    "id": 126,
+    "original": "já mám",
+    "translation": "Я имею"
+  },
+  "127": {
+    "id": 127,
+    "original": "Ty máš",
+    "translation": "Ты имеешь"
+  },
+  "128": {
+    "id": 128,
+    "original": "Ona má",
+    "translation": "Она имеет"
+  },
+  "129": {
+    "id": 129,
+    "original": "My máme",
+    "translation": "Мы имеем"
+  },
+  "13": {
+    "id": 13,
+    "original": "Zajímavý",
+    "translation": "Интересный"
+  },
+  "130": {
+    "id": 130,
+    "original": "Vy máte",
+    "translation": "Вы имеете"
+  },
+  "131": {
+    "id": 131,
+    "original": "Oni mají",
+    "translation": "Они имеют"
+  },
+  "132": {
+    "id": 132,
+    "original": "já chci",
+    "translation": "Я хочу"
+  },
+  "133": {
+    "id": 133,
+    "original": "Ty chceš",
+    "translation": "Ты хочешь"
+  },
+  "134": {
+    "id": 134,
+    "original": "On chce",
+    "translation": "Он хочет"
+  },
+  "135": {
+    "id": 135,
+    "original": "My chceme",
+    "translation": "Мы хотим"
+  },
+  "136": {
+    "id": 136,
+    "original": "Vy chcete",
+    "translation": "Вы хотите"
+  },
+  "137": {
+    "id": 137,
+    "original": "Oni chtějí",
+    "translation": "Они хотят"
+  },
+  "138": {
+    "id": 138,
+    "original": "já můžu",
+    "translation": "Я могу"
+  },
+  "139": {
+    "id": 139,
+    "original": "Ty můžeš",
+    "translation": "Ты можешь"
+  },
+  "14": {
+    "id": 14,
+    "original": "Budova",
+    "translation": "Здание"
+  },
+  "140": {
+    "id": 140,
+    "original": "On může",
+    "translation": "Он может"
+  },
+  "141": {
+    "id": 141,
+    "original": "My můžeme",
+    "translation": "Мы можем"
+  },
+  "142": {
+    "id": 142,
+    "original": "Vy můžete",
+    "translation": "Вы можете"
+  },
+  "143": {
+    "id": 143,
+    "original": "Oni můžou",
+    "translation": "Они могут"
+  },
+  "144": {
+    "id": 144,
+    "original": "já musím",
+    "translation": "Я должен"
+  },
+  "145": {
+    "id": 145,
+    "original": "Ty musíš",
+    "translation": "Ты должен"
+  },
+  "146": {
+    "id": 146,
+    "original": "On musí",
+    "translation": "Он должен"
+  },
+  "147": {
+    "id": 147,
+    "original": "My musíme",
+    "translation": "Мы должны"
+  },
+  "148": {
+    "id": 148,
+    "original": "Vy musíte",
+    "translation": "Вы должны"
+  },
+  "149": {
+    "id": 149,
+    "original": "Oni musí",
+    "translation": "Они должны"
+  },
+  "15": {
+    "id": 15,
+    "original": "Ošklivý",
+    "translation": "Безобразный"
+  },
+  "150": {
+    "id": 150,
+    "original": "Leden",
+    "translation": "Январь"
+  },
+  "151": {
+    "id": 151,
+    "original": "Únor",
+    "translation": "Февраль"
+  },
+  "152": {
+    "id": 152,
+    "original": "Březen",
+    "translation": "Март"
+  },
+  "153": {
+    "id": 153,
+    "original": "Duben",
+    "translation": "Апрель"
+  },
+  "154": {
+    "id": 154,
+    "original": "Květen",
+    "translation": "Май"
+  },
+  "155": {
+    "id": 155,
+    "original": "Červen",
+    "translation": "Июнь"
+  },
+  "156": {
+    "id": 156,
+    "original": "Červenec",
+    "translation": "Июль"
+  },
+  "157": {
+    "id": 157,
+    "original": "Srpen",
+    "translation": "Август"
+  },
+  "158": {
+    "id": 158,
+    "original": "Září",
+    "translation": "Сентябрь"
+  },
+  "159": {
+    "id": 159,
+    "original": "Říjen",
+    "translation": "Октябрь"
+  },
+  "16": {
+    "id": 16,
+    "original": "Obyčejný",
+    "translation": "Обычный"
+  },
+  "160": {
+    "id": 160,
+    "original": "Listopad",
+    "translation": "Ноябрь"
+  },
+  "161": {
+    "id": 161,
+    "original": "Prosinec",
+    "translation": "Декабрь"
+  },
+  "162": {
+    "id": 162,
+    "original": "Čast",
+    "translation": "Часть"
+  },
+  "163": {
+    "id": 163,
+    "original": "Obrovský",
+    "translation": "Огромный"
+  },
+  "164": {
+    "id": 164,
+    "original": "Vítr",
+    "translation": "Ветер"
+  },
+  "165": {
+    "id": 165,
+    "original": "Zataženo",
+    "translation": "Пасмурно"
+  },
+  "166": {
+    "id": 166,
+    "original": "Nic moc",
+    "translation": "Так себе"
+  },
+  "167": {
+    "id": 167,
+    "original": "Teď a tady",
+    "translation": "Здеть и сейчас"
+  },
+  "168": {
+    "id": 168,
+    "original": "Používat",
+    "translation": "Использовать"
+  },
+  "169": {
+    "id": 169,
+    "original": "Monitor",
+    "translation": "Монитор"
+  },
+  "17": {
+    "id": 17,
+    "original": "Nudný",
+    "translation": "Скучный"
+  },
+  "170": {
+    "id": 170,
+    "original": "Různý",
+    "translation": "Разный"
+  },
+  "171": {
+    "id": 171,
+    "original": "Inzerát",
+    "translation": "Объявление"
+  },
+  "172": {
+    "id": 172,
+    "original": "Tužka",
+    "translation": "Карандаш"
+  },
+  "173": {
+    "id": 173,
+    "original": "Sporák",
+    "translation": "Плита"
+  },
+  "174": {
+    "id": 174,
+    "original": "Za týden",
+    "translation": "В неделю"
+  },
+  "175": {
+    "id": 175,
+    "original": "Potraviny",
+    "translation": "Продукты"
+  },
+  "176": {
+    "id": 176,
+    "original": "Mléčné výrobky",
+    "translation": "Молочные продукты"
+  },
+  "177": {
+    "id": 177,
+    "original": "Snažit se",
+    "translation": "Стараться"
+  },
+  "178": {
+    "id": 178,
+    "original": "Zákazník",
+    "translation": "Клиент"
+  },
+  "179": {
+    "id": 179,
+    "original": "Brambůrky",
+    "translation": "Чипсы"
+  },
+  "18": {
+    "id": 18,
+    "original": "Pohodlný",
+    "translation": "Удобный"
+  },
+  "180": {
+    "id": 180,
+    "original": "někam",
+    "translation": "Куда-то"
+  },
+  "181": {
+    "id": 181,
+    "original": "možná",
+    "translation": "Возможно"
+  },
+  "182": {
+    "id": 182,
+    "original": "hlas",
+    "translation": "Голос"
+  },
+  "183": {
+    "id": 183,
+    "original": "foukat",
+    "translation": "Дуть"
+  },
+  "184": {
+    "id": 184,
+    "original": "houska",
+    "translation": "Булка"
+  },
+  "185": {
+    "id": 185,
+    "original": "buchta",
+    "translation": "Пирог"
+  },
+  "186": {
+    "id": 186,
+    "original": "ani jednou",
+    "translation": "Ни разу"
+  },
+  "187": {
+    "id": 187,
+    "original": "měsíc",
+    "translation": "Месяц"
+  },
+  "188": {
+    "id": 188,
+    "original": "lék",
+    "translation": "Лекарство"
+  },
+  "189": {
+    "id": 189,
+    "original": "cigareta",
+    "translation": "Сигарета"
+  },
+  "19": {
+    "id": 19,
+    "original": "Obývák",
+    "translation": "Зал/гостинная"
+  },
+  "190": {
+    "id": 190,
+    "original": "vybírat",
+    "translation": "Выбирать"
+  },
+  "191": {
+    "id": 191,
+    "original": "dostat",
+    "translation": "Получить"
+  },
+  "192": {
+    "id": 192,
+    "original": "dočkat se",
+    "translation": "Дождаться"
+  },
+  "193": {
+    "id": 193,
+    "original": "fronta",
+    "translation": "Очередь"
+  },
+  "194": {
+    "id": 194,
+    "original": "zapsat se",
+    "translation": "Записаться"
+  },
+  "195": {
+    "id": 195,
+    "original": "pro jistotu",
+    "translation": "На всякий случай"
+  },
+  "196": {
+    "id": 196,
+    "original": "o víkendnu",
+    "translation": "в выходные"
+  },
+  "197": {
+    "id": 197,
+    "original": "doufat",
+    "translation": "надеяться"
+  },
+  "198": {
+    "id": 198,
+    "original": "každé",
+    "translation": "Каждое"
+  },
+  "199": {
+    "id": 199,
+    "original": "Snídani",
+    "translation": "Завтрак"
+  },
+  "2": {
+    "id": 2,
+    "original": "Zeď",
+    "translation": "Стена"
+  },
+  "20": {
+    "id": 20,
+    "original": "Předsíň",
+    "translation": "Прихожая"
+  },
+  "200": {
+    "id": 200,
+    "original": "koukat na",
+    "translation": "Смотреть на"
+  },
+  "201": {
+    "id": 201,
+    "original": "spát",
+    "translation": "Спать"
+  },
+  "202": {
+    "id": 202,
+    "original": "snídat",
+    "translation": "Завтракать"
+  },
+  "203": {
+    "id": 203,
+    "original": "časopis",
+    "translation": "Журнал"
+  },
+  "204": {
+    "id": 204,
+    "original": "skupina",
+    "translation": "группа"
+  },
+  "205": {
+    "id": 205,
+    "original": "trenér",
+    "translation": "тренер"
+  },
+  "206": {
+    "id": 206,
+    "original": "chodím na box",
+    "translation": "занимаюсь боксом"
+  },
+  "207": {
+    "id": 207,
+    "original": "ptát se",
+    "translation": "спрашивать"
+  },
+  "208": {
+    "id": 208,
+    "original": "podnebí",
+    "translation": "климат"
+  },
+  "209": {
+    "id": 209,
+    "original": "roční období",
+    "translation": "времена года"
+  },
+  "21": {
+    "id": 21,
+    "original": "Levní",
+    "translation": "Дешевый"
+  },
+  "210": {
+    "id": 210,
+    "original": "střídat se",
+    "translation": "меняться"
+  },
+  "211": {
+    "id": 211,
+    "original": "švestka",
+    "translation": "слива"
+  },
+  "212": {
+    "id": 212,
+    "original": "broskev",
+    "translation": "персик"
+  },
+  "213": {
+    "id": 213,
+    "original": "houba",
+    "translation": "гриб"
+  },
+  "214": {
+    "id": 214,
+    "original": "bruslit",
+    "translation": "кататься на коньках"
+  },
+  "215": {
+    "id": 215,
+    "original": "koulovat se",
+    "translation": "играть в снежки"
+  },
+  "216": {
+    "id": 216,
+    "original": "podobný",
+    "translation": "похожий"
+  },
+  "217": {
+    "id": 217,
+    "original": "vybitý",
+    "translation": "разряженный"
+  },
+  "218": {
+    "id": 218,
+    "original": "volit",
+    "translation": "избирать"
+  },
   "219": {
     "id": 219,
-    "original": "po",
-    "translation": "после"
+    "original": "jenom",
+    "translation": "только"
   },
   "22": {
     "id": 22,
-    "original": "Sklep",
-    "translation": "Подвал"
+    "original": "Mrakodrap",
+    "translation": "Небоскреб"
   },
   "220": {
     "id": 220,
-    "original": "poprvé",
-    "translation": "впервые"
+    "original": "po",
+    "translation": "после"
   },
   "221": {
     "id": 221,
-    "original": "možná",
-    "translation": "возможно"
+    "original": "poprvé",
+    "translation": "впервые"
   },
   "222": {
     "id": 222,
-    "original": "asi",
-    "translation": "наверное, может быть"
+    "original": "možná",
+    "translation": "возможно"
   },
   "223": {
     "id": 223,
-    "original": "stát",
-    "translation": "стоять"
+    "original": "asi",
+    "translation": "наверное, может быть"
   },
   "224": {
     "id": 224,
-    "original": "bát se",
-    "translation": "бояться"
+    "original": "stát",
+    "translation": "стоять"
   },
   "225": {
     "id": 225,
-    "original": "období",
-    "translation": "период"
+    "original": "bát se",
+    "translation": "бояться"
   },
   "226": {
     "id": 226,
-    "original": "sbírat houby",
-    "translation": "собирать грибы"
+    "original": "období",
+    "translation": "период"
   },
   "227": {
     "id": 227,
-    "original": "lesní plody",
-    "translation": "лесные плоды"
+    "original": "sbírat houby",
+    "translation": "собирать грибы"
   },
   "228": {
     "id": 228,
-    "original": "jet k moři",
-    "translation": "ехать к морю"
+    "original": "lesní plody",
+    "translation": "лесные плоды"
   },
   "229": {
     "id": 229,
-    "original": "plavat, koupat se",
-    "translation": "плавать, купаться"
+    "original": "jet k moři",
+    "translation": "ехать к морю"
   },
   "23": {
     "id": 23,
-    "original": "Zahrada",
-    "translation": "Придомовая территория"
+    "original": "Sklep",
+    "translation": "Подвал"
   },
   "230": {
     "id": 230,
-    "original": "nebo",
-    "translation": "или"
+    "original": "plavat, koupat se",
+    "translation": "плавать, купаться"
   },
   "231": {
     "id": 231,
-    "original": "slunce",
-    "translation": "солнце"
+    "original": "nebo",
+    "translation": "или"
   },
   "232": {
     "id": 232,
-    "original": "plánovat",
-    "translation": "планировать"
+    "original": "slunce",
+    "translation": "солнце"
   },
   "233": {
     "id": 233,
-    "original": "Rakousko",
-    "translation": "Австрия"
+    "original": "plánovat",
+    "translation": "планировать"
   },
   "234": {
     "id": 234,
-    "original": "vedle",
-    "translation": "рядом"
+    "original": "Rakousko",
+    "translation": "Австрия"
   },
   "235": {
     "id": 235,
-    "original": "lístek",
-    "translation": "билет"
+    "original": "vedle",
+    "translation": "рядом"
   },
   "236": {
     "id": 236,
-    "original": "deštník",
-    "translation": "зонтик"
+    "original": "lístek",
+    "translation": "билет"
   },
   "237": {
     "id": 237,
-    "original": "překvapit",
-    "translation": "удивить"
+    "original": "deštník",
+    "translation": "зонтик"
   },
   "238": {
     "id": 238,
-    "original": "volby",
-    "translation": "выборы"
+    "original": "překvapit",
+    "translation": "удивить"
   },
   "239": {
     "id": 239,
-    "original": "Předpověd´počasí",
-    "translation": "прогноз погоды"
+    "original": "volby",
+    "translation": "выборы"
   },
   "24": {
     "id": 24,
-    "original": "Záchod",
-    "translation": "Туалет"
+    "original": "Zahrada",
+    "translation": "Придомовая территория"
   },
   "240": {
     "id": 240,
-    "original": "nad nulou, pod nulou",
-    "translation": "выше нуля, ниже нуля"
+    "original": "Předpověd´počasí",
+    "translation": "прогноз погоды"
   },
   "241": {
     "id": 241,
-    "original": "to je na mně moc",
-    "translation": "это для меня слишком много"
+    "original": "nad nulou, pod nulou",
+    "translation": "выше нуля, ниже нуля"
   },
   "242": {
     "id": 242,
-    "original": "rýma",
-    "translation": "насморк"
+    "original": "to je na mně moc",
+    "translation": "это для меня слишком много"
   },
   "243": {
     "id": 243,
-    "original": "je mi zima",
-    "translation": "мне холодно"
+    "original": "rýma",
+    "translation": "насморк"
   },
   "244": {
     "id": 244,
-    "original": "unavený",
-    "translation": "уставший"
+    "original": "je mi zima",
+    "translation": "мне холодно"
   },
   "245": {
     "id": 245,
-    "original": "ropa",
-    "translation": "нефть"
+    "original": "unavený",
+    "translation": "уставший"
   },
   "246": {
     "id": 246,
-    "original": "používat",
-    "translation": "использовать"
+    "original": "ropa",
+    "translation": "нефть"
   },
   "247": {
     "id": 247,
-    "original": "lux",
-    "translation": "пылесос"
+    "original": "používat",
+    "translation": "использовать"
   },
   "248": {
     "id": 248,
-    "original": "podporovat",
-    "translation": "поддерживать"
+    "original": "lux",
+    "translation": "пылесос"
   },
   "249": {
     "id": 249,
-    "original": "umělá inteligence",
-    "translation": "искусственный интеллект"
+    "original": "podporovat",
+    "translation": "поддерживать"
   },
   "25": {
     "id": 25,
-    "original": "Gauč",
-    "translation": "Диван"
+    "original": "Záchod",
+    "translation": "Туалет"
   },
   "250": {
     "id": 250,
-    "original": "jistý",
-    "translation": "уверенный"
+    "original": "umělá inteligence",
+    "translation": "искусственный интеллект"
   },
   "251": {
     "id": 251,
-    "original": "přestěhovat se",
-    "translation": "переехать"
+    "original": "jistý",
+    "translation": "уверенный"
   },
   "252": {
     "id": 252,
-    "original": "podniknout něco",
-    "translation": "что-то делать, организовать"
+    "original": "přestěhovat se",
+    "translation": "переехать"
   },
   "253": {
     "id": 253,
-    "original": "poušt'",
-    "translation": "пустыня"
+    "original": "podniknout něco",
+    "translation": "что-то делать, организовать"
   },
   "254": {
     "id": 254,
-    "original": "minulý rok",
-    "translation": "прошлый год"
+    "original": "poušt'",
+    "translation": "пустыня"
   },
   "255": {
     "id": 255,
-    "original": "zpráva",
-    "translation": "новость"
+    "original": "minulý rok",
+    "translation": "прошлый год"
   },
   "256": {
     "id": 256,
-    "original": "více než",
-    "translation": "больше чем"
+    "original": "zpráva",
+    "translation": "новость"
   },
   "257": {
     "id": 257,
-    "original": "kolem",
-    "translation": "вокруг"
+    "original": "více než",
+    "translation": "больше чем"
   },
   "258": {
     "id": 258,
-    "original": "zvláštní",
-    "translation": "странный"
+    "original": "kolem",
+    "translation": "вокруг"
   },
   "259": {
     "id": 259,
-    "original": "důležitý",
-    "translation": "важный"
+    "original": "zvláštní",
+    "translation": "странный"
   },
   "26": {
     "id": 26,
-    "original": "Koberec",
-    "translation": "Ковер"
+    "original": "Gauč",
+    "translation": "Диван"
   },
   "260": {
     "id": 260,
-    "original": "užitečný",
-    "translation": "полезный"
+    "original": "důležitý",
+    "translation": "важный"
   },
   "261": {
     "id": 261,
-    "original": "vláda",
-    "translation": "правительство"
+    "original": "užitečný",
+    "translation": "полезный"
   },
   "262": {
     "id": 262,
-    "original": "schůzka",
-    "translation": "встреча"
+    "original": "vláda",
+    "translation": "правительство"
   },
   "263": {
     "id": 263,
-    "original": "hodina",
-    "translation": "урок/час"
+    "original": "schůzka",
+    "translation": "встреча"
   },
   "264": {
     "id": 264,
-    "original": "pohovor",
-    "translation": "собеседование"
+    "original": "hodina",
+    "translation": "урок/час"
   },
   "265": {
     "id": 265,
-    "original": "učit",
-    "translation": "обучать"
+    "original": "pohovor",
+    "translation": "собеседование"
   },
   "266": {
     "id": 266,
-    "original": "povinnost",
-    "translation": "обязанность"
+    "original": "učit",
+    "translation": "обучать"
   },
   "267": {
     "id": 267,
-    "original": "3 roky zpátky",
-    "translation": "3 года назад"
+    "original": "povinnost",
+    "translation": "обязанность"
   },
   "268": {
     "id": 268,
-    "original": "ten",
-    "translation": "тот"
+    "original": "3 roky zpátky",
+    "translation": "3 года назад"
   },
   "269": {
     "id": 269,
-    "original": "čumět",
-    "translation": "глазеть"
+    "original": "ten",
+    "translation": "тот"
   },
   "27": {
     "id": 27,
-    "original": "Skříň",
-    "translation": "Шкаф"
+    "original": "Koberec",
+    "translation": "Ковер"
   },
   "270": {
     "id": 270,
-    "original": "vypnout",
-    "translation": "выключить"
+    "original": "čumět",
+    "translation": "глазеть"
   },
   "271": {
     "id": 271,
-    "original": "nálada",
-    "translation": "настроение"
+    "original": "vypnout",
+    "translation": "выключить"
   },
   "272": {
     "id": 272,
-    "original": "kterýkoliv",
-    "translation": "любой/какой-угодно"
+    "original": "nálada",
+    "translation": "настроение"
   },
   "273": {
     "id": 273,
-    "original": "pomalu",
-    "translation": "медленно"
+    "original": "kterýkoliv",
+    "translation": "любой/какой-угодно"
   },
   "274": {
     "id": 274,
-    "original": "špatně připraven",
-    "translation": "плохо подготовлен"
+    "original": "pomalu",
+    "translation": "медленно"
   },
   "275": {
     "id": 275,
-    "original": "často",
-    "translation": "часто"
+    "original": "špatně připraven",
+    "translation": "плохо подготовлен"
   },
   "276": {
     "id": 276,
-    "original": "horolezectví",
-    "translation": "альпинизм"
+    "original": "často",
+    "translation": "часто"
   },
   "277": {
     "id": 277,
-    "original": "běžet",
-    "translation": "бежать"
+    "original": "horolezectví",
+    "translation": "альпинизм"
   },
   "278": {
     "id": 278,
-    "original": "za rok",
-    "translation": "через год"
+    "original": "běžet",
+    "translation": "бежать"
   },
   "279": {
     "id": 279,
-    "original": "kapsa",
-    "translation": "карман"
+    "original": "za rok",
+    "translation": "через год"
   },
   "28": {
     "id": 28,
-    "original": "Zrcadlo",
-    "translation": "Зеркало"
+    "original": "Skříň",
+    "translation": "Шкаф"
   },
   "280": {
     "id": 280,
-    "original": "řidič",
-    "translation": "водитель"
+    "original": "kapsa",
+    "translation": "карман"
   },
   "281": {
     "id": 281,
-    "original": "čas",
-    "translation": "время"
+    "original": "řidič",
+    "translation": "водитель"
   },
   "282": {
     "id": 282,
-    "original": "kvůli",
-    "translation": "из-за"
+    "original": "čas",
+    "translation": "время"
   },
   "283": {
     "id": 283,
-    "original": "díky",
-    "translation": "благодаря"
+    "original": "kvůli",
+    "translation": "из-за"
   },
   "284": {
     "id": 284,
-    "original": "uložit",
-    "translation": "сохранить (документ)"
+    "original": "díky",
+    "translation": "благодаря"
   },
   "285": {
     "id": 285,
-    "original": "řádek",
-    "translation": "строчка"
+    "original": "uložit",
+    "translation": "сохранить (документ)"
   },
   "286": {
     "id": 286,
-    "original": "soubor",
-    "translation": "папка"
+    "original": "řádek",
+    "translation": "строчка"
   },
   "287": {
     "id": 287,
-    "original": "smazat",
-    "translation": "стереть"
+    "original": "soubor",
+    "translation": "папка"
   },
   "288": {
     "id": 288,
-    "original": "batoh",
-    "translation": "рюкзак"
+    "original": "smazat",
+    "translation": "стереть"
   },
   "289": {
     "id": 289,
-    "original": "pojištění",
-    "translation": "страховка"
+    "original": "batoh",
+    "translation": "рюкзак"
   },
   "29": {
     "id": 29,
-    "original": "Šedý",
-    "translation": "Серый/седой"
+    "original": "Zrcadlo",
+    "translation": "Зеркало"
   },
   "290": {
     "id": 290,
-    "original": "foťák",
-    "translation": "фотоаппарат"
+    "original": "pojištění",
+    "translation": "страховка"
   },
   "291": {
     "id": 291,
-    "original": "jízdenka",
-    "translation": "билет"
+    "original": "foťák",
+    "translation": "фотоаппарат"
   },
   "292": {
     "id": 292,
-    "original": "kufr",
-    "translation": "чемодан"
+    "original": "jízdenka",
+    "translation": "билет"
   },
   "293": {
     "id": 293,
-    "original": "letenka",
-    "translation": "авиабилет"
+    "original": "kufr",
+    "translation": "чемодан"
   },
   "294": {
     "id": 294,
-    "original": "nabíječka",
-    "translation": "зарядное устройство"
+    "original": "letenka",
+    "translation": "авиабилет"
   },
   "295": {
     "id": 295,
-    "original": "řidičák",
-    "translation": "водительское удостоверение"
+    "original": "nabíječka",
+    "translation": "зарядное устройство"
   },
   "296": {
     "id": 296,
-    "original": "průvodce",
-    "translation": "путеводитель"
+    "original": "řidičák",
+    "translation": "водительское удостоверение"
   },
   "297": {
     "id": 297,
-    "original": "vízum",
-    "translation": "виза"
+    "original": "průvodce",
+    "translation": "путеводитель"
   },
   "298": {
     "id": 298,
-    "original": "jsem zvyklý na",
-    "translation": "я привык к"
+    "original": "vízum",
+    "translation": "виза"
   },
   "299": {
     "id": 299,
-    "original": "to same",
-    "translation": "то же самое"
+    "original": "jsem zvyklý na",
+    "translation": "я привык к"
   },
   "3": {
     "id": 3,
-    "original": "Střecha",
-    "translation": "Крыша"
+    "original": "Zítra",
+    "translation": "Завтра"
   },
   "30": {
     "id": 30,
-    "original": "Nic",
-    "translation": "Ничего"
+    "original": "Šedý",
+    "translation": "Серый/седой"
   },
   "300": {
     "id": 300,
-    "original": "kecat",
-    "translation": "болтать, сплетничать"
+    "original": "to same",
+    "translation": "то же самое"
   },
   "301": {
     "id": 301,
-    "original": "rozhodování",
-    "translation": "принятие решение"
+    "original": "kecat",
+    "translation": "болтать, сплетничать"
   },
   "302": {
     "id": 302,
-    "original": "občas",
-    "translation": "иногда"
+    "original": "rozhodování",
+    "translation": "принятие решение"
   },
   "303": {
     "id": 303,
-    "original": "plavat",
-    "translation": "плавать"
+    "original": "občas",
+    "translation": "иногда"
   },
   "304": {
     "id": 304,
-    "original": "bažina",
-    "translation": "болото"
+    "original": "plavat",
+    "translation": "плавать"
   },
   "305": {
     "id": 305,
-    "original": "lod'",
-    "translation": "лодка"
+    "original": "bažina",
+    "translation": "болото"
   },
   "306": {
     "id": 306,
-    "original": "člun",
-    "translation": "шлюпка"
+    "original": "lod'",
+    "translation": "лодка"
   },
   "307": {
     "id": 307,
-    "original": "bankovní karta",
-    "translation": "банковская карта"
+    "original": "člun",
+    "translation": "шлюпка"
   },
   "308": {
     "id": 308,
-    "original": "prohlížet si",
-    "translation": "просматривать"
+    "original": "bankovní karta",
+    "translation": "банковская карта"
   },
   "309": {
     "id": 309,
-    "original": "opalovat se",
-    "translation": "загорать"
+    "original": "prohlížet si",
+    "translation": "просматривать"
   },
   "31": {
     "id": 31,
-    "original": "Dovolená",
-    "translation": "Отпуск"
+    "original": "Nic",
+    "translation": "Ничего"
   },
   "310": {
     "id": 310,
-    "original": "ztratit",
-    "translation": "потерять"
+    "original": "opalovat se",
+    "translation": "загорать"
   },
   "311": {
     "id": 311,
-    "original": "Maso",
-    "translation": "Мясо"
+    "original": "ztratit",
+    "translation": "потерять"
   },
   "312": {
     "id": 312,
-    "original": "Slepice",
-    "translation": "Курица"
+    "original": "Maso",
+    "translation": "Мясо"
   },
   "313": {
     "id": 313,
-    "original": "Kuře",
-    "translation": "Цыплёнок"
+    "original": "Slepice",
+    "translation": "Курица"
   },
   "314": {
     "id": 314,
-    "original": "Kachna",
-    "translation": "Утка"
+    "original": "Kuře",
+    "translation": "Цыплёнок"
   },
   "315": {
     "id": 315,
-    "original": "Husa",
-    "translation": "Гусь"
+    "original": "Kachna",
+    "translation": "Утка"
   },
   "316": {
     "id": 316,
-    "original": "Krůta",
-    "translation": "Индейка"
+    "original": "Husa",
+    "translation": "Гусь"
   },
   "317": {
     "id": 317,
-    "original": "Vepřové",
-    "translation": "Свинина"
+    "original": "Krůta",
+    "translation": "Индейка"
   },
   "318": {
     "id": 318,
-    "original": "Telecí",
-    "translation": "Телятина"
+    "original": "Vepřové",
+    "translation": "Свинина"
   },
   "319": {
     "id": 319,
-    "original": "Skopové",
-    "translation": "Баранина"
+    "original": "Telecí",
+    "translation": "Телятина"
   },
   "32": {
     "id": 32,
-    "original": "Uprostřed",
-    "translation": "Посередине"
+    "original": "Dovolená",
+    "translation": "Отпуск"
   },
   "320": {
     "id": 320,
-    "original": "Hovězí",
-    "translation": "Говядина"
+    "original": "Skopové",
+    "translation": "Баранина"
   },
   "321": {
     "id": 321,
-    "original": "Králík",
-    "translation": "Кролик"
+    "original": "Hovězí",
+    "translation": "Говядина"
   },
   "322": {
     "id": 322,
-    "original": "Salám",
-    "translation": "Колбаса"
+    "original": "Králík",
+    "translation": "Кролик"
   },
   "323": {
     "id": 323,
-    "original": "Párek",
-    "translation": "Сосиска"
+    "original": "Salám",
+    "translation": "Колбаса"
   },
   "324": {
     "id": 324,
-    "original": "Slanina",
-    "translation": "Бекон"
+    "original": "Párek",
+    "translation": "Сосиска"
   },
   "325": {
     "id": 325,
-    "original": "Šunka",
-    "translation": "Ветчина"
+    "original": "Slanina",
+    "translation": "Бекон"
   },
   "326": {
     "id": 326,
-    "original": "Vejce",
-    "translation": "Яйцо"
+    "original": "Šunka",
+    "translation": "Ветчина"
   },
   "327": {
     "id": 327,
-    "original": "Ryby",
-    "translation": "Рыба"
+    "original": "Vejce",
+    "translation": "Яйцо"
   },
   "328": {
     "id": 328,
-    "original": "Mořské plody",
-    "translation": "Морепродукты"
+    "original": "Ryby",
+    "translation": "Рыба"
   },
   "329": {
     "id": 329,
-    "original": "Kaviár",
-    "translation": "Икра"
+    "original": "Mořské plody",
+    "translation": "Морепродукты"
   },
   "33": {
     "id": 33,
-    "original": "Kde se ti libilo?",
-    "translation": "Где тебе понравилось"
+    "original": "Uprostřed",
+    "translation": "Посередине"
   },
   "330": {
     "id": 330,
-    "original": "Chléb",
-    "translation": "Хлеб"
+    "original": "Kaviár",
+    "translation": "Икра"
   },
   "331": {
     "id": 331,
-    "original": "Sýr",
-    "translation": "Сыр"
+    "original": "Chléb",
+    "translation": "Хлеб"
   },
   "332": {
     "id": 332,
-    "original": "Cukr",
-    "translation": "Сахар"
+    "original": "Sýr",
+    "translation": "Сыр"
   },
   "333": {
     "id": 333,
-    "original": "Sůl",
-    "translation": "Соль"
+    "original": "Cukr",
+    "translation": "Сахар"
   },
   "334": {
     "id": 334,
-    "original": "Rýže",
-    "translation": "Рис"
+    "original": "Sůl",
+    "translation": "Соль"
   },
   "335": {
     "id": 335,
-    "original": "Makaróny",
-    "translation": "Макароны"
+    "original": "Rýže",
+    "translation": "Рис"
   },
   "336": {
     "id": 336,
-    "original": "Nudle",
-    "translation": "Лапша"
+    "original": "Makaróny",
+    "translation": "Макароны"
   },
   "337": {
     "id": 337,
-    "original": "Máslo",
-    "translation": "Сливочное масло"
+    "original": "Nudle",
+    "translation": "Лапша"
   },
   "338": {
     "id": 338,
-    "original": "Olej",
-    "translation": "Растительное масло"
+    "original": "Máslo",
+    "translation": "Сливочное масло"
   },
   "339": {
     "id": 339,
-    "original": "Mléko",
-    "translation": "Молоко"
+    "original": "Olej",
+    "translation": "Растительное масло"
   },
   "34": {
     "id": 34,
-    "original": "Jet na výlet",
-    "translation": "Отправиться в путешествие"
+    "original": "Kde se ti libilo?",
+    "translation": "Где тебе понравилось"
   },
   "340": {
     "id": 340,
-    "original": "Jogurt",
-    "translation": "Йогурт"
+    "original": "Mléko",
+    "translation": "Молоко"
   },
   "341": {
     "id": 341,
-    "original": "Kyselá smetana",
-    "translation": "Сметана"
+    "original": "Jogurt",
+    "translation": "Йогурт"
   },
   "342": {
     "id": 342,
-    "original": "Smetana",
-    "translation": "Сливки"
+    "original": "Kyselá smetana",
+    "translation": "Сметана"
   },
   "343": {
     "id": 343,
-    "original": "Zelenina",
-    "translation": "Овощи"
+    "original": "Smetana",
+    "translation": "Сливки"
   },
   "344": {
     "id": 344,
-    "original": "Rajče",
-    "translation": "Помидор"
+    "original": "Zelenina",
+    "translation": "Овощи"
   },
   "345": {
     "id": 345,
-    "original": "Okurka",
-    "translation": "Огурец"
+    "original": "Rajče",
+    "translation": "Помидор"
   },
   "346": {
     "id": 346,
-    "original": "Mrkev",
-    "translation": "Морковь"
+    "original": "Okurka",
+    "translation": "Огурец"
   },
   "347": {
     "id": 347,
-    "original": "Brambory",
-    "translation": "Картофель"
+    "original": "Mrkev",
+    "translation": "Морковь"
   },
   "348": {
     "id": 348,
-    "original": "Cibule",
-    "translation": "Лук"
+    "original": "Brambory",
+    "translation": "Картофель"
   },
   "349": {
     "id": 349,
-    "original": "Česnek",
-    "translation": "Чеснок"
+    "original": "Cibule",
+    "translation": "Лук"
   },
   "35": {
     "id": 35,
-    "original": "Nějaky",
-    "translation": "Какой-нибудь"
+    "original": "Jet na výlet",
+    "translation": "Отправиться в путешествие"
   },
   "350": {
     "id": 350,
-    "original": "Zelí",
-    "translation": "Капуста"
+    "original": "Česnek",
+    "translation": "Чеснок"
   },
   "351": {
     "id": 351,
-    "original": "Petržel",
-    "translation": "Петрушка"
+    "original": "Zelí",
+    "translation": "Капуста"
   },
   "352": {
     "id": 352,
-    "original": "Pepř",
-    "translation": "Перец"
+    "original": "Petržel",
+    "translation": "Петрушка"
   },
   "353": {
     "id": 353,
-    "original": "Jablko",
-    "translation": "Яблоко"
+    "original": "Pepř",
+    "translation": "Перец"
   },
   "354": {
     "id": 354,
-    "original": "Hruška",
-    "translation": "Груша"
+    "original": "Jablko",
+    "translation": "Яблоко"
   },
   "355": {
     "id": 355,
-    "original": "Citrón",
-    "translation": "Лимон"
+    "original": "Hruška",
+    "translation": "Груша"
   },
   "356": {
     "id": 356,
-    "original": "Pomeranč",
-    "translation": "Апельсин"
+    "original": "Citrón",
+    "translation": "Лимон"
   },
   "357": {
     "id": 357,
-    "original": "Jahoda",
-    "translation": "Клубника"
+    "original": "Pomeranč",
+    "translation": "Апельсин"
   },
   "358": {
     "id": 358,
-    "original": "Mandarinka",
-    "translation": "Мандарин"
+    "original": "Jahoda",
+    "translation": "Клубника"
   },
   "359": {
     "id": 359,
-    "original": "Švestka",
-    "translation": "Слива"
+    "original": "Mandarinka",
+    "translation": "Мандарин"
   },
   "36": {
     "id": 36,
-    "original": "zpátky",
-    "translation": "Назад"
+    "original": "Nějaky",
+    "translation": "Какой-нибудь"
   },
   "360": {
     "id": 360,
-    "original": "Broskev",
-    "translation": "Персик"
+    "original": "Švestka",
+    "translation": "Слива"
   },
   "361": {
     "id": 361,
-    "original": "Meruňka",
-    "translation": "Абрикос"
+    "original": "Broskev",
+    "translation": "Персик"
   },
   "362": {
     "id": 362,
-    "original": "Banán",
-    "translation": "Банан"
+    "original": "Meruňka",
+    "translation": "Абрикос"
   },
   "363": {
     "id": 363,
-    "original": "Vodní meloun",
-    "translation": "Арбуз"
+    "original": "Banán",
+    "translation": "Банан"
   },
   "364": {
     "id": 364,
-    "original": "Víno",
-    "translation": "Вино"
+    "original": "Vodní meloun",
+    "translation": "Арбуз"
   },
   "365": {
     "id": 365,
-    "original": "Šampaňské",
-    "translation": "Шампанское"
+    "original": "Víno",
+    "translation": "Вино"
   },
   "366": {
     "id": 366,
-    "original": "Káva",
-    "translation": "Кофе"
+    "original": "Šampaňské",
+    "translation": "Шампанское"
   },
   "367": {
     "id": 367,
-    "original": "Limonáda",
-    "translation": "Лимонад"
+    "original": "Káva",
+    "translation": "Кофе"
   },
   "368": {
     "id": 368,
-    "original": "Sok",
-    "translation": "Сок"
+    "original": "Limonáda",
+    "translation": "Лимонад"
   },
   "369": {
     "id": 369,
-    "original": "Pivo",
-    "translation": "Пиво"
+    "original": "Sok",
+    "translation": "Сок"
   },
   "37": {
     "id": 37,
-    "original": "Musíte",
-    "translation": "Must"
+    "original": "zpátky",
+    "translation": "Назад"
   },
   "370": {
     "id": 370,
-    "original": "Čaj",
-    "translation": "Чай"
+    "original": "Pivo",
+    "translation": "Пиво"
   },
   "371": {
     "id": 371,
-    "original": "Voda",
-    "translation": "Вода"
+    "original": "Čaj",
+    "translation": "Чай"
   },
   "372": {
     "id": 372,
-    "original": "Nealkoholický nápoj",
-    "translation": "Безалкогольный напиток"
+    "original": "Voda",
+    "translation": "Вода"
   },
   "373": {
     "id": 373,
-    "original": "manželka",
-    "translation": "Жена"
+    "original": "Nealkoholický nápoj",
+    "translation": "Безалкогольный напиток"
   },
   "374": {
     "id": 374,
-    "original": "otec",
-    "translation": "Отец"
+    "original": "manželka",
+    "translation": "Жена"
   },
   "375": {
     "id": 375,
-    "original": "tatínek",
-    "translation": "Папа"
+    "original": "otec",
+    "translation": "Отец"
   },
   "376": {
     "id": 376,
-    "original": "matka",
-    "translation": "Мать"
+    "original": "tatínek",
+    "translation": "Папа"
   },
   "377": {
     "id": 377,
-    "original": "rodiče",
-    "translation": "Родители"
+    "original": "matka",
+    "translation": "Мать"
   },
   "378": {
     "id": 378,
-    "original": "syn",
-    "translation": "Сын"
+    "original": "rodiče",
+    "translation": "Родители"
   },
   "379": {
     "id": 379,
-    "original": "dcera",
-    "translation": "Дочь"
+    "original": "syn",
+    "translation": "Сын"
   },
   "38": {
     "id": 38,
-    "original": "Křižovatka",
-    "translation": "Перекресток"
+    "original": "Musíte",
+    "translation": "Must"
   },
   "380": {
     "id": 380,
-    "original": "bratr",
-    "translation": "Брат"
+    "original": "dcera",
+    "translation": "Дочь"
   },
   "381": {
     "id": 381,
-    "original": "sestra",
-    "translation": "Сестра"
+    "original": "bratr",
+    "translation": "Брат"
   },
   "382": {
     "id": 382,
-    "original": "sourozenci",
-    "translation": "Сиблинги"
+    "original": "sestra",
+    "translation": "Сестра"
   },
   "383": {
     "id": 383,
-    "original": "dědeček",
-    "translation": "Дедушка"
+    "original": "sourozenci",
+    "translation": "Сиблинги"
   },
   "384": {
     "id": 384,
-    "original": "babička",
-    "translation": "Бабушка"
+    "original": "dědeček",
+    "translation": "Дедушка"
   },
   "385": {
     "id": 385,
-    "original": "strýc",
-    "translation": "Дядя"
+    "original": "babička",
+    "translation": "Бабушка"
   },
   "386": {
     "id": 386,
-    "original": "teta",
-    "translation": "Тётя"
+    "original": "strýc",
+    "translation": "Дядя"
   },
   "387": {
     "id": 387,
-    "original": "neteř",
-    "translation": "Племянница"
+    "original": "teta",
+    "translation": "Тётя"
   },
   "388": {
     "id": 388,
-    "original": "synovec",
-    "translation": "Племянник"
+    "original": "neteř",
+    "translation": "Племянница"
   },
   "389": {
     "id": 389,
-    "original": "neteř",
-    "translation": ""
+    "original": "synovec",
+    "translation": "Племянник"
   },
   "39": {
     "id": 39,
-    "original": "Byla návštěva",
-    "translation": "Были гостях"
+    "original": "Křižovatka",
+    "translation": "Перекресток"
   },
   "390": {
     "id": 390,
-    "original": "tchán",
-    "translation": "Отец супруга"
+    "original": "neteř",
+    "translation": ""
   },
   "391": {
     "id": 391,
-    "original": "tchyně",
-    "translation": "Мать супруга"
+    "original": "tchán",
+    "translation": "Отец супруга"
   },
   "392": {
     "id": 392,
-    "original": "zeť",
-    "translation": "зять"
+    "original": "tchyně",
+    "translation": "Мать супруга"
   },
   "393": {
     "id": 393,
-    "original": "snacha",
-    "translation": "невестка"
+    "original": "zeť",
+    "translation": "зять"
   },
   "394": {
     "id": 394,
-    "original": "kalhoty",
-    "translation": "брюки"
+    "original": "snacha",
+    "translation": "невестка"
   },
   "395": {
     "id": 395,
-    "original": "tričko",
-    "translation": "футболка"
+    "original": "kalhoty",
+    "translation": "брюки"
   },
   "396": {
     "id": 396,
-    "original": "šaty",
-    "translation": "платье"
+    "original": "tričko",
+    "translation": "футболка"
   },
   "397": {
     "id": 397,
-    "original": "sukně",
-    "translation": "юбка"
+    "original": "šaty",
+    "translation": "платье"
   },
   "398": {
     "id": 398,
-    "original": "košile",
-    "translation": "рубашка"
+    "original": "sukně",
+    "translation": "юбка"
   },
   "399": {
     "id": 399,
-    "original": "mikina",
-    "translation": "свитер"
+    "original": "košile",
+    "translation": "рубашка"
   },
   "4": {
     "id": 4,
-    "original": "Cestovat",
-    "translation": "Путешествовать"
+    "original": "Střecha",
+    "translation": "Крыша"
   },
   "40": {
     "id": 40,
-    "original": "Navštívit",
-    "translation": "Посещать, ходить в гости"
+    "original": "Byla návštěva",
+    "translation": "Были гостях"
   },
   "400": {
     "id": 400,
-    "original": "sako",
-    "translation": "пиджак"
+    "original": "mikina",
+    "translation": "свитер"
   },
   "401": {
     "id": 401,
-    "original": "kabát",
-    "translation": "пальто"
+    "original": "sako",
+    "translation": "пиджак"
   },
   "402": {
     "id": 402,
-    "original": "vesta",
-    "translation": "жилет"
+    "original": "kabát",
+    "translation": "пальто"
   },
   "403": {
     "id": 403,
-    "original": "bunda",
-    "translation": "куртка"
+    "original": "vesta",
+    "translation": "жилет"
   },
   "404": {
     "id": 404,
-    "original": "kraťasy",
-    "translation": "шорты"
+    "original": "bunda",
+    "translation": "куртка"
   },
   "405": {
     "id": 405,
-    "original": "overal",
-    "translation": "комбинезон"
+    "original": "kraťasy",
+    "translation": "шорты"
   },
   "406": {
     "id": 406,
-    "original": "kalhotky",
-    "translation": "трусы"
+    "original": "overal",
+    "translation": "комбинезон"
   },
   "407": {
     "id": 407,
-    "original": "pásek",
-    "translation": "пояс"
+    "original": "kalhotky",
+    "translation": "трусы"
   },
   "408": {
     "id": 408,
-    "original": "ponožka",
-    "translation": "носок"
+    "original": "pásek",
+    "translation": "пояс"
   },
   "409": {
     "id": 409,
-    "original": "punčochy",
-    "translation": "чулки"
+    "original": "ponožka",
+    "translation": "носок"
   },
   "41": {
     "id": 41,
-    "original": "Dávat dárky",
-    "translation": "Дарить подарки"
+    "original": "Navštívit",
+    "translation": "Посещать, ходить в гости"
   },
   "410": {
     "id": 410,
-    "original": "klobouk",
-    "translation": "шляпа"
+    "original": "punčochy",
+    "translation": "чулки"
   },
   "411": {
     "id": 411,
-    "original": "rukavice",
-    "translation": "перчатки"
+    "original": "klobouk",
+    "translation": "шляпа"
   },
   "412": {
     "id": 412,
-    "original": "šála",
-    "translation": "шарф"
+    "original": "rukavice",
+    "translation": "перчатки"
   },
   "413": {
     "id": 413,
-    "original": "kravata",
-    "translation": "галстук"
+    "original": "šála",
+    "translation": "шарф"
   },
   "414": {
     "id": 414,
-    "original": "boty",
-    "translation": "обувь"
+    "original": "kravata",
+    "translation": "галстук"
   },
   "415": {
     "id": 415,
-    "original": "sandály",
-    "translation": "сандалии"
+    "original": "boty",
+    "translation": "обувь"
   },
   "416": {
     "id": 416,
-    "original": "tenisky",
-    "translation": "кроссовки"
+    "original": "sandály",
+    "translation": "сандалии"
   },
   "417": {
     "id": 417,
-    "original": "papuče",
-    "translation": "тапочки"
+    "original": "tenisky",
+    "translation": "кроссовки"
   },
   "418": {
     "id": 418,
-    "original": "opasek",
-    "translation": "ремень"
+    "original": "papuče",
+    "translation": "тапочки"
   },
   "419": {
     "id": 419,
-    "original": "rukáv",
-    "translation": "рукав"
+    "original": "opasek",
+    "translation": "ремень"
   },
   "42": {
     "id": 42,
-    "original": "Dostat",
-    "translation": "Получить"
+    "original": "Dávat dárky",
+    "translation": "Дарить подарки"
   },
   "420": {
     "id": 420,
-    "original": "kapuce",
-    "translation": "капюшон"
+    "original": "rukáv",
+    "translation": "рукав"
   },
   "421": {
     "id": 421,
-    "original": "zip",
-    "translation": "молния"
+    "original": "kapuce",
+    "translation": "капюшон"
   },
   "422": {
     "id": 422,
-    "original": "knoflík",
-    "translation": "пуговица"
+    "original": "zip",
+    "translation": "молния"
   },
   "423": {
     "id": 423,
+    "original": "knoflík",
+    "translation": "пуговица"
+  },
+  "424": {
+    "id": 424,
     "original": "podprsenka",
     "translation": "бюстгальтер"
   },
   "43": {
     "id": 43,
-    "original": "Svetr",
-    "translation": "Свитер"
+    "original": "Dostat",
+    "translation": "Получить"
   },
   "44": {
     "id": 44,
-    "original": "Směr",
-    "translation": "Наприавление"
+    "original": "Svetr",
+    "translation": "Свитер"
   },
   "45": {
     "id": 45,
-    "original": "Přítel",
-    "translation": "Друг"
+    "original": "Směr",
+    "translation": "Наприавление"
   },
   "46": {
     "id": 46,
-    "original": "Herec",
-    "translation": "Актер"
+    "original": "Přítel",
+    "translation": "Друг"
   },
   "47": {
     "id": 47,
-    "original": "Úředník",
-    "translation": "Чиновник/клерк"
+    "original": "Herec",
+    "translation": "Актер"
   },
   "48": {
     "id": 48,
-    "original": "Strom",
-    "translation": "Дерево"
+    "original": "Úředník",
+    "translation": "Чиновник/клерк"
   },
   "49": {
     "id": 49,
-    "original": "Snídat",
-    "translation": "Завртакать"
+    "original": "Strom",
+    "translation": "Дерево"
   },
   "5": {
     "id": 5,
-    "original": "Co znamená..?",
-    "translation": "Что значит ..."
+    "original": "Cestovat",
+    "translation": "Путешествовать"
   },
   "50": {
     "id": 50,
-    "original": "Snídaně",
-    "translation": "Завртак"
+    "original": "Snídat",
+    "translation": "Завртакать"
   },
   "51": {
     "id": 51,
-    "original": "Večeřet",
-    "translation": "Ужинать"
+    "original": "Snídaně",
+    "translation": "Завртак"
   },
   "52": {
     "id": 52,
-    "original": "Večeře",
-    "translation": "Ужин"
+    "original": "Večeřet",
+    "translation": "Ужинать"
   },
   "53": {
     "id": 53,
-    "original": "Hledat",
-    "translation": "Искать"
+    "original": "Večeře",
+    "translation": "Ужин"
   },
   "54": {
     "id": 54,
-    "original": "Spěchat",
-    "translation": "Спешить"
+    "original": "Hledat",
+    "translation": "Искать"
   },
   "55": {
     "id": 55,
-    "original": "Zřídka",
-    "translation": "Редко"
+    "original": "Spěchat",
+    "translation": "Спешить"
   },
   "56": {
     "id": 56,
-    "original": "Občas",
-    "translation": "Иногда"
+    "original": "Zřídka",
+    "translation": "Редко"
   },
   "57": {
     "id": 57,
-    "original": "Hodně",
-    "translation": "Много"
+    "original": "Občas",
+    "translation": "Иногда"
   },
   "58": {
     "id": 58,
-    "original": "Zavináč",
-    "translation": "@"
+    "original": "Hodně",
+    "translation": "Много"
   },
   "59": {
     "id": 59,
-    "original": "Žízeň",
-    "translation": "Жажда"
+    "original": "Zavináč",
+    "translation": "@"
   },
   "6": {
     "id": 6,
-    "original": "Jak se řekne",
-    "translation": "Как это произносится"
+    "original": "Co znamená..?",
+    "translation": "Что значит ..."
   },
   "60": {
     "id": 60,
-    "original": "Hlad",
-    "translation": "Голод"
+    "original": "Žízeň",
+    "translation": "Жажда"
   },
   "61": {
     "id": 61,
-    "original": "Chlad",
-    "translation": "Холод"
+    "original": "Hlad",
+    "translation": "Голод"
   },
   "62": {
     "id": 62,
-    "original": "Zkouška",
-    "translation": "Экзамен"
+    "original": "Chlad",
+    "translation": "Холод"
   },
   "63": {
     "id": 63,
-    "original": "Opakovat",
-    "translation": "Повторять"
+    "original": "Zkouška",
+    "translation": "Экзамен"
   },
   "64": {
     "id": 64,
-    "original": "Zvyknout",
-    "translation": "Привыкать"
+    "original": "Opakovat",
+    "translation": "Повторять"
   },
   "65": {
     "id": 65,
-    "original": "Sejdeme se",
-    "translation": "Встретимся/пересечемся"
+    "original": "Zvyknout",
+    "translation": "Привыкать"
   },
   "66": {
     "id": 66,
-    "original": "Chutnat",
-    "translation": "Нравиться по вкусу"
+    "original": "Sejdeme se",
+    "translation": "Встретимся/пересечемся"
   },
   "67": {
     "id": 67,
-    "original": "Vyhovovat",
-    "translation": "Подходить, соответсвовать"
+    "original": "Chutnat",
+    "translation": "Нравиться по вкусу"
   },
   "68": {
     "id": 68,
-    "original": "Zůstat",
-    "translation": "Остаться"
+    "original": "Vyhovovat",
+    "translation": "Подходить, соответсвовать"
   },
   "69": {
     "id": 69,
-    "original": "cvičit",
-    "translation": "Делать упражнения, тренироваться"
+    "original": "Zůstat",
+    "translation": "Остаться"
   },
   "7": {
     "id": 7,
-    "original": "Náhoda",
-    "translation": "Совпадение"
+    "original": "Jak se řekne",
+    "translation": "Как это произносится"
   },
   "70": {
     "id": 70,
-    "original": "Sportovec",
-    "translation": "Спортсмен"
+    "original": "cvičit",
+    "translation": "Делать упражнения, тренироваться"
   },
   "71": {
     "id": 71,
-    "original": "kluk",
-    "translation": "Мальчик"
+    "original": "Sportovec",
+    "translation": "Спортсмен"
   },
   "72": {
     "id": 72,
-    "original": "lidi",
-    "translation": "Люди"
+    "original": "kluk",
+    "translation": "Мальчик"
   },
   "73": {
     "id": 73,
-    "original": "kuchař",
-    "translation": "Повар"
+    "original": "lidi",
+    "translation": "Люди"
   },
   "74": {
     "id": 74,
-    "original": "dlouho",
-    "translation": "Долго"
+    "original": "kuchař",
+    "translation": "Повар"
   },
   "75": {
     "id": 75,
-    "original": "procházet se",
-    "translation": "Ходить, прогуливаться"
+    "original": "dlouho",
+    "translation": "Долго"
   },
   "76": {
     "id": 76,
-    "original": "vůbec",
-    "translation": "Вообще"
+    "original": "procházet se",
+    "translation": "Ходить, прогуливаться"
   },
   "77": {
     "id": 77,
-    "original": "teď",
-    "translation": "Сейчас"
+    "original": "vůbec",
+    "translation": "Вообще"
   },
   "78": {
     "id": 78,
-    "original": "sněžit",
-    "translation": "Идёт снег"
+    "original": "teď",
+    "translation": "Сейчас"
   },
   "79": {
     "id": 79,
-    "original": "od rána do večera",
-    "translation": "С утра до вечера"
+    "original": "sněžit",
+    "translation": "Идёт снег"
   },
   "8": {
     "id": 8,
-    "original": "Určitě",
-    "translation": "Конечно, однозначно, определенно"
+    "original": "Náhoda",
+    "translation": "Совпадение"
   },
   "80": {
     "id": 80,
-    "original": "vařit",
-    "translation": "Готовить"
+    "original": "od rána do večera",
+    "translation": "С утра до вечера"
   },
   "81": {
     "id": 81,
-    "original": "hudba",
-    "translation": "Музыка"
+    "original": "vařit",
+    "translation": "Готовить"
   },
   "82": {
     "id": 82,
-    "original": "poslouchat",
-    "translation": "Слушать"
+    "original": "hudba",
+    "translation": "Музыка"
   },
   "83": {
     "id": 83,
-    "original": "těšit se",
-    "translation": "Очень сильно ждать"
+    "original": "poslouchat",
+    "translation": "Слушать"
   },
   "84": {
     "id": 84,
-    "original": "zajímat se o",
-    "translation": "Чем-то интересоваться"
+    "original": "těšit se",
+    "translation": "Очень сильно ждать"
   },
   "85": {
     "id": 85,
-    "original": "protože",
-    "translation": "Потому"
+    "original": "zajímat se o",
+    "translation": "Чем-то интересоваться"
   },
   "86": {
     "id": 86,
-    "original": "být vzhůru",
-    "translation": "Бодорствовать"
+    "original": "protože",
+    "translation": "Потому"
   },
   "87": {
     "id": 87,
-    "original": "většinou",
-    "translation": "В общем, преимуществено"
+    "original": "být vzhůru",
+    "translation": "Бодорствовать"
   },
   "88": {
     "id": 88,
-    "original": "zase",
-    "translation": "Снова"
+    "original": "většinou",
+    "translation": "В общем, преимуществено"
   },
   "89": {
     "id": 89,
-    "original": "ale",
-    "translation": "Но"
+    "original": "zase",
+    "translation": "Снова"
   },
   "9": {
     "id": 9,
-    "original": "Nizozemsko",
-    "translation": "Нидерланды"
+    "original": "Určitě",
+    "translation": "Конечно, однозначно, определенно"
   },
   "90": {
     "id": 90,
-    "original": "stupňů",
-    "translation": "Градус"
+    "original": "ale",
+    "translation": "Но"
   },
   "91": {
     "id": 91,
-    "original": "10 stupňů",
-    "translation": "Десять градусов"
+    "original": "stupňů",
+    "translation": "Градус"
   },
   "92": {
     "id": 92,
-    "original": "kancelář",
-    "translation": "Офис"
+    "original": "10 stupňů",
+    "translation": "Десять градусов"
   },
   "93": {
     "id": 93,
-    "original": "nemám nic nového",
-    "translation": "Нет ничего нового"
+    "original": "kancelář",
+    "translation": "Офис"
   },
   "94": {
     "id": 94,
-    "original": "O víkendu",
-    "translation": "В выходные"
+    "original": "nemám nic nového",
+    "translation": "Нет ничего нового"
   },
   "95": {
     "id": 95,
-    "original": "pozdě",
-    "translation": "Поздно"
+    "original": "O víkendu",
+    "translation": "В выходные"
   },
   "96": {
     "id": 96,
-    "original": "skřivánek",
-    "translation": "Жаворонок"
+    "original": "pozdě",
+    "translation": "Поздно"
   },
   "97": {
     "id": 97,
-    "original": "mít návštěvu",
-    "translation": "Принимать гостей"
+    "original": "skřivánek",
+    "translation": "Жаворонок"
   },
   "98": {
     "id": 98,
-    "original": "brzy",
-    "translation": "Рано"
+    "original": "mít návštěvu",
+    "translation": "Принимать гостей"
   },
   "99": {
     "id": 99,
-    "original": "půjčit",
-    "translation": "Одолжить, занять, взять напрокат"
+    "original": "brzy",
+    "translation": "Рано"
   }
 }

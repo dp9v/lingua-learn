@@ -1,23 +1,107 @@
 [
-  {"Original": "manželka", "Translation": "Жена"},
-  {"Original": "otec", "Translation": "Отец"},
-  {"Original": "tatínek", "Translation": "Папа"},
-  {"Original": "matka", "Translation": "Мать"},
-  {"Original": "rodiče", "Translation": "Родители"},
-  {"Original": "syn", "Translation": "Сын"},
-  {"Original": "dcera", "Translation": "Дочь"},
-  {"Original": "bratr", "Translation": "Брат"},
-  {"Original": "sestra", "Translation": "Сестра"},
-  {"Original": "sourozenci", "Translation": "Сиблинги"},
-  {"Original": "dědeček", "Translation": "Дедушка"},
-  {"Original": "babička", "Translation": "Бабушка"},
-  {"Original": "strýc", "Translation": "Дядя"},
-  {"Original": "teta", "Translation": "Тётя"},
-  {"Original": "neteř", "Translation": "Племянница"},
-  {"Original": "synovec", "Translation": "Племянник"},
-  {"Original": "neteř", "Translation": ""},
-  {"Original": "tchán", "Translation": "Отец супруга"},
-  {"Original": "tchyně", "Translation": "Мать супруга"},
-  {"Original": "zeť", "Translation": "зять"},
-  {"Original": "snacha", "Translation": "невестка"}
+  {
+    "id": 374,
+    "original": "manželka",
+    "translation": "Жена"
+  },
+  {
+    "id": 375,
+    "original": "otec",
+    "translation": "Отец"
+  },
+  {
+    "id": 376,
+    "original": "tatínek",
+    "translation": "Папа"
+  },
+  {
+    "id": 377,
+    "original": "matka",
+    "translation": "Мать"
+  },
+  {
+    "id": 378,
+    "original": "rodiče",
+    "translation": "Родители"
+  },
+  {
+    "id": 379,
+    "original": "syn",
+    "translation": "Сын"
+  },
+  {
+    "id": 380,
+    "original": "dcera",
+    "translation": "Дочь"
+  },
+  {
+    "id": 381,
+    "original": "bratr",
+    "translation": "Брат"
+  },
+  {
+    "id": 382,
+    "original": "sestra",
+    "translation": "Сестра"
+  },
+  {
+    "id": 383,
+    "original": "sourozenci",
+    "translation": "Сиблинги"
+  },
+  {
+    "id": 384,
+    "original": "dědeček",
+    "translation": "Дедушка"
+  },
+  {
+    "id": 385,
+    "original": "babička",
+    "translation": "Бабушка"
+  },
+  {
+    "id": 386,
+    "original": "strýc",
+    "translation": "Дядя"
+  },
+  {
+    "id": 387,
+    "original": "teta",
+    "translation": "Тётя"
+  },
+  {
+    "id": 388,
+    "original": "neteř",
+    "translation": "Племянница"
+  },
+  {
+    "id": 389,
+    "original": "synovec",
+    "translation": "Племянник"
+  },
+  {
+    "id": 390,
+    "original": "neteř",
+    "translation": ""
+  },
+  {
+    "id": 391,
+    "original": "tchán",
+    "translation": "Отец супруга"
+  },
+  {
+    "id": 392,
+    "original": "tchyně",
+    "translation": "Мать супруга"
+  },
+  {
+    "id": 393,
+    "original": "zeť",
+    "translation": "зять"
+  },
+  {
+    "id": 394,
+    "original": "snacha",
+    "translation": "невестка"
+  }
 ]

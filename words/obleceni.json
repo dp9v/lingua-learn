@@ -1,32 +1,152 @@
 [
-    {"Original": "kalhoty", "Translation": "брюки"},
-    {"Original": "tričko", "Translation": "футболка"},
-    {"Original": "šaty", "Translation": "платье"},
-    {"Original": "sukně", "Translation": "юбка"},
-    {"Original": "košile", "Translation": "рубашка"},
-    {"Original": "mikina", "Translation": "свитер"},
-    {"Original": "sako", "Translation": "пиджак"},
-    {"Original": "kabát", "Translation": "пальто"},
-    {"Original": "vesta", "Translation": "жилет"},
-    {"Original": "bunda", "Translation": "куртка"},
-    {"Original": "kraťasy", "Translation": "шорты"},
-    {"Original": "overal", "Translation": "комбинезон"},
-    {"Original": "kalhotky", "Translation": "трусы"},
-    {"Original": "pásek", "Translation": "пояс"},
-    {"Original": "ponožka", "Translation": "носок"},
-    {"Original": "punčochy", "Translation": "чулки"},
-    {"Original": "klobouk", "Translation": "шляпа"},
-    {"Original": "rukavice", "Translation": "перчатки"},
-    {"Original": "šála", "Translation": "шарф"},
-    {"Original": "kravata", "Translation": "галстук"},
-    {"Original": "boty", "Translation": "обувь"},
-    {"Original": "sandály", "Translation": "сандалии"},
-    {"Original": "tenisky", "Translation": "кроссовки"},
-    {"Original": "papuče", "Translation": "тапочки"},
-    {"Original": "opasek", "Translation": "ремень"},
-    {"Original": "rukáv", "Translation": "рукав"},
-    {"Original": "kapuce", "Translation": "капюшон"},
-    {"Original": "zip", "Translation": "молния"},
-    {"Original": "knoflík", "Translation": "пуговица"},
-    {"Original": "podprsenka", "Translation": "бюстгальтер"}
+  {
+    "id": 395,
+    "original": "kalhoty",
+    "translation": "брюки"
+  },
+  {
+    "id": 396,
+    "original": "tričko",
+    "translation": "футболка"
+  },
+  {
+    "id": 397,
+    "original": "šaty",
+    "translation": "платье"
+  },
+  {
+    "id": 398,
+    "original": "sukně",
+    "translation": "юбка"
+  },
+  {
+    "id": 399,
+    "original": "košile",
+    "translation": "рубашка"
+  },
+  {
+    "id": 400,
+    "original": "mikina",
+    "translation": "свитер"
+  },
+  {
+    "id": 401,
+    "original": "sako",
+    "translation": "пиджак"
+  },
+  {
+    "id": 402,
+    "original": "kabát",
+    "translation": "пальто"
+  },
+  {
+    "id": 403,
+    "original": "vesta",
+    "translation": "жилет"
+  },
+  {
+    "id": 404,
+    "original": "bunda",
+    "translation": "куртка"
+  },
+  {
+    "id": 405,
+    "original": "kraťasy",
+    "translation": "шорты"
+  },
+  {
+    "id": 406,
+    "original": "overal",
+    "translation": "комбинезон"
+  },
+  {
+    "id": 407,
+    "original": "kalhotky",
+    "translation": "трусы"
+  },
+  {
+    "id": 408,
+    "original": "pásek",
+    "translation": "пояс"
+  },
+  {
+    "id": 409,
+    "original": "ponožka",
+    "translation": "носок"
+  },
+  {
+    "id": 410,
+    "original": "punčochy",
+    "translation": "чулки"
+  },
+  {
+    "id": 411,
+    "original": "klobouk",
+    "translation": "шляпа"
+  },
+  {
+    "id": 412,
+    "original": "rukavice",
+    "translation": "перчатки"
+  },
+  {
+    "id": 413,
+    "original": "šála",
+    "translation": "шарф"
+  },
+  {
+    "id": 414,
+    "original": "kravata",
+    "translation": "галстук"
+  },
+  {
+    "id": 415,
+    "original": "boty",
+    "translation": "обувь"
+  },
+  {
+    "id": 416,
+    "original": "sandály",
+    "translation": "сандалии"
+  },
+  {
+    "id": 417,
+    "original": "tenisky",
+    "translation": "кроссовки"
+  },
+  {
+    "id": 418,
+    "original": "papuče",
+    "translation": "тапочки"
+  },
+  {
+    "id": 419,
+    "original": "opasek",
+    "translation": "ремень"
+  },
+  {
+    "id": 420,
+    "original": "rukáv",
+    "translation": "рукав"
+  },
+  {
+    "id": 421,
+    "original": "kapuce",
+    "translation": "капюшон"
+  },
+  {
+    "id": 422,
+    "original": "zip",
+    "translation": "молния"
+  },
+  {
+    "id": 423,
+    "original": "knoflík",
+    "translation": "пуговица"
+  },
+  {
+    "id": 424,
+    "original": "podprsenka",
+    "translation": "бюстгальтер"
+  }
 ]

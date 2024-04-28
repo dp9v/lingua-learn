@@ -1,14 +1,62 @@
 [
-    {"Original": "Leden", "Translation": "Январь"},
-    {"Original": "Únor", "Translation": "Февраль"},
-    {"Original": "Březen", "Translation": "Март"},
-    {"Original": "Duben", "Translation": "Апрель"},
-    {"Original": "Květen", "Translation": "Май"},
-    {"Original": "Červen", "Translation": "Июнь"},
-    {"Original": "Červenec", "Translation": "Июль"},
-    {"Original": "Srpen", "Translation": "Август"},
-    {"Original": "Září", "Translation": "Сентябрь"},
-    {"Original": "Říjen", "Translation": "Октябрь"},
-    {"Original": "Listopad", "Translation": "Ноябрь"},
-    {"Original": "Prosinec", "Translation": "Декабрь"}
+  {
+    "id": 150,
+    "original": "Leden",
+    "translation": "Январь"
+  },
+  {
+    "id": 151,
+    "original": "Únor",
+    "translation": "Февраль"
+  },
+  {
+    "id": 152,
+    "original": "Březen",
+    "translation": "Март"
+  },
+  {
+    "id": 153,
+    "original": "Duben",
+    "translation": "Апрель"
+  },
+  {
+    "id": 154,
+    "original": "Květen",
+    "translation": "Май"
+  },
+  {
+    "id": 155,
+    "original": "Červen",
+    "translation": "Июнь"
+  },
+  {
+    "id": 156,
+    "original": "Červenec",
+    "translation": "Июль"
+  },
+  {
+    "id": 157,
+    "original": "Srpen",
+    "translation": "Август"
+  },
+  {
+    "id": 158,
+    "original": "Září",
+    "translation": "Сентябрь"
+  },
+  {
+    "id": 159,
+    "original": "Říjen",
+    "translation": "Октябрь"
+  },
+  {
+    "id": 160,
+    "original": "Listopad",
+    "translation": "Ноябрь"
+  },
+  {
+    "id": 161,
+    "original": "Prosinec",
+    "translation": "Декабрь"
+  }
 ]

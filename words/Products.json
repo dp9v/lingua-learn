@@ -1,64 +1,312 @@
 [
-  {"Original": "Maso", "Translation": "Мясо"},
-  {"Original": "Slepice", "Translation": "Курица"},
-  {"Original": "Kuře", "Translation": "Цыплёнок"},
-  {"Original": "Kachna", "Translation": "Утка"},
-  {"Original": "Husa", "Translation": "Гусь"},
-  {"Original": "Krůta", "Translation": "Индейка"},
-  {"Original": "Vepřové", "Translation": "Свинина"},
-  {"Original": "Telecí", "Translation": "Телятина"},
-  {"Original": "Skopové", "Translation": "Баранина"},
-  {"Original": "Hovězí", "Translation": "Говядина"},
-  {"Original": "Králík", "Translation": "Кролик"},
-  {"Original": "Salám", "Translation": "Колбаса"},
-  {"Original": "Párek", "Translation": "Сосиска"},
-  {"Original": "Slanina", "Translation": "Бекон"},
-  {"Original": "Šunka", "Translation": "Ветчина"},
-  {"Original": "Vejce", "Translation": "Яйцо"},
-  {"Original": "Ryby", "Translation": "Рыба"},
-  {"Original": "Mořské plody", "Translation": "Морепродукты"},
-  {"Original": "Kaviár", "Translation": "Икра"},
-  {"Original": "Chléb", "Translation": "Хлеб"},
-  {"Original": "Sýr", "Translation": "Сыр"},
-  {"Original": "Cukr", "Translation": "Сахар"},
-  {"Original": "Sůl", "Translation": "Соль"},
-  {"Original": "Rýže", "Translation": "Рис"},
-  {"Original": "Makaróny", "Translation": "Макароны"},
-  {"Original": "Nudle", "Translation": "Лапша"},
-  {"Original": "Máslo", "Translation": "Сливочное масло"},
-  {"Original": "Olej", "Translation": "Растительное масло"},
-  {"Original": "Mléko", "Translation": "Молоко"},
-  {"Original": "Jogurt", "Translation": "Йогурт"},
-  {"Original": "Kyselá smetana", "Translation": "Сметана"},
-  {"Original": "Smetana", "Translation": "Сливки"},
-  {"Original": "Zelenina", "Translation": "Овощи"},
-  {"Original": "Rajče", "Translation": "Помидор"},
-  {"Original": "Okurka", "Translation": "Огурец"},
-  {"Original": "Mrkev", "Translation": "Морковь"},
-  {"Original": "Brambory", "Translation": "Картофель"},
-  {"Original": "Cibule", "Translation": "Лук"},
-  {"Original": "Česnek", "Translation": "Чеснок"},
-  {"Original": "Zelí", "Translation": "Капуста"},
-  {"Original": "Petržel", "Translation": "Петрушка"},
-  {"Original": "Pepř", "Translation": "Перец"},
-  {"Original": "Jablko", "Translation": "Яблоко"},
-  {"Original": "Hruška", "Translation": "Груша"},
-  {"Original": "Citrón", "Translation": "Лимон"},
-  {"Original": "Pomeranč", "Translation": "Апельсин"},
-  {"Original": "Jahoda", "Translation": "Клубника"},
-  {"Original": "Mandarinka", "Translation": "Мандарин"},
-  {"Original": "Švestka", "Translation": "Слива"},
-  {"Original": "Broskev", "Translation": "Персик"},
-  {"Original": "Meruňka", "Translation": "Абрикос"},
-  {"Original": "Banán", "Translation": "Банан"},
-  {"Original": "Vodní meloun", "Translation": "Арбуз"},
-  {"Original": "Víno", "Translation": "Вино"},
-  {"Original": "Šampaňské", "Translation": "Шампанское"},
-  {"Original": "Káva", "Translation": "Кофе"},
-  {"Original": "Limonáda", "Translation": "Лимонад"},
-  {"Original": "Sok", "Translation": "Сок"},
-  {"Original": "Pivo", "Translation": "Пиво"},
-  {"Original": "Čaj", "Translation": "Чай"},
-  {"Original": "Voda", "Translation": "Вода"},
-  {"Original": "Nealkoholický nápoj", "Translation": "Безалкогольный напиток"}
+  {
+    "id": 312,
+    "original": "Maso",
+    "translation": "Мясо"
+  },
+  {
+    "id": 313,
+    "original": "Slepice",
+    "translation": "Курица"
+  },
+  {
+    "id": 314,
+    "original": "Kuře",
+    "translation": "Цыплёнок"
+  },
+  {
+    "id": 315,
+    "original": "Kachna",
+    "translation": "Утка"
+  },
+  {
+    "id": 316,
+    "original": "Husa",
+    "translation": "Гусь"
+  },
+  {
+    "id": 317,
+    "original": "Krůta",
+    "translation": "Индейка"
+  },
+  {
+    "id": 318,
+    "original": "Vepřové",
+    "translation": "Свинина"
+  },
+  {
+    "id": 319,
+    "original": "Telecí",
+    "translation": "Телятина"
+  },
+  {
+    "id": 320,
+    "original": "Skopové",
+    "translation": "Баранина"
+  },
+  {
+    "id": 321,
+    "original": "Hovězí",
+    "translation": "Говядина"
+  },
+  {
+    "id": 322,
+    "original": "Králík",
+    "translation": "Кролик"
+  },
+  {
+    "id": 323,
+    "original": "Salám",
+    "translation": "Колбаса"
+  },
+  {
+    "id": 324,
+    "original": "Párek",
+    "translation": "Сосиска"
+  },
+  {
+    "id": 325,
+    "original": "Slanina",
+    "translation": "Бекон"
+  },
+  {
+    "id": 326,
+    "original": "Šunka",
+    "translation": "Ветчина"
+  },
+  {
+    "id": 327,
+    "original": "Vejce",
+    "translation": "Яйцо"
+  },
+  {
+    "id": 328,
+    "original": "Ryby",
+    "translation": "Рыба"
+  },
+  {
+    "id": 329,
+    "original": "Mořské plody",
+    "translation": "Морепродукты"
+  },
+  {
+    "id": 330,
+    "original": "Kaviár",
+    "translation": "Икра"
+  },
+  {
+    "id": 331,
+    "original": "Chléb",
+    "translation": "Хлеб"
+  },
+  {
+    "id": 332,
+    "original": "Sýr",
+    "translation": "Сыр"
+  },
+  {
+    "id": 333,
+    "original": "Cukr",
+    "translation": "Сахар"
+  },
+  {
+    "id": 334,
+    "original": "Sůl",
+    "translation": "Соль"
+  },
+  {
+    "id": 335,
+    "original": "Rýže",
+    "translation": "Рис"
+  },
+  {
+    "id": 336,
+    "original": "Makaróny",
+    "translation": "Макароны"
+  },
+  {
+    "id": 337,
+    "original": "Nudle",
+    "translation": "Лапша"
+  },
+  {
+    "id": 338,
+    "original": "Máslo",
+    "translation": "Сливочное масло"
+  },
+  {
+    "id": 339,
+    "original": "Olej",
+    "translation": "Растительное масло"
+  },
+  {
+    "id": 340,
+    "original": "Mléko",
+    "translation": "Молоко"
+  },
+  {
+    "id": 341,
+    "original": "Jogurt",
+    "translation": "Йогурт"
+  },
+  {
+    "id": 342,
+    "original": "Kyselá smetana",
+    "translation": "Сметана"
+  },
+  {
+    "id": 343,
+    "original": "Smetana",
+    "translation": "Сливки"
+  },
+  {
+    "id": 344,
+    "original": "Zelenina",
+    "translation": "Овощи"
+  },
+  {
+    "id": 345,
+    "original": "Rajče",
+    "translation": "Помидор"
+  },
+  {
+    "id": 346,
+    "original": "Okurka",
+    "translation": "Огурец"
+  },
+  {
+    "id": 347,
+    "original": "Mrkev",
+    "translation": "Морковь"
+  },
+  {
+    "id": 348,
+    "original": "Brambory",
+    "translation": "Картофель"
+  },
+  {
+    "id": 349,
+    "original": "Cibule",
+    "translation": "Лук"
+  },
+  {
+    "id": 350,
+    "original": "Česnek",
+    "translation": "Чеснок"
+  },
+  {
+    "id": 351,
+    "original": "Zelí",
+    "translation": "Капуста"
+  },
+  {
+    "id": 352,
+    "original": "Petržel",
+    "translation": "Петрушка"
+  },
+  {
+    "id": 353,
+    "original": "Pepř",
+    "translation": "Перец"
+  },
+  {
+    "id": 354,
+    "original": "Jablko",
+    "translation": "Яблоко"
+  },
+  {
+    "id": 355,
+    "original": "Hruška",
+    "translation": "Груша"
+  },
+  {
+    "id": 356,
+    "original": "Citrón",
+    "translation": "Лимон"
+  },
+  {
+    "id": 357,
+    "original": "Pomeranč",
+    "translation": "Апельсин"
+  },
+  {
+    "id": 358,
+    "original": "Jahoda",
+    "translation": "Клубника"
+  },
+  {
+    "id": 359,
+    "original": "Mandarinka",
+    "translation": "Мандарин"
+  },
+  {
+    "id": 360,
+    "original": "Švestka",
+    "translation": "Слива"
+  },
+  {
+    "id": 361,
+    "original": "Broskev",
+    "translation": "Персик"
+  },
+  {
+    "id": 362,
+    "original": "Meruňka",
+    "translation": "Абрикос"
+  },
+  {
+    "id": 363,
+    "original": "Banán",
+    "translation": "Банан"
+  },
+  {
+    "id": 364,
+    "original": "Vodní meloun",
+    "translation": "Арбуз"
+  },
+  {
+    "id": 365,
+    "original": "Víno",
+    "translation": "Вино"
+  },
+  {
+    "id": 366,
+    "original": "Šampaňské",
+    "translation": "Шампанское"
+  },
+  {
+    "id": 367,
+    "original": "Káva",
+    "translation": "Кофе"
+  },
+  {
+    "id": 368,
+    "original": "Limonáda",
+    "translation": "Лимонад"
+  },
+  {
+    "id": 369,
+    "original": "Sok",
+    "translation": "Сок"
+  },
+  {
+    "id": 370,
+    "original": "Pivo",
+    "translation": "Пиво"
+  },
+  {
+    "id": 371,
+    "original": "Čaj",
+    "translation": "Чай"
+  },
+  {
+    "id": 372,
+    "original": "Voda",
+    "translation": "Вода"
+  },
+  {
+    "id": 373,
+    "original": "Nealkoholický nápoj",
+    "translation": "Безалкогольный напиток"
+  }
 ]
