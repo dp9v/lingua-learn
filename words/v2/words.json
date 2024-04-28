@@ -444,11 +444,6 @@
     "original": "Brambůrky",
     "translation": "Чипсы"
   },
-  "18": {
-    "id": 18,
-    "original": "Pohodlný",
-    "translation": "Удобный"
-  },
   "180": {
     "id": 180,
     "original": "někam",
@@ -786,7 +781,7 @@
   },
   "240": {
     "id": 240,
-    "original": "Předpověd´počasí",
+    "original": "Předpověď počasí",
     "translation": "прогноз погоды"
   },
   "241": {
@@ -1809,15 +1804,110 @@
     "original": "podprsenka",
     "translation": "бюстгальтер"
   },
+  "425": {
+    "id": 425,
+    "original": "oranžový",
+    "translation": "оранжевый"
+  },
+  "426": {
+    "id": 426,
+    "original": "fialový",
+    "translation": "фиолетовый"
+  },
+  "427": {
+    "id": 427,
+    "original": "žlutý",
+    "translation": "желтый"
+  },
+  "428": {
+    "id": 428,
+    "original": "barevný",
+    "translation": "цветной"
+  },
+  "429": {
+    "id": 429,
+    "original": "pruhovaný",
+    "translation": "полосатый"
+  },
   "43": {
     "id": 43,
     "original": "Dostat",
     "translation": "Получить"
   },
+  "430": {
+    "id": 430,
+    "original": "puntíkovaný",
+    "translation": "в горошек"
+  },
+  "431": {
+    "id": 431,
+    "original": "levný",
+    "translation": "дешевый"
+  },
+  "432": {
+    "id": 432,
+    "original": "plná penze",
+    "translation": "полный пансион"
+  },
+  "433": {
+    "id": 433,
+    "original": "polopenze",
+    "translation": "полупансион"
+  },
+  "434": {
+    "id": 434,
+    "original": "žádat",
+    "translation": "просить"
+  },
+  "435": {
+    "id": 435,
+    "original": "společnost",
+    "translation": "компания"
+  },
+  "436": {
+    "id": 436,
+    "original": "mít zpoždění",
+    "translation": "иметь задержку"
+  },
+  "437": {
+    "id": 437,
+    "original": "mít štěstí",
+    "translation": "иметь удачу"
+  },
+  "438": {
+    "id": 438,
+    "original": "přestup",
+    "translation": "пересадка"
+  },
+  "439": {
+    "id": 439,
+    "original": "jdu pěšky",
+    "translation": "иду пешком"
+  },
   "44": {
     "id": 44,
     "original": "Svetr",
     "translation": "Свитер"
+  },
+  "440": {
+    "id": 440,
+    "original": "pohodlný",
+    "translation": "удобный"
+  },
+  "441": {
+    "id": 441,
+    "original": "knihkupectví",
+    "translation": "книжный магазин"
+  },
+  "442": {
+    "id": 442,
+    "original": "kožich",
+    "translation": "шуба"
+  },
+  "443": {
+    "id": 443,
+    "original": "věc",
+    "translation": "вещь"
   },
   "45": {
     "id": 45,

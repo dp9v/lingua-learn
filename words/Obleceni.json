@@ -149,6 +149,14 @@
     "original": "podprsenka",
     "translation": "бюстгальтер"
   },
-  {"Original": "kožich", "Translation": "шуба"},
-  {"Original": "věc", "Translation": "вещь"}
+  {
+    "id": 442,
+    "original": "kožich",
+    "translation": "шуба"
+  },
+  {
+    "id": 443,
+    "original": "věc",
+    "translation": "вещь"
+  }
 ]
