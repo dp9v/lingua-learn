@@ -391,7 +391,7 @@
   },
   {
     "id": 240,
-    "original": "Předpověd´počasí",
+    "original": "Předpověď počasí",
     "translation": "прогноз погоды"
   },
   {
@@ -743,5 +743,23 @@
     "id": 310,
     "original": "opalovat se",
     "translation": "загорать"
-  }
+  },
+  {"Original": "špatný", "Translation": "плохой"},
+  {"Original": "oranžový", "Translation": "оранжевый"},
+  {"Original": "fialový", "Translation": "фиолетовый"},
+  {"Original": "žlutý", "Translation": "желтый"},
+  {"Original": "barevný", "Translation": "цветной"},
+  {"Original": "pruhovaný", "Translation": "полосатый"},
+  {"Original": "puntíkovaný", "Translation": "в горошек"},
+  {"Original": "levný", "Translation": "дешевый"},
+  {"Original": "plná penze", "Translation": "полный пансион"},
+  {"Original": "polopenze", "Translation": "полупансион"},
+  {"Original": "žádat", "Translation": "просить"},
+  {"Original": "společnost", "Translation": "компания"},
+  {"Original": "mít zpoždění", "Translation": "иметь задержку"},
+  {"Original": "mít štěstí", "Translation": "иметь удачу"},
+  {"Original": "přestup", "Translation": "пересадка"},
+  {"Original": "jdu pěšky", "Translation": "иду пешком"},
+  {"Original": "pohodlný", "Translation": "удобный"},
+  {"Original": "knihkupectví", "Translation": "книжный магазин"}
 ]
