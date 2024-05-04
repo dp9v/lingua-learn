@@ -145,87 +145,108 @@
     "translation": "книжный магазин"
   },
   {
-    "Original": "jet domů",
-    "Translation": "ехать домой"
+    "id": 443,
+    "original": "jet domů",
+    "translation": "ехать домой"
   },
   {
-    "Original": "kam",
-    "Translation": "куда"
+    "id": 444,
+    "original": "kam",
+    "translation": "куда"
   },
   {
-    "Original": "doporučovat",
-    "Translation": "рекомендовать"
+    "id": 445,
+    "original": "doporučovat",
+    "translation": "рекомендовать"
   },
   {
-    "Original": "mít zpoždění",
-    "Translation": "опаздывать"
+    "id": 446,
+    "original": "mít zpoždění",
+    "translation": "опаздывать"
   },
   {
-    "Original": "stihnout",
-    "Translation": "успевать"
+    "id": 447,
+    "original": "stihnout",
+    "translation": "успевать"
   },
   {
-    "Original": "rande",
-    "Translation": "свидание"
+    "id": 448,
+    "original": "rande",
+    "translation": "свидание"
   },
   {
-    "Original": "schůzka",
-    "Translation": "встреча"
+    "id": 449,
+    "original": "schůzka",
+    "translation": "встреча"
   },
   {
-    "Original": "přepážka ztráty a nálezy",
-    "Translation": "пункт находок и утерь"
+    "id": 450,
+    "original": "přepážka ztráty a nálezy",
+    "translation": "пункт находок и утерь"
   },
   {
-    "Original": "jednaní",
-    "Translation": "переговоры"
+    "id": 451,
+    "original": "jednaní",
+    "translation": "переговоры"
   },
   {
-    "Original": "zaspat",
-    "Translation": "проспать"
+    "id": 452,
+    "original": "zaspat",
+    "translation": "проспать"
   },
   {
-    "Original": "úschovna",
-    "Translation": "камера хранения"
+    "id": 453,
+    "original": "úschovna",
+    "translation": "камера хранения"
   },
   {
-    "Original": "pokladna",
-    "Translation": "касса"
+    "id": 454,
+    "original": "pokladna",
+    "translation": "касса"
   },
   {
-    "Original": "zavazadlo",
-    "Translation": "багаж"
+    "id": 455,
+    "original": "zavazadlo",
+    "translation": "багаж"
   },
   {
-    "Original": "žehlit",
-    "Translation": "гладить"
+    "id": 456,
+    "original": "žehlit",
+    "translation": "гладить"
   },
   {
-    "Original": "žehlička",
-    "Translation": "утюг"
+    "id": 457,
+    "original": "žehlička",
+    "translation": "утюг"
   },
   {
-    "Original": "závod",
-    "Translation": "гонка"
+    "id": 458,
+    "original": "závod",
+    "translation": "гонка"
   },
   {
-    "Original": "předpokládat",
-    "Translation": "предполагать"
+    "id": 459,
+    "original": "předpokládat",
+    "translation": "предполагать"
   },
   {
-    "Original": "doufat",
-    "Translation": "надеяться"
+    "id": 460,
+    "original": "doufat",
+    "translation": "надеяться"
   },
   {
-    "Original": "jenom",
-    "Translation": "только"
+    "id": 461,
+    "original": "jenom",
+    "translation": "только"
   },
   {
-    "Original": "brzda",
-    "Translation": "тормоз"
+    "id": 462,
+    "original": "brzda",
+    "translation": "тормоз"
   },
   {
-    "Original": "silnice",
-    "Translation": "дорога"
+    "id": 463,
+    "original": "silnice",
+    "translation": "дорога"
   }
 ]
