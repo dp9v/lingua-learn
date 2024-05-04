@@ -359,11 +359,6 @@
     "original": "Obrovský",
     "translation": "Огромный"
   },
-  "164": {
-    "id": 164,
-    "original": "Vítr",
-    "translation": "Ветер"
-  },
   "165": {
     "id": 165,
     "original": "Zataženo",
@@ -1549,11 +1544,6 @@
     "original": "syn",
     "translation": "Сын"
   },
-  "38": {
-    "id": 38,
-    "original": "Musíte",
-    "translation": "Must"
-  },
   "380": {
     "id": 380,
     "original": "dcera",
@@ -1801,8 +1791,8 @@
   },
   "424": {
     "id": 424,
-    "original": "podprsenka",
-    "translation": "бюстгальтер"
+    "original": "špatný",
+    "translation": "плохой"
   },
   "425": {
     "id": 425,
@@ -1864,11 +1854,6 @@
     "original": "společnost",
     "translation": "компания"
   },
-  "436": {
-    "id": 436,
-    "original": "mít zpoždění",
-    "translation": "иметь задержку"
-  },
   "437": {
     "id": 437,
     "original": "mít štěstí",
@@ -1906,18 +1891,118 @@
   },
   "443": {
     "id": 443,
-    "original": "věc",
-    "translation": "вещь"
+    "original": "jet domů",
+    "translation": "ехать домой"
+  },
+  "444": {
+    "id": 444,
+    "original": "kam",
+    "translation": "куда"
+  },
+  "445": {
+    "id": 445,
+    "original": "doporučovat",
+    "translation": "рекомендовать"
+  },
+  "446": {
+    "id": 446,
+    "original": "mít zpoždění",
+    "translation": "опаздывать"
+  },
+  "447": {
+    "id": 447,
+    "original": "stihnout",
+    "translation": "успевать"
+  },
+  "448": {
+    "id": 448,
+    "original": "rande",
+    "translation": "свидание"
+  },
+  "449": {
+    "id": 449,
+    "original": "schůzka",
+    "translation": "встреча"
   },
   "45": {
     "id": 45,
     "original": "Směr",
     "translation": "Наприавление"
   },
+  "450": {
+    "id": 450,
+    "original": "přepážka ztráty a nálezy",
+    "translation": "пункт находок и утерь"
+  },
+  "451": {
+    "id": 451,
+    "original": "jednaní",
+    "translation": "переговоры"
+  },
+  "452": {
+    "id": 452,
+    "original": "zaspat",
+    "translation": "проспать"
+  },
+  "453": {
+    "id": 453,
+    "original": "úschovna",
+    "translation": "камера хранения"
+  },
+  "454": {
+    "id": 454,
+    "original": "pokladna",
+    "translation": "касса"
+  },
+  "455": {
+    "id": 455,
+    "original": "zavazadlo",
+    "translation": "багаж"
+  },
+  "456": {
+    "id": 456,
+    "original": "žehlit",
+    "translation": "гладить"
+  },
+  "457": {
+    "id": 457,
+    "original": "žehlička",
+    "translation": "утюг"
+  },
+  "458": {
+    "id": 458,
+    "original": "závod",
+    "translation": "гонка"
+  },
+  "459": {
+    "id": 459,
+    "original": "předpokládat",
+    "translation": "предполагать"
+  },
   "46": {
     "id": 46,
     "original": "Přítel",
-    "translation": "Друг"
+    "translation": "Друг, парень"
+  },
+  "460": {
+    "id": 460,
+    "original": "doufat",
+    "translation": "надеяться"
+  },
+  "461": {
+    "id": 461,
+    "original": "jenom",
+    "translation": "только"
+  },
+  "462": {
+    "id": 462,
+    "original": "brzda",
+    "translation": "тормоз"
+  },
+  "463": {
+    "id": 463,
+    "original": "silnice",
+    "translation": "дорога"
   },
   "47": {
     "id": 47,
