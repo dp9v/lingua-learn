@@ -39,8 +39,10 @@ jobs:
       run: go run app.go datasource_converter.go -convert
           
     - name: "Commit updated words"
+      continue-on-error: true
       run: |
           git config --global user.name 'dp9v'
           git config --global user.email 'polkovnikov13@gmail.com'
           git commit -am "Sync words"
           git push origin HEAD:${{ github.head_ref }} --force
+      
