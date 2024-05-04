@@ -17,20 +17,20 @@ type ShowWordsActivity struct {
 	RoundWords       models.WordList
 	app              *Application
 	currentWord      int
-	nextBtn          *widget.Button
-	input            *OnKeyEntry
-	translationLabel *widget.Label
-	correctWordLabel *widget.Label
+	NextBtn          *widget.Button
+	Input            *OnKeyEntry
+	TranslationLabel *widget.Label
+	CorrectWordLabel *widget.Label
 }
 
 func (a *ShowWordsActivity) GetContent() fyne.CanvasObject {
-	a.translationLabel.SetText(a.RoundWords[a.currentWord].Translation)
+	a.TranslationLabel.SetText(a.RoundWords[a.currentWord].Translation)
 	return container.NewBorder(
-		a.translationLabel,
-		container.NewHBox(layout.NewSpacer(), a.nextBtn),
+		a.TranslationLabel,
+		container.NewHBox(layout.NewSpacer(), a.NextBtn),
 		nil,
 		nil,
-		container.NewVBox(a.input, a.correctWordLabel),
+		container.NewVBox(a.Input, a.CorrectWordLabel),
 	)
 }
 
@@ -43,16 +43,16 @@ func NewShowWordsActivity(app *Application, words models.WordList) *ShowWordsAct
 		app:              app,
 		currentWord:      0,
 		RoundWords:       words,
-		translationLabel: widget.NewLabel(""),
-		correctWordLabel: widget.NewLabel(""),
+		TranslationLabel: widget.NewLabel(""),
+		CorrectWordLabel: widget.NewLabel(""),
 	}
-	activity.input = NewOnKeyEntry(activity.onNextBtnClick)
-	activity.nextBtn = widget.NewButton("Next", activity.onNextBtnClick)
+	activity.Input = NewOnKeyEntry(activity.onNextBtnClick)
+	activity.NextBtn = widget.NewButton("Next", activity.onNextBtnClick)
 	return &activity
 }
 
 func (a *ShowWordsActivity) onNextBtnClick() {
-	var answer = strings.ToLower(a.input.Text)
+	var answer = strings.ToLower(a.Input.Text)
 	var correctAnswer = strings.ToLower(a.RoundWords[a.currentWord].Original)
 	if answer != correctAnswer {
 		if common.Normalize(answer) == common.Normalize(correctAnswer) {
@@ -90,19 +90,19 @@ func (a *ShowWordsActivity) onCorrectAnswer() {
 }
 
 func (a *ShowWordsActivity) onWrongAnswer() {
-	a.correctWordLabel.SetText(a.RoundWords[a.currentWord].Original)
+	a.CorrectWordLabel.SetText(a.RoundWords[a.currentWord].Original)
 }
 
 func (a *ShowWordsActivity) nextWord() {
-	if len(a.correctWordLabel.Text) != 0 {
+	if len(a.CorrectWordLabel.Text) != 0 {
 		a.RoundWords = append(a.RoundWords, a.RoundWords[a.currentWord])
 	}
 	a.currentWord++
-	a.correctWordLabel.SetText("")
-	a.translationLabel.SetText(a.RoundWords[a.currentWord].Translation)
-	a.input.SetText("")
+	a.CorrectWordLabel.SetText("")
+	a.TranslationLabel.SetText(a.RoundWords[a.currentWord].Translation)
+	a.Input.SetText("")
 }
 
 func (a *ShowWordsActivity) focusInput() {
-	a.app.w.Canvas().Focus(a.input)
+	a.app.w.Canvas().Focus(a.Input)
 }

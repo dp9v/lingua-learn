@@ -3,15 +3,11 @@ package tests
 import (
 	"fyne.io/fyne/v2/test"
 	"github.com/stretchr/testify/assert"
-	v2 "learn_words/datasources/v2"
 	"learn_words/datasources/v2/models"
 	"learn_words/gui"
 	"sort"
 	"testing"
 )
-
-var app = test.NewApp()
-var source = v2.NewPreferencesDataSource(app)
 
 func TestMainActivity_showGroups(t *testing.T) {
 	guiApp := gui.NewApplication(app)
@@ -39,14 +35,4 @@ func TestMainActivity_showGroupsClick(t *testing.T) {
 	activity := gui.NewMainActivity(guiApp, "title", source)
 	test.Tap(activity.ShowGroupsBtn)
 	assert.IsType(t, &gui.GroupsActivity{}, guiApp.Content)
-}
-
-func init() {
-	println("init test data")
-	for _, word := range Words {
-		_ = source.AddWord(&word, true)
-	}
-	for _, group := range Groups {
-		_ = source.AddGroup(&group, true)
-	}
 }
