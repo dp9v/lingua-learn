@@ -8,6 +8,7 @@ import (
 
 const GROUPS_PATTERN = "GroupsV2"
 const WORD_ID_PATTERN = "WordsV2_%d"
+const STAT_ID_PATTERN = "StatsV2_%d"
 
 type PreferencesDataSource struct {
 	fyne.App
@@ -77,7 +78,6 @@ func (p *PreferencesDataSource) AddWord(word *models.Word, force bool) error {
 		return err
 	}
 	if len(*words) == 1 && !force {
-
 		return fmt.Errorf("word with id: %d already saved", word.Id)
 	}
 
@@ -87,6 +87,51 @@ func (p *PreferencesDataSource) AddWord(word *models.Word, force bool) error {
 	}
 
 	p.Preferences().SetString(fmt.Sprintf(WORD_ID_PATTERN, word.Id), jsonWord)
+	return nil
+}
+
+func (p *PreferencesDataSource) LoadStats(ids []int64) (*models.Stats, error) {
+	res := make(models.Stats)
+	for _, id := range ids {
+		stat, err := p.loadStat(id)
+		if err != nil {
+			fyne.LogError("Stats can not be unmarshalled", err)
+			return nil, fmt.Errorf("stat if:%d can not be unmarshalled: %s", id, err)
+		}
+		res[stat.WordId] = *stat
+	}
+	return &res, nil
+}
+
+func (p *PreferencesDataSource) UpdateStats(stats *models.Stats) error {
+	errorCount := 0
+	for _, stat := range *stats {
+		err := p.updateStat(stat)
+		if err != nil {
+			fyne.LogError("stats can not be updated", err)
+			errorCount++
+		}
+	}
+	if errorCount > 0 {
+		return fmt.Errorf("%d error(s) occurred in updating stats", errorCount)
+	}
+	return nil
+}
+
+func (p *PreferencesDataSource) loadStat(id int64) (*models.Stat, error) {
+	wordJson := p.Preferences().StringWithFallback(fmt.Sprintf(STAT_ID_PATTERN, id), "{}")
+	if wordJson == "{}" {
+		return &models.Stat{WordId: id}, nil
+	}
+	return models.UnmarshalStat(wordJson)
+}
+
+func (p *PreferencesDataSource) updateStat(stat models.Stat) error {
+	statJson, err := stat.Marshal()
+	if err != nil {
+		return fmt.Errorf("stat id=%d can not be marshalled: %s", stat.WordId, err)
+	}
+	p.Preferences().SetString(fmt.Sprintf(STAT_ID_PATTERN, stat.WordId), statJson)
 	return nil
 }
 
