@@ -1,6 +1,13 @@
 package tests
 
-import "learn_words/datasources/v2/models"
+import (
+	"fyne.io/fyne/v2/test"
+	v2 "learn_words/datasources/v2"
+	"learn_words/datasources/v2/models"
+)
+
+var app = test.NewApp()
+var source = v2.NewPreferencesDataSource(app)
 
 var Words = models.Words{
 	1: {
@@ -29,6 +36,7 @@ var Words = models.Words{
 		Translation: "Translation5",
 	},
 }
+var WordsList = Words.AsList()
 
 var Groups = models.Groups{
 	1: {
@@ -46,4 +54,14 @@ var Groups = models.Groups{
 		Name:  "Group3",
 		Words: []int64{2, 3},
 	},
+}
+
+func init() {
+	println("init test data")
+	for _, word := range Words {
+		_ = source.AddWord(&word, true)
+	}
+	for _, group := range Groups {
+		_ = source.AddGroup(&group, true)
+	}
 }

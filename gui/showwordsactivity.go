@@ -2,11 +2,13 @@ package gui
 
 import (
 	"errors"
+	"fmt"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
+	"learn_words/common"
 	"learn_words/datasources/v2/models"
 	"strings"
 )
@@ -15,20 +17,20 @@ type ShowWordsActivity struct {
 	RoundWords       models.WordList
 	app              *Application
 	currentWord      int
-	nextBtn          *widget.Button
-	input            *OnKeyEntry
-	translationLabel *widget.Label
-	correctWordLabel *widget.Label
+	NextBtn          *widget.Button
+	Input            *OnKeyEntry
+	TranslationLabel *widget.Label
+	CorrectWordLabel *widget.Label
 }
 
 func (a *ShowWordsActivity) GetContent() fyne.CanvasObject {
-	a.translationLabel.SetText(a.RoundWords[a.currentWord].Translation)
+	a.TranslationLabel.SetText(a.RoundWords[a.currentWord].Translation)
 	return container.NewBorder(
-		a.translationLabel,
-		container.NewHBox(layout.NewSpacer(), a.nextBtn),
+		a.TranslationLabel,
+		container.NewHBox(layout.NewSpacer(), a.NextBtn),
 		nil,
 		nil,
-		container.NewVBox(a.input, a.correctWordLabel),
+		container.NewVBox(a.Input, a.CorrectWordLabel),
 	)
 }
 
@@ -41,38 +43,66 @@ func NewShowWordsActivity(app *Application, words models.WordList) *ShowWordsAct
 		app:              app,
 		currentWord:      0,
 		RoundWords:       words,
-		translationLabel: widget.NewLabel(""),
-		correctWordLabel: widget.NewLabel(""),
+		TranslationLabel: widget.NewLabel(""),
+		CorrectWordLabel: widget.NewLabel(""),
 	}
-	activity.input = NewOnKeyEntry(activity.onNextBtnClick)
-	activity.nextBtn = widget.NewButton("Next", activity.onNextBtnClick)
+	activity.Input = NewOnKeyEntry(activity.onNextBtnClick)
+	activity.NextBtn = widget.NewButton("Next", activity.onNextBtnClick)
 	return &activity
 }
 
 func (a *ShowWordsActivity) onNextBtnClick() {
-	defer a.focusInput()
-	if strings.ToUpper(a.input.Text) != strings.ToUpper(a.RoundWords[a.currentWord].Original) {
-		a.correctWordLabel.SetText(a.RoundWords[a.currentWord].Original)
-		return
+	var answer = strings.ToLower(a.Input.Text)
+	var correctAnswer = strings.ToLower(a.RoundWords[a.currentWord].Original)
+	if answer != correctAnswer {
+		if common.Normalize(answer) == common.Normalize(correctAnswer) {
+			dialog.NewConfirm(
+				"Is correct",
+				fmt.Sprintf("You answer is not correct because of diacritic."+
+					"Do you want to accept it? \n Your answer is: %s \n Correct answer is: %s", answer, correctAnswer),
+				a.onAnswer,
+				a.app.w,
+			).Show()
+		} else {
+			a.onAnswer(false)
+		}
+	} else {
+		a.onAnswer(true)
 	}
-	if a.currentWord+1 == len(a.RoundWords) {
-		dialog.ShowError(errors.New("Слова закончились"), a.app.w)
-		return
-	}
+}
 
+func (a *ShowWordsActivity) onAnswer(isCorrect bool) {
+	defer a.focusInput()
+	if isCorrect {
+		a.onCorrectAnswer()
+	} else {
+		a.onWrongAnswer()
+	}
+}
+
+func (a *ShowWordsActivity) onCorrectAnswer() {
+	defer a.focusInput()
+	if a.currentWord+1 == len(a.RoundWords) {
+		dialog.ShowError(errors.New("no more words"), a.app.w)
+		return
+	}
 	a.nextWord()
 }
 
+func (a *ShowWordsActivity) onWrongAnswer() {
+	a.CorrectWordLabel.SetText(a.RoundWords[a.currentWord].Original)
+}
+
 func (a *ShowWordsActivity) nextWord() {
-	if len(a.correctWordLabel.Text) != 0 {
+	if len(a.CorrectWordLabel.Text) != 0 {
 		a.RoundWords = append(a.RoundWords, a.RoundWords[a.currentWord])
 	}
 	a.currentWord++
-	a.correctWordLabel.SetText("")
-	a.translationLabel.SetText(a.RoundWords[a.currentWord].Translation)
-	a.input.SetText("")
+	a.CorrectWordLabel.SetText("")
+	a.TranslationLabel.SetText(a.RoundWords[a.currentWord].Translation)
+	a.Input.SetText("")
 }
 
 func (a *ShowWordsActivity) focusInput() {
-	a.app.w.Canvas().Focus(a.input)
+	a.app.w.Canvas().Focus(a.Input)
 }
