@@ -180,11 +180,6 @@
     "translation": "Назад"
   },
   {
-    "id": 38,
-    "original": "Musíte",
-    "translation": "Must"
-  },
-  {
     "id": 39,
     "original": "Křižovatka",
     "translation": "Перекресток"
@@ -210,11 +205,6 @@
     "translation": "Получить"
   },
   {
-    "id": 44,
-    "original": "Svetr",
-    "translation": "Свитер"
-  },
-  {
     "id": 45,
     "original": "Směr",
     "translation": "Наприавление"
@@ -222,7 +212,7 @@
   {
     "id": 46,
     "original": "Přítel",
-    "translation": "Друг"
+    "translation": "Друг, парень"
   },
   {
     "id": 47,
