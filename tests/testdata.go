@@ -56,6 +56,10 @@ var Groups = models.Groups{
 	},
 }
 
+func UpdateStatEmpty(id int64, k int) error {
+	return nil
+}
+
 func init() {
 	println("init test data")
 	for _, word := range Words {

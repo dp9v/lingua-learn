@@ -93,7 +93,7 @@ func (p *PreferencesDataSource) AddWord(word *models.Word, force bool) error {
 func (p *PreferencesDataSource) LoadStat(id int64) (*models.Stat, error) {
 	wordJson := p.Preferences().StringWithFallback(fmt.Sprintf(STAT_ID_PATTERN, id), "{}")
 	if wordJson == "{}" {
-		return &models.Stat{WordId: id}, nil
+		return &models.Stat{WordId: id, Statistic: map[int]int{}}, nil
 	}
 	return models.UnmarshalStat(wordJson)
 }

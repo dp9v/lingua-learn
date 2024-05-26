@@ -9,7 +9,7 @@ import (
 
 func TestShowWordsActivity_wrongAnswer(t *testing.T) {
 	guiApp := gui.NewApplication(app)
-	a := gui.NewShowWordsActivity(guiApp, WordsList)
+	a := gui.NewShowWordsActivity(guiApp, WordsList, UpdateStatEmpty)
 	a.GetContent()
 	assert.Equal(t, WordsList[0].Translation, a.TranslationLabel.Text)
 	test.Tap(a.NextBtn)
@@ -18,7 +18,7 @@ func TestShowWordsActivity_wrongAnswer(t *testing.T) {
 
 func TestShowWordsActivity_correctAnswer(t *testing.T) {
 	guiApp := gui.NewApplication(app)
-	a := gui.NewShowWordsActivity(guiApp, WordsList)
+	a := gui.NewShowWordsActivity(guiApp, WordsList, UpdateStatEmpty)
 	a.GetContent()
 	a.Input.Text = WordsList[0].Original
 	test.Tap(a.NextBtn)

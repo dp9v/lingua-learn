@@ -57,7 +57,7 @@ func (a *MainActivity) startBtnClick() {
 		dialog.ShowError(err, a.app.w)
 		return
 	}
-	a.app.update(NewShowWordsActivity(a.app, words))
+	a.app.update(NewShowWordsActivity(a.app, words, a.ds.IncrementStatValue))
 }
 
 func NewMainActivity(app *Application, title string, ds v2.RWDataSourceV2) *MainActivity {

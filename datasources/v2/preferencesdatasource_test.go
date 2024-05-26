@@ -65,9 +65,12 @@ func TestPreferencesDataSource_Stats(t *testing.T) {
 	testDataSource := NewPreferencesDataSource(app)
 	stat := models.Stats{
 		1: models.Stat{
-			WordId:       1,
-			ShowCount:    3,
-			WrongAnswers: 2,
+			WordId: 1,
+			Statistic: map[int]int{
+				models.SHOW:    3,
+				models.WRONG:   2,
+				models.CORRECT: 1,
+			},
 		},
 	}
 	err := testDataSource.UpdateStats(&stat)
@@ -78,14 +81,16 @@ func TestPreferencesDataSource_Stats(t *testing.T) {
 	assert.Len(t, *stats, 2)
 	assert.Equal(t, stats, &models.Stats{
 		1: models.Stat{
-			WordId:       1,
-			ShowCount:    3,
-			WrongAnswers: 2,
+			WordId: 1,
+			Statistic: map[int]int{
+				models.SHOW:    3,
+				models.WRONG:   2,
+				models.CORRECT: 1,
+			},
 		},
 		2: models.Stat{
-			WordId:       2,
-			ShowCount:    0,
-			WrongAnswers: 0,
+			WordId:    2,
+			Statistic: map[int]int{},
 		},
 	})
 }
