@@ -2,10 +2,15 @@ package models
 
 import "encoding/json"
 
+const (
+	SHOW    = iota
+	CORRECT = iota
+	WRONG   = iota
+)
+
 type Stat struct {
-	WordId       int64 `json:"wordId"`
-	ShowCount    int   `json:"showCount"`
-	WrongAnswers int64 `json:"wrongAnswers"`
+	WordId    int64       `json:"wordId"`
+	Statistic map[int]int `json:"statistic"`
 }
 
 type Stats map[int64]Stat

@@ -5,10 +5,10 @@ import (
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/widget"
+	"learn_words/common"
 	v2 "learn_words/datasources/v2"
 	"learn_words/datasources/v2/models"
 	"regexp"
-	"slices"
 	"strconv"
 )
 
@@ -17,7 +17,7 @@ type MainActivity struct {
 	StartBtn      *widget.Button
 	ShowGroupsBtn *widget.Button
 	app           *Application
-	ds            v2.DataSourceV2
+	ds            *common.DictionaryService
 	groups        *models.Groups
 	title         string
 }
@@ -31,18 +31,17 @@ func (a *MainActivity) GetTitle() string {
 }
 
 func (a *MainActivity) refresh() {
-	groups, err := a.ds.ReadAllGroups()
+	groups, err := a.ds.GetGroupNames()
 	if err != nil {
 		dialog.ShowError(err, a.app.w)
 		return
 	}
-	a.groups = groups
-	a.CheckGroup.Options = *groups.AsList().Names()
+	a.CheckGroup.Options = groups
 	a.CheckGroup.SetSelected([]string{})
 }
 
 func (a *MainActivity) startBtnClick() {
-	var wordIds []int64
+	var groupIds []int64
 	r := regexp.MustCompile("\\(id: (\\d+)\\)")
 	for _, s := range a.CheckGroup.Selected {
 		id, err := strconv.Atoi(r.FindStringSubmatch(s)[1])
@@ -50,25 +49,22 @@ func (a *MainActivity) startBtnClick() {
 			dialog.ShowError(err, a.app.w)
 			return
 		}
-		wordIds = append(wordIds, (*a.groups)[int64(id)].Words...)
+
+		groupIds = append(groupIds, int64(id))
 	}
-	slices.Sort(wordIds)
-	slices.Compact(wordIds)
-	wordIds = slices.Clip(wordIds)
-	words, err := a.ds.ReadWords(wordIds)
+	words, err := a.ds.GetRandomWords(13, groupIds)
 	if err != nil {
 		dialog.ShowError(err, a.app.w)
 		return
 	}
-	wordsToShow := words.Shuffle(13)
-	a.app.update(NewShowWordsActivity(a.app, wordsToShow))
+	a.app.update(NewShowWordsActivity(a.app, words))
 }
 
-func NewMainActivity(app *Application, title string, ds v2.DataSourceV2) *MainActivity {
+func NewMainActivity(app *Application, title string, ds v2.RWDataSourceV2) *MainActivity {
 	groupSelector := widget.NewCheckGroup([]string{}, nil)
 	startBtn := widget.NewButton("Run check", nil)
 	showGroupsBtn := widget.NewButton("ShowGroups", func() {
-		app.update(NewShowGroupsActivity(app, v2.NewPreferencesDataSource(app.app)))
+		app.update(NewShowGroupsActivity(app, ds)) //ToDo: remove this functionality
 	})
 	res := &MainActivity{
 		app:           app,
@@ -76,7 +72,7 @@ func NewMainActivity(app *Application, title string, ds v2.DataSourceV2) *MainAc
 		CheckGroup:    groupSelector,
 		StartBtn:      startBtn,
 		ShowGroupsBtn: showGroupsBtn,
-		ds:            ds,
+		ds:            common.NewDictionaryService(ds),
 	}
 	res.StartBtn.OnTapped = res.startBtnClick
 	res.refresh()

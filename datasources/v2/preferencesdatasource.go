@@ -90,10 +90,18 @@ func (p *PreferencesDataSource) AddWord(word *models.Word, force bool) error {
 	return nil
 }
 
+func (p *PreferencesDataSource) LoadStat(id int64) (*models.Stat, error) {
+	wordJson := p.Preferences().StringWithFallback(fmt.Sprintf(STAT_ID_PATTERN, id), "{}")
+	if wordJson == "{}" {
+		return &models.Stat{WordId: id}, nil
+	}
+	return models.UnmarshalStat(wordJson)
+}
+
 func (p *PreferencesDataSource) LoadStats(ids []int64) (*models.Stats, error) {
 	res := make(models.Stats)
 	for _, id := range ids {
-		stat, err := p.loadStat(id)
+		stat, err := p.LoadStat(id)
 		if err != nil {
 			fyne.LogError("Stats can not be unmarshalled", err)
 			return nil, fmt.Errorf("stat if:%d can not be unmarshalled: %s", id, err)
@@ -106,7 +114,7 @@ func (p *PreferencesDataSource) LoadStats(ids []int64) (*models.Stats, error) {
 func (p *PreferencesDataSource) UpdateStats(stats *models.Stats) error {
 	errorCount := 0
 	for _, stat := range *stats {
-		err := p.updateStat(stat)
+		err := p.UpdateStat(&stat)
 		if err != nil {
 			fyne.LogError("stats can not be updated", err)
 			errorCount++
@@ -118,15 +126,7 @@ func (p *PreferencesDataSource) UpdateStats(stats *models.Stats) error {
 	return nil
 }
 
-func (p *PreferencesDataSource) loadStat(id int64) (*models.Stat, error) {
-	wordJson := p.Preferences().StringWithFallback(fmt.Sprintf(STAT_ID_PATTERN, id), "{}")
-	if wordJson == "{}" {
-		return &models.Stat{WordId: id}, nil
-	}
-	return models.UnmarshalStat(wordJson)
-}
-
-func (p *PreferencesDataSource) updateStat(stat models.Stat) error {
+func (p *PreferencesDataSource) UpdateStat(stat *models.Stat) error {
 	statJson, err := stat.Marshal()
 	if err != nil {
 		return fmt.Errorf("stat id=%d can not be marshalled: %s", stat.WordId, err)
