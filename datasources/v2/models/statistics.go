@@ -3,14 +3,14 @@ package models
 import "encoding/json"
 
 const (
-	SHOW    = iota
-	CORRECT = iota
-	WRONG   = iota
+	SHOW    = "SHOW"
+	CORRECT = "CORRECT"
+	WRONG   = "WRONG"
 )
 
 type Stat struct {
-	WordId    int64       `json:"wordId"`
-	Statistic map[int]int `json:"statistic"`
+	WordId    int64          `json:"wordId"`
+	Statistic map[string]int `json:"statistic"`
 }
 
 type Stats map[int64]Stat

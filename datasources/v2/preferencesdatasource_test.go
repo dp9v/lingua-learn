@@ -66,7 +66,7 @@ func TestPreferencesDataSource_Stats(t *testing.T) {
 	stat := models.Stats{
 		1: models.Stat{
 			WordId: 1,
-			Statistic: map[int]int{
+			Statistic: map[string]int{
 				models.SHOW:    3,
 				models.WRONG:   2,
 				models.CORRECT: 1,
@@ -82,7 +82,7 @@ func TestPreferencesDataSource_Stats(t *testing.T) {
 	assert.Equal(t, stats, &models.Stats{
 		1: models.Stat{
 			WordId: 1,
-			Statistic: map[int]int{
+			Statistic: map[string]int{
 				models.SHOW:    3,
 				models.WRONG:   2,
 				models.CORRECT: 1,
@@ -90,7 +90,7 @@ func TestPreferencesDataSource_Stats(t *testing.T) {
 		},
 		2: models.Stat{
 			WordId:    2,
-			Statistic: map[int]int{},
+			Statistic: map[string]int{},
 		},
 	})
 }

@@ -39,7 +39,7 @@ func (s *DictionaryService) GetRandomWords(count int, groupIds []int64) (models.
 	return result, nil
 }
 
-func (s *DictionaryService) IncrementStatValue(wordId int64, key int) error {
+func (s *DictionaryService) IncrementStatValue(wordId int64, key string) error {
 	stat, err := s.ds.LoadStat(wordId)
 	if err != nil {
 		return err
