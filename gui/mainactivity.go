@@ -61,14 +61,14 @@ func (a *MainActivity) startBtnClick() {
 		return
 	}
 	wordsToShow := words.Shuffle(13)
-	a.app.update(NewShowWordsActivity(a.app, wordsToShow))
+	a.app.Next(NewShowWordsActivity(a.app, wordsToShow))
 }
 
 func NewMainActivity(app *Application, title string, ds v2.DataSourceV2) *MainActivity {
 	groupSelector := widget.NewCheckGroup([]string{}, nil)
 	startBtn := widget.NewButton("Run check", nil)
 	showGroupsBtn := widget.NewButton("ShowGroups", func() {
-		app.update(NewShowGroupsActivity(app, v2.NewPreferencesDataSource(app.app)))
+		app.Next(NewShowGroupsActivity(app, v2.NewPreferencesDataSource(app.app)))
 	})
 	res := &MainActivity{
 		app:           app,
