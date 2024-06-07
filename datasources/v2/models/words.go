@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fyne.io/fyne/v2"
 	"math/rand"
+	"sort"
 )
 
 type Word struct {
@@ -41,6 +42,9 @@ func (w *Words) AsList() WordList {
 		res[counter] = word
 		counter++
 	}
+	sort.Slice(res, func(i, j int) bool {
+		return res[i].Id < res[j].Id
+	})
 	return res
 }
 

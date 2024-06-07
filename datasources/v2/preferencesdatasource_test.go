@@ -59,3 +59,38 @@ func TestPreferencesDataSource_Words(t *testing.T) {
 		Translation: "TestTranslation",
 	}}, words)
 }
+
+func TestPreferencesDataSource_Stats(t *testing.T) {
+	app := test.NewApp()
+	testDataSource := NewPreferencesDataSource(app)
+	stat := models.Stats{
+		1: models.Stat{
+			WordId: 1,
+			Statistic: map[string]int{
+				models.SHOW:    3,
+				models.WRONG:   2,
+				models.CORRECT: 1,
+			},
+		},
+	}
+	err := testDataSource.UpdateStats(&stat)
+	assert.Empty(t, err, "UpdateStats: Error should be empty")
+
+	stats, err := testDataSource.LoadStats([]int64{1, 2})
+	assert.Empty(t, err, "LoadStats: Error should be empty")
+	assert.Len(t, *stats, 2)
+	assert.Equal(t, stats, &models.Stats{
+		1: models.Stat{
+			WordId: 1,
+			Statistic: map[string]int{
+				models.SHOW:    3,
+				models.WRONG:   2,
+				models.CORRECT: 1,
+			},
+		},
+		2: models.Stat{
+			WordId:    2,
+			Statistic: map[string]int{},
+		},
+	})
+}
