@@ -13,5 +13,5 @@ func TestShowStatsActivity(t *testing.T) {
 
 	content := testActivity.GetContent()
 	assert.NotEmpty(t, content, "content should not be empty")
-	assert.NotEmpty(t, testActivity.StatText.Text)
+	assert.NotEmpty(t, testActivity.StatText.Text())
 }

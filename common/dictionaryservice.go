@@ -53,7 +53,18 @@ func (s *DictionaryService) IncrementStatValue(wordId int64, key string) error {
 }
 
 func (s *DictionaryService) GetFullStat() (*models.Stats, error) {
-	return s.ds.ReadAllStats()
+	stats, err := s.ds.ReadAllStats()
+	if err != nil {
+		return nil, err
+	}
+	nonEmptyStat := make(models.Stats)
+
+	for key, value := range *stats {
+		if len(value.Statistic) != 0 {
+			nonEmptyStat[key] = value
+		}
+	}
+	return &nonEmptyStat, nil
 }
 
 func NewDictionaryService(ds v2.RWDataSourceV2) *DictionaryService {

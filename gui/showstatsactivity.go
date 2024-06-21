@@ -2,11 +2,9 @@ package gui
 
 import (
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/widget"
-	"image/color"
 	"learn_words/common"
 )
 
@@ -15,7 +13,7 @@ type ShowStatsActivity struct {
 	ds        *common.DictionaryService
 	exportBtn *widget.Button
 	importBtn *widget.Button
-	StatText  *canvas.Text
+	StatText  *widget.TextGrid
 }
 
 func (s *ShowStatsActivity) GetContent() fyne.CanvasObject {
@@ -30,6 +28,7 @@ func (s *ShowStatsActivity) GetContent() fyne.CanvasObject {
 }
 
 func (s *ShowStatsActivity) Refresh() {
+	println("test")
 	stat, err := s.ds.GetFullStat()
 	if err != nil {
 		dialog.ShowError(err, s.app.w)
@@ -38,7 +37,7 @@ func (s *ShowStatsActivity) Refresh() {
 	if err != nil {
 		dialog.ShowError(err, s.app.w)
 	}
-	s.StatText.Text = string(jsonStat)
+	s.StatText.SetText(jsonStat)
 }
 
 func (s *ShowStatsActivity) GetTitle() string {
@@ -51,7 +50,7 @@ func NewShowStatsActivity(app *Application, ds *common.DictionaryService) *ShowS
 		ds:        ds,
 		importBtn: widget.NewButton("Import..", func() {}),
 		exportBtn: widget.NewButton("Export..", func() {}),
-		StatText:  canvas.NewText("", color.White),
+		StatText:  widget.NewTextGrid(),
 	}
 	res.exportBtn.Disable()
 	res.importBtn.Disable()
