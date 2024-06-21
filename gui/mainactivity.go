@@ -57,14 +57,14 @@ func (a *MainActivity) startBtnClick() {
 		dialog.ShowError(err, a.app.w)
 		return
 	}
-	a.app.update(NewShowWordsActivity(a.app, words, a.ds.IncrementStatValue))
+	a.app.Next(NewShowWordsActivity(a.app, words, a.ds.IncrementStatValue))
 }
 
 func NewMainActivity(app *Application, title string, ds v2.RWDataSourceV2) *MainActivity {
 	groupSelector := widget.NewCheckGroup([]string{}, nil)
 	startBtn := widget.NewButton("Run check", nil)
 	showGroupsBtn := widget.NewButton("ShowGroups", func() {
-		app.update(NewShowGroupsActivity(app, ds)) //ToDo: remove this functionality
+		app.Next(NewShowGroupsActivity(app, ds)) //ToDo: remove this functionality
 	})
 	res := &MainActivity{
 		app:           app,

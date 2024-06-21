@@ -18,30 +18,25 @@ type Activity interface {
 
 type Application struct {
 	Content        Activity
+	Activities     []Activity
+	BackBtn        *widget.Button
 	app            fyne.App
 	w              fyne.Window
-	backBtn        *widget.Button
 	updateWordsBtn *widget.Button
 	label          *widget.Label
-}
-
-type TestApplication struct {
-	*Application
-}
-
-func (t TestApplication) update(content Activity) {
-
 }
 
 func NewApplication(myApp fyne.App) *Application {
 	myWindow := myApp.NewWindow("")
 	res := Application{
-		app:   myApp,
-		w:     myWindow,
-		label: widget.NewLabel(""),
+		Activities: make([]Activity, 0),
+		app:        myApp,
+		w:          myWindow,
+		label:      widget.NewLabel(""),
 	}
 	res.label.TextStyle = fyne.TextStyle{Bold: true}
-	res.backBtn = widget.NewButton(" << ", res.showMainActivity)
+	res.BackBtn = widget.NewButton(" << ", res.back)
+	res.BackBtn.Disable()
 	res.updateWordsBtn = widget.NewButton("Update words", res.updateWords)
 	res.showMainActivity()
 	res.w.ShowAndRun()
@@ -55,16 +50,33 @@ func (app *Application) showMainActivity() {
 	}
 }
 
+func (app *Application) back() {
+	activitiesCount := len(app.Activities)
+	prevActivity := app.Activities[activitiesCount-1]
+	app.Activities = app.Activities[:activitiesCount-1]
+	app.update(prevActivity)
+}
+
+func (app *Application) Next(content Activity) {
+	app.Activities = append(app.Activities, app.Content)
+	app.update(content)
+}
+
 func (app *Application) update(content Activity) {
 	app.Content = content
 	app.w.SetTitle(content.GetTitle())
 	app.label.SetText(app.Content.GetTitle())
 	app.w.SetContent(app.getMainContainer())
+	if len(app.Activities) == 0 {
+		app.BackBtn.Disable()
+	} else {
+		app.BackBtn.Enable()
+	}
 }
 
 func (app *Application) getMainContainer() *fyne.Container {
 	return container.NewBorder(
-		container.NewHBox(app.label, layout.NewSpacer(), app.backBtn),
+		container.NewHBox(app.label, layout.NewSpacer(), app.BackBtn),
 		app.updateWordsBtn,
 		nil,
 		nil,
