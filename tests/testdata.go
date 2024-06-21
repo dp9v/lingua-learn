@@ -1,6 +1,7 @@
 package tests
 
 import (
+	"fmt"
 	"fyne.io/fyne/v2/test"
 	v2 "learn_words/datasources/v2"
 	"learn_words/datasources/v2/models"
@@ -54,6 +55,16 @@ var Groups = models.Groups{
 		Name:  "Group3",
 		Words: []int64{2, 3},
 	},
+}
+
+func UpdateStatEmpty(_ int64, _ string) error {
+	return nil
+}
+
+func CleanStat() {
+	for i := 0; i < 10; i++ {
+		app.Preferences().RemoveValue(fmt.Sprintf(v2.STAT_ID_PATTERN, i))
+	}
 }
 
 func init() {

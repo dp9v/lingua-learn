@@ -21,10 +21,11 @@ type ShowWordsActivity struct {
 	Input            *OnKeyEntry
 	TranslationLabel *widget.Label
 	CorrectWordLabel *widget.Label
+	IncrementStat    func(int64, string) error
 }
 
 func (a *ShowWordsActivity) GetContent() fyne.CanvasObject {
-	a.TranslationLabel.SetText(a.RoundWords[a.currentWord].Translation)
+	a.nextWord()
 	return container.NewBorder(
 		a.TranslationLabel,
 		container.NewHBox(layout.NewSpacer(), a.NextBtn),
@@ -38,13 +39,17 @@ func (a *ShowWordsActivity) GetTitle() string {
 	return "Show words"
 }
 
-func NewShowWordsActivity(app *Application, words models.WordList) *ShowWordsActivity {
+func NewShowWordsActivity(
+	app *Application,
+	words models.WordList,
+	incrementStat func(int64, string) error) *ShowWordsActivity {
 	activity := ShowWordsActivity{
 		app:              app,
-		currentWord:      0,
+		currentWord:      -1,
 		RoundWords:       words,
 		TranslationLabel: widget.NewLabel(""),
 		CorrectWordLabel: widget.NewLabel(""),
+		IncrementStat:    incrementStat,
 	}
 	activity.Input = NewOnKeyEntry(activity.onNextBtnClick)
 	activity.NextBtn = widget.NewButton("Next", activity.onNextBtnClick)
@@ -86,10 +91,15 @@ func (a *ShowWordsActivity) onCorrectAnswer() {
 		dialog.ShowError(errors.New("no more words"), a.app.w)
 		return
 	}
+	a.incrementStat(models.CORRECT)
 	a.nextWord()
 }
 
 func (a *ShowWordsActivity) onWrongAnswer() {
+	if len(a.CorrectWordLabel.Text) > 0 {
+		return
+	}
+	a.incrementStat(models.WRONG)
 	a.CorrectWordLabel.SetText(a.RoundWords[a.currentWord].Original)
 }
 
@@ -101,8 +111,17 @@ func (a *ShowWordsActivity) nextWord() {
 	a.CorrectWordLabel.SetText("")
 	a.TranslationLabel.SetText(a.RoundWords[a.currentWord].Translation)
 	a.Input.SetText("")
+	a.incrementStat(models.SHOW)
 }
 
 func (a *ShowWordsActivity) focusInput() {
 	a.app.w.Canvas().Focus(a.Input)
+}
+
+func (a *ShowWordsActivity) incrementStat(key string) {
+	err := a.IncrementStat(a.RoundWords[a.currentWord].Id, key)
+	if err != nil {
+		dialog.ShowError(err, a.app.w)
+		return
+	}
 }
