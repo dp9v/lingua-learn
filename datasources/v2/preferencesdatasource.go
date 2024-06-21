@@ -4,9 +4,12 @@ import (
 	"fmt"
 	"fyne.io/fyne/v2"
 	"learn_words/datasources/v2/models"
+	"slices"
+	"sort"
 )
 
 const GROUPS_PATTERN = "GroupsV2"
+const SAVED_WORDS = "SavedWords"
 const WORD_ID_PATTERN = "WordsV2_%d"
 const STAT_ID_PATTERN = "StatsV2_%d"
 
@@ -20,6 +23,24 @@ func (p *PreferencesDataSource) ReadAllGroups() (*models.Groups, error) {
 		return &models.Groups{}, nil
 	}
 	return models.UnmarshalGroups(result)
+}
+
+func (p *PreferencesDataSource) ReadAllWords() (*models.Words, error) {
+	wordIds := p.Preferences().IntList(SAVED_WORDS)
+	wordIds64 := make([]int64, len(wordIds))
+	for i, wordId := range wordIds {
+		wordIds64[i] = int64(wordId)
+	}
+	return p.ReadWords(wordIds64)
+}
+
+func (p *PreferencesDataSource) ReadAllStats() (*models.Stats, error) {
+	wordIds := p.Preferences().IntList(SAVED_WORDS)
+	wordIds64 := make([]int64, len(wordIds))
+	for i, wordId := range wordIds {
+		wordIds64[i] = int64(wordId)
+	}
+	return p.ReadStats(wordIds64)
 }
 
 func (p *PreferencesDataSource) ReadWords(ids []int64) (*models.Words, error) {
@@ -87,10 +108,21 @@ func (p *PreferencesDataSource) AddWord(word *models.Word, force bool) error {
 	}
 
 	p.Preferences().SetString(fmt.Sprintf(WORD_ID_PATTERN, word.Id), jsonWord)
+	p.addWordId(int(word.Id))
+
 	return nil
 }
 
-func (p *PreferencesDataSource) LoadStat(id int64) (*models.Stat, error) {
+func (p *PreferencesDataSource) addWordId(id int) {
+	list := p.Preferences().IntList(SAVED_WORDS)
+	savedIds := append(list, id)
+	sort.Ints(savedIds)
+	slices.Compact(savedIds)
+	slices.Clip(savedIds)
+	p.Preferences().SetIntList(SAVED_WORDS, savedIds)
+}
+
+func (p *PreferencesDataSource) ReadStat(id int64) (*models.Stat, error) {
 	wordJson := p.Preferences().StringWithFallback(fmt.Sprintf(STAT_ID_PATTERN, id), "{}")
 	if wordJson == "{}" {
 		return &models.Stat{WordId: id, Statistic: map[string]int{}}, nil
@@ -98,10 +130,10 @@ func (p *PreferencesDataSource) LoadStat(id int64) (*models.Stat, error) {
 	return models.UnmarshalStat(wordJson)
 }
 
-func (p *PreferencesDataSource) LoadStats(ids []int64) (*models.Stats, error) {
+func (p *PreferencesDataSource) ReadStats(ids []int64) (*models.Stats, error) {
 	res := make(models.Stats)
 	for _, id := range ids {
-		stat, err := p.LoadStat(id)
+		stat, err := p.ReadStat(id)
 		if err != nil {
 			fyne.LogError("Stats can not be unmarshalled", err)
 			return nil, fmt.Errorf("stat if:%d can not be unmarshalled: %s", id, err)

@@ -49,7 +49,7 @@ func TestShowWordsActivity_collectStatistics(t *testing.T) {
 	a.Input.Text = WordsList[1].Original
 	test.Tap(a.NextBtn)
 
-	stats, err := source.LoadStats([]int64{1, 2, 3})
+	stats, err := source.ReadStats([]int64{1, 2, 3})
 	assert.NoError(t, err)
 	assert.Equal(t, *stats, models.Stats{
 		1: {

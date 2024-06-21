@@ -60,9 +60,26 @@ func TestPreferencesDataSource_Words(t *testing.T) {
 	}}, words)
 }
 
+func TestPreferencesDataSource_ReadAllWords(t *testing.T) {
+	app := test.NewApp()
+	testDataSource := NewPreferencesDataSource(app)
+	_ = testDataSource.AddWord(&models.Word{
+		Id: 1,
+	}, false)
+	_ = testDataSource.AddWord(&models.Word{
+		Id: 4,
+	}, false)
+	words, err := testDataSource.ReadAllWords()
+	assert.NoError(t, err, "ReadAllWords: Error should be empty")
+	assert.Len(t, *words, 2)
+	assert.Equal(t, &models.Words{1: models.Word{Id: 1}, 4: models.Word{Id: 4}}, words)
+}
+
 func TestPreferencesDataSource_Stats(t *testing.T) {
 	app := test.NewApp()
 	testDataSource := NewPreferencesDataSource(app)
+	_ = testDataSource.AddWord(&models.Word{Id: 1}, false)
+
 	stat := models.Stats{
 		1: models.Stat{
 			WordId: 1,
@@ -76,8 +93,8 @@ func TestPreferencesDataSource_Stats(t *testing.T) {
 	err := testDataSource.UpdateStats(&stat)
 	assert.Empty(t, err, "UpdateStats: Error should be empty")
 
-	stats, err := testDataSource.LoadStats([]int64{1, 2})
-	assert.Empty(t, err, "LoadStats: Error should be empty")
+	stats, err := testDataSource.ReadStats([]int64{1, 2})
+	assert.Empty(t, err, "ReadStats: Error should be empty")
 	assert.Len(t, *stats, 2)
 	assert.Equal(t, stats, &models.Stats{
 		1: models.Stat{
@@ -93,4 +110,8 @@ func TestPreferencesDataSource_Stats(t *testing.T) {
 			Statistic: map[string]int{},
 		},
 	})
+
+	allStats, err := testDataSource.ReadAllStats()
+	assert.NoError(t, err, "ReadAllStats: Error should be empty")
+	assert.Len(t, *allStats, 1)
 }

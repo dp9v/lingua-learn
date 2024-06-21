@@ -40,7 +40,7 @@ func (s *DictionaryService) GetRandomWords(count int, groupIds []int64) (models.
 }
 
 func (s *DictionaryService) IncrementStatValue(wordId int64, key string) error {
-	stat, err := s.ds.LoadStat(wordId)
+	stat, err := s.ds.ReadStat(wordId)
 	if err != nil {
 		return err
 	}
@@ -50,6 +50,10 @@ func (s *DictionaryService) IncrementStatValue(wordId int64, key string) error {
 		return err
 	}
 	return nil
+}
+
+func (s *DictionaryService) GetFullStat() (*models.Stats, error) {
+	return s.ds.ReadAllStats()
 }
 
 func NewDictionaryService(ds v2.RWDataSourceV2) *DictionaryService {
