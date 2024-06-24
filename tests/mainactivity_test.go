@@ -36,3 +36,10 @@ func TestMainActivity_showGroupsClick(t *testing.T) {
 	test.Tap(activity.ShowGroupsBtn)
 	assert.IsType(t, &gui.GroupsActivity{}, guiApp.Content)
 }
+
+func TestMainActivity_showStatsBtnClick(t *testing.T) {
+	guiApp := gui.NewApplication(app)
+	activity := gui.NewMainActivity(guiApp, "title", source)
+	test.Tap(activity.ShowStatsBtn)
+	assert.IsType(t, &gui.ShowStatsActivity{}, guiApp.Content)
+}

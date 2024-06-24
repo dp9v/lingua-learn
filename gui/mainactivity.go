@@ -16,6 +16,7 @@ type MainActivity struct {
 	CheckGroup    *widget.CheckGroup
 	StartBtn      *widget.Button
 	ShowGroupsBtn *widget.Button
+	ShowStatsBtn  *widget.Button
 	app           *Application
 	ds            *common.DictionaryService
 	groups        *models.Groups
@@ -23,7 +24,7 @@ type MainActivity struct {
 }
 
 func (a *MainActivity) GetContent() fyne.CanvasObject {
-	return container.NewVBox(a.CheckGroup, a.StartBtn, a.ShowGroupsBtn)
+	return container.NewVBox(a.CheckGroup, a.StartBtn, a.ShowStatsBtn)
 }
 
 func (a *MainActivity) GetTitle() string {
@@ -63,8 +64,12 @@ func (a *MainActivity) startBtnClick() {
 func NewMainActivity(app *Application, title string, ds v2.RWDataSourceV2) *MainActivity {
 	groupSelector := widget.NewCheckGroup([]string{}, nil)
 	startBtn := widget.NewButton("Run check", nil)
+	dictionaryService := common.NewDictionaryService(ds)
 	showGroupsBtn := widget.NewButton("ShowGroups", func() {
 		app.Next(NewShowGroupsActivity(app, ds)) //ToDo: remove this functionality
+	})
+	showStatsBtn := widget.NewButton("ShowStats", func() {
+		app.Next(NewShowStatsActivity(app, dictionaryService))
 	})
 	res := &MainActivity{
 		app:           app,
@@ -72,7 +77,8 @@ func NewMainActivity(app *Application, title string, ds v2.RWDataSourceV2) *Main
 		CheckGroup:    groupSelector,
 		StartBtn:      startBtn,
 		ShowGroupsBtn: showGroupsBtn,
-		ds:            common.NewDictionaryService(ds),
+		ShowStatsBtn:  showStatsBtn,
+		ds:            dictionaryService,
 	}
 	res.StartBtn.OnTapped = res.startBtnClick
 	res.refresh()

@@ -31,3 +31,11 @@ func (s *Stat) Marshal() (string, error) {
 	}
 	return string(jsonValue), nil
 }
+
+func (s *Stats) Marshal() (string, error) {
+	jsonValue, err := json.MarshalIndent(&s, "", "  ")
+	if err != nil {
+		return "", err
+	}
+	return string(jsonValue), nil
+}
